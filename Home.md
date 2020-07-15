@@ -5,9 +5,9 @@ This is an on-going project to develop the RISC-V backend for the V8 JavaScript 
 This repo will be the community home for some time before the code-base is upstream to the V8 community. For general V8 information, see [V8 Dev](https://v8.dev/). The rest of the wiki is specific to the RISC-V V8 backend.
 
 ## Getting started
-- Get the source
-- Simulated build
-- Run tests
+- [Get the source](get-the-source)
+- [Simulator build](simulator-build)
+- [Run tests](run-tests)
 
 ## Project management
 - Project roadmap
