@@ -11,7 +11,7 @@ This repo will be the community home for some time before the code-base is upstr
 
 ## Project management
 - Project roadmap
-- [Testing status](test-status)
+- [Testing status](Testing-Status)
 - Planning discussions
 - Help needed
 
@@ -19,9 +19,9 @@ This repo will be the community home for some time before the code-base is upstr
 - How to submit an issue
 
 ## For developers
-- Setup VSCod
+- [Setup VSCode](VSCode-Setup)
 - Testing before submitting pull request
-- How to debug V8
+- [How to debug V8](How-to-debug-V8)
 - How to contribute
 
 ## Understanding V8 backend
