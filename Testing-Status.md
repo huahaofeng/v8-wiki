@@ -1,8 +1,10 @@
+This page lists the latest test results for different builds.
+
 # Simulated build testing
 
-To run one or more test suites listed below, specify your own simulated build directory, e.g.,
+The following stats are obtained from CI test runs and can be reproduced as
 ```
-tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
+tools/run-tests.py --outdir=<your-simulated-build-dir> <test-suites>
 ```
 
 | Test Suite | Status | Notes |
@@ -14,6 +16,11 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 | wasm-js, wasm-api-tests | 50 (50%) |  |
 | fuzzer | | fuzzer tests seem not enabled (see #6)|
 | message, inspector, mkgrokdump, debugger | 857 (59%) |  |
+
+To run one or more test suites listed below, specify your own simulated build directory, e.g.,
+```
+tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
+```
 
 **TODO**
 - Add issue number for all failure cases
