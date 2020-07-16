@@ -31,5 +31,4 @@ This repo will be the community home for some time before the code-base is upstr
 
 ## Community operation
 
-TO BE ADDED
-
+- [Join our Slack](https://v8-riscv.typeform.com/to/AoTYfmFW)
