@@ -10,7 +10,7 @@ This repo will be the community home for some time before the code-base is upstr
 - [Run tests](run-tests)
 
 ## Project management
-- Project roadmap
+- [Project roadmap](Project-Roadmap)
 - [Testing status](Testing-Status)
 - Planning discussions
 - Help needed
