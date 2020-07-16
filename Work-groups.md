@@ -6,15 +6,15 @@ Since debugging generated codes in V8 can be extremely time-consuming, it is esp
 
 On the tooling side, we have only explored a few of the tools provided by V8 such as `run_test.py` and the debugger interface. We shall also look into enabling or developing debugging tools, trace analysis tools (e.g., `tools/riscv/analyze.py`), profiling tools to further improve our productivity. Some of the tools are important to later performance optimizations as well. For instance, we consider to extend our trace analysis tools to identify inefficient sequences of instructions from the simulator traces. 
 
-This work is immediately needed as it impacts the quality of our code-base and our daily productivity.
+**This work is immediately needed** as it impacts the quality of our code-base and our daily productivity.
 
 ### Native build enablement
 
 This work will focus on enabling RISC-V port using the native build (instead of the simulated build). We would like to first bring up native build v8-riscv in QEMU, then on real RISC-V board. The goal is to achieve a similar test success rate on the native build in on the simulated build.
 
-This work is immediately needed because a functioning native build is the real Minimal Viable Product (MVP) that an early adopter of v8-riscv will want to try out. While the simulated build makes a lot of sense for us V8 developers, it is not the case for users of V8.
-
 The native build also enables us to bring up more interesting applications that may not be possible under the simulated build (e.g., Node)
+
+**This work is immediately needed** because a functioning native build is the real Minimal Viable Product (MVP) that an early adopter of v8-riscv will want to try out. While the simulated build makes a lot of sense for us V8 developers, it is not the case for users of V8.
 
 ### Upstreaming preparation
 
