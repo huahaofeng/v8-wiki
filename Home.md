@@ -21,7 +21,7 @@ This repo will be the community home for some time before the code-base is upstr
 - [Setup VSCode](VSCode-Setup)
 - Testing before submitting pull request
 - [How to debug V8](How-to-debug-V8)
-- How to contribute
+- [How to contribute](contributing)
 
 ## Understanding V8 backend
 - Understand V8 backend architecture
@@ -31,4 +31,3 @@ This repo will be the community home for some time before the code-base is upstr
 ## Community operation
 
 - [Join our Slack](https://forms.office.com/Pages/ResponsePage.aspx?id=8o_uD7KjGECcdTodVZH-3OiciJKG_BJHrqMNgnsFFqtUNlRUNEQ5QUgxNk0wVEVaTjJBTDNOMDNIQS4u)
-- [Contributing](contributing)
