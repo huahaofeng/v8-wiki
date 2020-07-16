@@ -12,8 +12,7 @@ This repo will be the community home for some time before the code-base is upstr
 ## Project management
 - [Project roadmap](Project-Roadmap)
 - [Testing status](Testing-Status)
-- Planning discussions
-- Help needed
+- [Work groups](Work-groups)
 
 ## For early-adopters
 - How to submit an issue
