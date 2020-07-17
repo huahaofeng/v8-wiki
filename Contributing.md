@@ -20,4 +20,4 @@ As mentioned above, we will follow the [guidelines](https://v8.dev/docs/contribu
 > ```
 > The presubmit script uses a linter from Google, cpplint.py. It is part of depot_tools, and it must be in your PATH — so if you have depot_tools in your PATH, everything should just work.
 
-Our CI job will run tests as well. These tests must all pass in order for your pull request to be considered. All pull requests must be reviewed and approved by at least one owner before being accepted. Please also review ["Using Git"] and ensure that your commit messages follow the guidelines laid out there.
+Our CI job will run tests as well. These tests must all pass in order for your pull request to be considered. All pull requests must be reviewed and approved by at least one owner before being accepted. Please also review ["Using Git"](using-git) and ensure that your commit messages follow the guidelines laid out there.
