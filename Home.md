@@ -14,19 +14,15 @@ This repo will be the community home for some time before the code-base is upstr
 - [Testing status](Testing-Status)
 - [Work groups](Work-groups)
 
-## For early-adopters
-- How to submit an issue
-
 ## For developers
 - [Setup VSCode](VSCode-Setup)
-- Testing before submitting pull request
-- [How to debug V8](How-to-debug-V8)
 - [How to contribute](contributing)
+- [How to debug V8](How-to-debug-V8)
 
 ## Understanding V8 backend
 - Understand V8 backend architecture
 - V8 Ignition bytecode IR
-- V8 RISC-V backend design document
+- How to develop a new backend
 
 ## Community operation
 
