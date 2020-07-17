@@ -1,6 +1,4 @@
-## Overall Approach
-
-### Porting Strategy
+## Overall Porting Strategy
 
 When we first started the project back in January, we did a thorough study of the V8 backend architecture and made the following observations
 1. V8 is a sophisticated and mature language VM that has gone through several major software architectures refactoring;
@@ -14,11 +12,11 @@ We realized the major challenge of developing the RISC-V backend is managing the
 - the assembly codes in the backend are especially hard to comprehend; 
 - debugging the generated code in V8 is especially hard compared to other compilers. 
 
-To manage such complexity, we progressively define the Minimal Viable Product (MVP) at each phase of the porting. We also leverage as much as possible existing backends. Since MIPS heavily influences the RISC-V ISA, we choose the MIPS64 backend as the base and gradually morph it into the RISC-V backend. And finally, we constantly improve our debugging methods and develop tools (see [how to debug V8 backend](How-to-debug-V8)). 
-  
-### Testing strategy
+To manage such complexity, we progressively define the Minimal Viable Product (MVP) at each phase of the porting. We also leverage as much as possible existing backends. Since the RISC-V ISA is heavily influenced by MIPS ISA, we choose the MIPS64 backend as the base and gradually morph it into the RISC-V backend. 
 
-Since debugging is a big challenge in developing a new backend in V8, being able to expose bugs in a minimal test case is especially important to development productivity. Therefore, we paid special attention to the order by which test cases are enabled. For instance, even a simple JS test can run tens of thousands or millions of instructions, whereas a simple `cctest` such as `test-run-machop.cc` consists of many tests, each of which runs a short sequence of instructions. So the order of test cases we enable is always `mksnapshot`, `cctest`, simple hello-world, simple `d8` console, `unittests`, `wasm`-tests, others, and finally `mjsunit`. 
+Since debugging is a big challenge in developing a new backend in V8, being able to expose bugs in a minimal test case is especially important to development productivity. [Our testing strategy](Testing-Strategy) details the order by which V8 standard test cases are enabled. 
+
+And finally, we constantly improve our debugging methods and develop tools (see [how to debug V8 backend](How-to-debug-V8)). 
 
 ## Milestones
 
