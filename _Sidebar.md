@@ -1,0 +1,22 @@
+- [Home](home)
+- Getting started
+  - [Get the source](get-the-source)
+  - [Simulator build](simulator-build)
+  - [Run tests](run-tests)
+- Project management
+  - [Project roadmap](Project-Roadmap)
+  - [Testing status](Testing-Status)
+  - [Work groups](Work-groups)
+- For early-adopters
+  - How to submit an issue
+- For developers
+  - [Setup VSCode](VSCode-Setup)
+  - Testing before submitting pull request
+  - [How to debug V8](How-to-debug-V8)
+  - [How to contribute](contributing)
+- Understanding V8 backend
+  - Understand V8 backend architecture
+  - V8 Ignition bytecode IR
+  - V8 RISC-V backend design document
+- Community operation
+  - [Join our Slack](https://forms.office.com/Pages/ResponsePage.aspx?id=8o_uD7KjGECcdTodVZH-3OiciJKG_BJHrqMNgnsFFqtUNlRUNEQ5QUgxNk0wVEVaTjJBTDNOMDNIQS4u)
