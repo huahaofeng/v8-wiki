@@ -1,0 +1,41 @@
+Debugging is a big challenge in developing a new V8 backend. Even the simplest JS test case can result in tens of thousands of dynamic instructions. Therefore, exposing bugs in a minimal test case is critical to the development productivity. 
+
+We have identified a specific ordering of test cases to be enabled that are proven effective in reducing the debugging time in our initial porting.
+
+### `mksnapshot`
+
+`mksnapshot` compiles V8 built-in functions into target binaries using V8's code generation backend. It is a necessary step in the standard V8 build process. These pre-compiled built-in function binaries are loaded during V8 initialization. Passing `mksnapshot` indicates that there is no error during the compilation process of these built-in functions using the target backend.
+
+### `cctest`
+
+The normal V8 VM bring-up requires the initialization of hundreds of V8 builtin functions that are compiled by V8 (i.e., `mksnapshot`). Therefore, running even the simplest JS program of `1` requires executing a lot more V8 generated codes than we expect. Fortunately, the `cctest` test suites can circumvent the normal bring up of V8 VM and test some internal V8 APIs directly. 
+
+`cctest` consists of 6000+ C++ test cases that test all aspect of V8. For a new backend, it is a lot easier to expose bugs in the `cctest`. Passing `cctest` is an essential indicator of the basic functionality of a new backend.
+
+We enable sub-tests of `cctest` in the following order:
+
+- `test-assembler-riscv64.cc` tests the execution of each RISCV instruction (i.e., `assembler-riscv64.cc`, and `simulator-riscv64.cc` for simulated build). 
+- `test-disasm-riscv64.cc` tests disassembly (i.e., `disasm-riscv64.cc`) of each RISCV instruction.
+- `test-macro-assembler-riscv64.cc` and `test-simple-riscv64.cc` tests the basic functionality of each `TurboAssembler` and `MacroAssembler` APIs (i.e., `macro-assembler-riscv64.cc`).
+- `compiler/test-run-machops.cc` tests the target-specific code-gen of each machine-node IR (i.e., `code-generator-riscv64.cc`).
+- `interpreter/test-interpreter.cc` tests individual interpreter handler.
+- `wasm/test-run-wasm-interpreter.cc` tests for individual wasm-interpreter-bytecode.
+- `wasm/test-run-wasm-64.cc` and `test-run-wasm.cc` test code-gen for individual WASM (32/64) IR.
+- `test-run-jsops` tests individual JS operators.
+- the rest of `cctest`. 
+
+### `unittests`
+
+Unit tests for all aspects of V8
+
+### `mjsunit`
+
+`mjsunit` consists of all JS test cases. After `cctest` and `unittests` are cleared, most of `mjsunit` tests will pass, but the remaining failures (albeit a small number of them) may take some time to debug. In particular, `mjsunit/asm` consists some fairly large applications including `asm/poppler` (a PDF rendering engine), `asm/sqllite` and `lua`. 
+
+### `wasm` test cases
+
+This includes `wasm-api-tests`, `wasm-js`, and `wasm-spec-tests`. Thought tests in the `wasm-spec-tests` are in `.js` form, the actual wasm code is expressed in the binary format of warm (`wast`). So far, we have not found a good way to debug binary form wasm codes.
+
+### 3rd-party benchmarks
+
+(TO BE ADDED)
