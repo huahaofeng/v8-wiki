@@ -29,6 +29,13 @@ cd v8
 ```
 You can now browse the original v8 code under _$V8_ROOT/v8_.
 
+Due to an incompatibility between our branch and the current third-party tools that are checked out by the v8 fetch, we need to go in and checkout an older version of _icu_ to prevent a build error:
+
+```
+cd third_party/icu
+git checkout dbd3825b31041d782c5b504c59dcfb5ac7dda08c
+```
+
 ## Checkout the RISC-V Branch
 
 Since the RISC-V port is not yet upstream, we need to pull it from this repository.
