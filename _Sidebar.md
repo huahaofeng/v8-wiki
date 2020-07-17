@@ -1,17 +1,17 @@
 - [Home](home)
-- Getting started
+- Getting Started
   - [Get the source](get-the-source)
   - [Simulator build](simulator-build)
   - [Run tests](run-tests)
-- Project management
+- Project Management
   - [Project roadmap](Project-Roadmap)
   - [Testing status](Testing-Status)
   - [Work groups](Work-groups)
-- For developers
+- For Developers
   - [Setup VSCode](VSCode-Setup)
   - [How to contribute](contributing)
   - [How to debug V8](How-to-debug-V8)
-- Understanding V8 backend
+- RISC-V Backend Design Doc
   - Understand V8 backend architecture
   - V8 Ignition bytecode IR
   - How to develop a new backend
