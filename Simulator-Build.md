@@ -2,7 +2,7 @@ This page describes how to build V8 for execution on the built-in RISC-V simulat
 
 ## Install prerequisites
 
-The following script will use `apt` to install any packages required for building v8.
+The following script will use `apt` to install any packages required for building v8. You will need `sudo` access to install the packages.
 
 ```bash
 cd $V8_ROOT/v8
