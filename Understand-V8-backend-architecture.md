@@ -1,6 +1,4 @@
-[[_TOC_]]
-
-This wiki documents our understanding on the platform-specific components of V8. The information is of interest to anyone who is adding a new machine platform to V8.
+This wiki documents our understanding on the platform-specific components of V8. The information is of interest to anyone who is adding a new machine platform to V8. We use the MIPS64 backend as a case study.
 
 # V8 Target-specific Backend Overview
 
@@ -777,7 +775,7 @@ I32_BINOP(xor, xor_)
 ### Porting Summary
 
 - WASM interpreter requires no porting
-- Liftoff Assembler requires very little porting because the assembler interfaces are implemented using `TurboAssembler` APIs and a few simple `CodeAssembler` APIs. Since we have implemented MIPS64 `TurboAssembler` APIs and a subset of `CodeAssembler` APIs using RISCV instructions for the JS engine anyway, very few additional porting is necessary. 
+- Liftoff Assembler (i.e., `liftoff_assembler_mips64.h` requires very little porting because the assembler interfaces are implemented using `TurboAssembler` APIs and a few simple `CodeAssembler` APIs. Since we have implemented MIPS64 `TurboAssembler` APIs and a subset of `CodeAssembler` APIs using RISCV instructions for the JS engine anyway, very few additional porting is necessary. 
 
 ## Other V8 Internals
 
@@ -820,8 +818,6 @@ The `Call()` interface is a simple wrapper to dispatch between simulated executi
 In the non-simulator mode, the interface directly invokes the generated code as a native function, i.e., `fn_ptr_(args...)`. Since `fn_ptr_(args...)` is invoked from C, it means that `GeneratedCode<...>.Call(...)` follows C varargs function calling convention on the target machine. 
 
 For instance, on MIPS, the callee expects that arguments are passed in `a0`, ..., `a7` first w/ the rest spilled onto the stack, and it passes the result back to `v0`.
-
-
 
 ##### Simulated Execution via `Simulator::CallImpl()`
 
