@@ -1,6 +1,6 @@
 This page lists the latest test results for different builds.
 
-# Simulated build testing
+# Simulated v8-riscv testing
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -24,11 +24,12 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 
 **TODO**
 - Add issue number for all failure cases
+- Add performance benchmark success rate
 
-# Native build testing
-
-TO BE ADDED
+# Cross-compiled v8-riscv testing
 
 ## Running in QEMU
+
+TO BE ADDED
 
 ## Running on real hardware 
