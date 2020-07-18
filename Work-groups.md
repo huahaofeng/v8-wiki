@@ -8,7 +8,7 @@ On the tooling side, we have only explored a few of the tools provided by V8 suc
 
 **This work is immediately needed** as it impacts the quality of our code-base and our daily productivity.
 
-### Native build enablement
+### Cross-compiled run enablement
 
 This work will focus on enabling RISC-V port using the native build (instead of the simulated build). We would like to first bring up native build v8-riscv in QEMU, then on real RISC-V board. The goal is to achieve a similar test success rate on the native build in on the simulated build.
 
@@ -41,3 +41,7 @@ We may also need to design the software architecture to support certain vendor-s
 ### Application bring up
 
 This work focuses on bringing up important JS or Web Assembly workload for demo, benchmarking, or product purposes. One possible first major application to bring up is NodeJS. Certain Web Assembly applications may also be good candidate for early bring-up.
+
+### Documentation
+
+
