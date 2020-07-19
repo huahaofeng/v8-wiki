@@ -23,13 +23,13 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 ```
 
 **TODO**
-- Add issue number for all failure cases
 - Add performance benchmark success rate
 
 # Cross-compiled v8-riscv testing
 
 ## Running in QEMU
 
-TO BE ADDED
+- `hello-world.js` runs successfully in QEMU 5.0.0
+- others to be added
 
 ## Running on real hardware 
