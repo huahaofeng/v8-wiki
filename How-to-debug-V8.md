@@ -1,11 +1,9 @@
-[[_TOC_]]
-
 # Overall strategy
 
-(TO BE ADDED)
-
-- Simplify test cases
+- Simplify the test cases
+- Identify the ground truth
 - Find the lead
+- Map execution trace back to V8 source code
 
 ## Build options for debugging
 
