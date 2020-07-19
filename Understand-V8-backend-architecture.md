@@ -1,4 +1,4 @@
-This wiki documents our understanding on the platform-specific components of V8. The information is of interest to anyone who is adding a new machine platform to V8. We use the MIPS64 backend as a case study.
+This wiki documents our understanding on the platform-specific components of V8. The information is of interest to anyone who is adding a new machine platform to V8. We use the PPC and MIPS64 backends as examples.
 
 # V8 Target-specific Backend Overview
 
