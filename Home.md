@@ -27,3 +27,4 @@ This repo will be the community home for some time before the code-base is upstr
 ## Community operation
 
 - [Join our Slack](https://forms.office.com/Pages/ResponsePage.aspx?id=8o_uD7KjGECcdTodVZH-3OiciJKG_BJHrqMNgnsFFqtUNlRUNEQ5QUgxNk0wVEVaTjJBTDNOMDNIQS4u)
+- Developer sync-up meetings (to be added)
