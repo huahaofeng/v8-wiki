@@ -30,6 +30,25 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 ## Running in QEMU
 
 - `hello-world.js` runs successfully in QEMU 5.0.0
-- others to be added
+
+| Test Suite | Tests passed (run-rate)| Notes |
+| - | - | - |
+| cctest |  |  |
+| unittests |  |  |
+| mjsunit | | |
+| wasm-spec-tests, wasm-js | disabled | |
+| wasm-api-tests |  | |
+| fuzzer | | fuzzer tests seem not enabled (see #6)|
+| intl, message, inspector, mkgrokdump, debugger | |  |
 
 ## Running on real hardware 
+
+| Test Suite | Tests passed (run-rate)| Notes |
+| - | - | - |
+| cctest |  |  |
+| unittests |  |  |
+| mjsunit | | |
+| wasm-spec-tests, wasm-js | disabled | |
+| wasm-api-tests |  | |
+| fuzzer | | fuzzer tests seem not enabled (see #6)|
+| intl, message, inspector, mkgrokdump, debugger | |  |
