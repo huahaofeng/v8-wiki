@@ -36,7 +36,7 @@ unxz Fedora-Developer-Rawhide-*.raw.xz
 ```
 ## ${VER} is version number of Fedora-Developer-Rawhide-*.raw.xz and Fedora-Developer-Rawhide-*-fw_payload-uboot-qemu-virt-smode.elf.
 ## I use ${VER}=20191123.n.0
-## default `root` passwd is `fedora_roscks!`
+## default `root` passwd is `fedora_rocks!`
 qemu-system-riscv64 \
   -nographic \
   -machine virt \
