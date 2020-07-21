@@ -2,7 +2,6 @@
 - Getting Started
   - [Get the source](get-the-source)
   - [Simulator build](simulator-build)
-  - [Cross-compiled build](Cross-compiled-Build)
   - [Run tests](run-tests)
 - Project Management
   - [Project roadmap](Project-Roadmap)
