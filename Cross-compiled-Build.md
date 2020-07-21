@@ -52,6 +52,8 @@ qemu-system-riscv64 \
   -netdev user,id=usernet,hostfwd=tcp::3333-:22
 ```
 **the SSH port number 22 of fedora is mapped to 3333.**  
-use `scp -P 3333 your-file-want-to-copy-into root@localhost:~/` to copy files into/out from.'
-Note:about more inf,please visit https://fedoraproject.org/wiki/Architectures/RISC-V/Installing
+use `scp -P 3333 your-file-want-to-copy-into root@localhost:~/` to copy files into/out from.'  
+
+
+**Note: about Fedora-riscv more inf,please visit https://fedoraproject.org/wiki/Architectures/RISC-V/Installing**
 
