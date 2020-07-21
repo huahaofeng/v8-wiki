@@ -21,7 +21,7 @@ git clone git@github.com:qemu/qemu.git
 sudo make install # if you want. Optional. 
 ```
 #### download a fedora-riscv64-image and run it:
-PLCT lab provide a script to run fedora-riscv64:[fedora-riscv64.sh](https://github.com/isrc-cas/PLCT-Toolbox/blob/master/deploy_riscv64fedora_qemu.sh).
+PLCT lab provide a script to run fedora-riscv64:[deploy_riscv64fedora_qemu.sh](https://github.com/isrc-cas/PLCT-Toolbox/blob/master/deploy_riscv64fedora_qemu.sh).
 run this script:
 ```
 ./deploy_riscv64fedora_qemu.sh 
