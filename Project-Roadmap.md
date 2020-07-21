@@ -20,7 +20,7 @@ And finally, we constantly improve our debugging methods and develop tools (see 
 
 ## Milestones
 
-### Phase I: basic RISC64 backend running in the simulated build
+### Phase I: basic RISCV64 backend running in the simulated build
 
 **Approach**
 At this phase, we aim at developing a functioning RISC64 backend (no code-gen optimization) that can pass all V8 test cases in the simulated build. The simulated build is a unique feature of V8 that allows V8 in the X86 binary form to run on the host machine (i.e., x86), but let the code generator in V8 produce RISCV binaries. When running the generated RISCV binary, V8 automatically switches to a built-in RISCV simulator (see `src/execution/riscv64/simulator-riscv64.cc`).
