@@ -14,7 +14,7 @@ clone the qeme:
 ```
 git clone git@github.com:qemu/qemu.git
 ```
-build it for riscv64:
+#### build it for riscv64:
 ```
 ./configure --target-list=riscv64-softmmu && make -j 4
 sudo make install # if you want. Optional. 
@@ -32,7 +32,7 @@ uncompress it before it can be used:
 ```
 unxz Fedora-Developer-Rawhide-*.raw.xz
 ```
-run it on qemu:
+#### run it on qemu:
 ```
 ## ${VER} is version number of Fedora-Developer-Rawhide-*.raw.xz and Fedora-Developer-Rawhide-*-fw_payload-uboot-qemu-virt-smode.elf.
 ## I use ${VER}=20191123.n.0
@@ -49,4 +49,6 @@ qemu-system-riscv64 \
   -device virtio-net-device,netdev=usernet \
   -netdev user,id=usernet,hostfwd=tcp::3333-:22
 ```
+**Note: the SSH port number 22 of fedora is mapped to 3333.**  
+use `scp -P 3333 your-file-want-to-copy-into root@localhost:~/` to copy files into/out from.'
 
