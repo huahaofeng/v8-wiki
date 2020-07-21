@@ -1,6 +1,14 @@
 This page describes how to build V8 for execution on risc-v hardware or risc-v qemu.
 
 ### Build a riscv-toolchain
+```
+$ git clone https://github.com/riscv/riscv-gnu-toolchain
+$ cd riscv-gnu-toolchain
+$ git submodule update --init --recursive
+
+./configure --prefix=/opt/riscv
+make linux
+```
 
 ### Configure with GN
   The following commands build an riscv64 executable for v8 . We use gn to configure the debug build as such: 
