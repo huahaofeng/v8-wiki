@@ -11,7 +11,7 @@ If the binary is too large. You can add `symbol_level = 1` or `symbol_level = 0`
 
 ### Run on QEMU
 #### build qemu-system-riscv64
-clone the qeme:
+clone the qemu:
 ```
 git clone git@github.com:qemu/qemu.git
 git checkout v5.0.0
