@@ -28,7 +28,7 @@ run this script:
 ```
 
 If can't download or download slowly fedora-riscv64 from https://mirror.iscas.ac.cn/, you can get it from https://dl.fedoraproject.org/pub/alt/risc-v/repo/virt-builder-images/images/ .  
-Download F`edora-Developer-Rawhide-*.raw.xz` as well as the matching `Fedora-Developer-Rawhide-*-fw_payload-uboot-qemu-virt-smode.elf`   
+Download `Fedora-Developer-Rawhide-*.raw.xz` as well as the matching `Fedora-Developer-Rawhide-*-fw_payload-uboot-qemu-virt-smode.elf`   
 uncompress it before it can be used:
 ```
 unxz Fedora-Developer-Rawhide-*.raw.xz
