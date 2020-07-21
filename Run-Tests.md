@@ -11,6 +11,11 @@ The v8 project has an extensive suite of tests cases. This repositories automate
 * inspector
 * mkgrokdump
 
+**The official set of tests which must be verified before opening a pull request should be run using the script:**
+```
+v8/v8-riscv/test-riscv.sh
+```
+
 Run all of the tests using the following command. The directory specified in this command, `out/riscv64.sim`, should match the directory (specified when you built) of the configuration you would like to test.
 
 ```bash
@@ -28,9 +33,4 @@ When a test fails, it should print the command used to run that one individual t
 ```bash
 cd out/riscv64.sim
 ./cctest test-macro-assembler-riscv64/Ror
-```
-
-The official set of tests which must be verified before opening a pull request should be run using the script:
-```
-v8/v8-riscv/test-riscv.sh
 ```
