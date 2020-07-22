@@ -31,8 +31,8 @@ This repo will be the community home for some time before the code-base is upstr
 
    | Meeting Info | Description |
    |-|-| 
-   | Next meeting | 07/22/2020 |
-   | Time | Wednesday 6-7pm Pacific Time (Thursday 9am Beijing Time) |
+   | Next meeting | 07/22/2020 (US) |
+   | Time | Wednesdays 6-7pm Pacific Time (Thursdays 9am Beijing Time) |
    | Meeting ID| 876 4151 0603 |
    | Passcode | 714793 |
    | Meeting Minutes | TBA |
