@@ -1,5 +1,9 @@
 Date: 07/22/2020 (6pm PT/9am Beijing)
 
+Information sharing:
+- Our talk proposal was accepted to RISC-V Global Forum (September)
+- Got feedback towards v8 upstreaming: our simulated build testing results are quite promising, suggest to do additional stress-test on compiler and optimization, release-build tests, and run the performance suite  
+
 Action items:
 - Define milestones for early September (Peng)
 - CI efficiency issues not fully resolved, need help from anyone w/ experience of setting up CI (?)
