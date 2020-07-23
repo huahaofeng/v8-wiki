@@ -35,5 +35,5 @@ This repo will be the community home for some time before the code-base is upstr
    | Time | Wednesdays 6-7pm Pacific Time (Thursdays 9am Beijing Time) |
    | Meeting ID| 876 4151 0603 |
    | Passcode | 714793 |
-   | Meeting Minutes | TBA |
+   | Meeting agenda/minutes | [Meeting agenda (07/22)](Developer-syn-up-meeting-agenda) |
 
