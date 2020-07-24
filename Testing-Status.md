@@ -49,6 +49,6 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 | unittests | 3280(3282) 99%| failed |
 | mjsunit | 4575(4816) 88%|failed |
 | wasm-spec-tests, wasm-js | disabled | |
-| wasm-api-tests |5(100)|failed |
+| wasm-api-tests |5(17)|failed |
 | fuzzer | | fuzzer tests seem not enabled (see #6)|
 | intl, message, inspector, mkgrokdump, debugger | |  |
