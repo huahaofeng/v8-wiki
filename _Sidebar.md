@@ -2,6 +2,7 @@
 - Getting Started
   - [Get the source](get-the-source)
   - [Simulator build](simulator-build)
+  - [Cross-compiled build](cross-compiled-build)
   - [Run tests](run-tests)
 - Project Management
   - [Project roadmap](Project-Roadmap)
@@ -17,4 +18,4 @@
   - How to develop a new backend
 - Community operation
   - [Join our Slack](https://forms.office.com/Pages/ResponsePage.aspx?id=8o_uD7KjGECcdTodVZH-3OiciJKG_BJHrqMNgnsFFqtUNlRUNEQ5QUgxNk0wVEVaTjJBTDNOMDNIQS4u)
-  - Attend developer meetings 
+  - Attend developer meetings
