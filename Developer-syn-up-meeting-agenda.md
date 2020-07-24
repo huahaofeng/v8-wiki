@@ -1,11 +1,8 @@
-Date: 07/22/2020 6pm PT
-
-This is our very first developer sync-up meeting
+Date: 08/05/2020 6pm PT
 
 **Agenda**
-- Brief introduction of participant (all)
-- Information sharing (Peng et al)
-- Github/Slack operation rules (Brice)
-- Current simulated build testing status (Peng)
-- Introduction of work-groups (Peng)
+- New attendee introduction
+- Information sharing
+- Cross-compiled and native build progress (Wei)
+- Work-group status update (all)
 - Suggestions & discussions (all)
