@@ -34,7 +34,7 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
 | cctest |4203(63%)|failed|
-| unittests | segment fault |  |
+| unittests | 3280(3282) 99%| 2 case failed|
 | mjsunit | | |
 | wasm-spec-tests, wasm-js | disabled | |
 | wasm-api-tests |  | |
@@ -46,7 +46,7 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
 | cctest |4231(6524) 64%|failed|
-| unittests | 3280(3282) 99%| failed |
+| unittests | 3280(3282) 99%| 2 case failed |
 | mjsunit | 4575(4816) 88%|failed |
 | wasm-spec-tests, wasm-js | disabled | |
 | wasm-api-tests |5(17)|failed |
