@@ -9,13 +9,16 @@ tools/run-tests.py --outdir=<your-simulated-build-dir> <test-suites>
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | 6515 (99%) | all pass |
-| unittests | 3282 (99%) | all pass |
-| mjsunit | 4598 (90%) | some `asm` and `wasm` tests fail (currently all `asm/` and `wasm/` tests are skipped|
+| cctest | +6515/-0 (99%) | all pass |
+| unittests | +3282/-0 (99%) | all pass |
+| mjsunit | +4882/-0(96%) | ~20 additional failures for riscv64 are currently skipped (issues opened)|
 | wasm-spec-tests, wasm-js | disabled | after pulling the latest from the latest V8 repo, more tests are failing, not yet investigated  |
-| wasm-api-tests | 50 (50%) | no outstanding issue identified (same success rate as arm64.simulated build)|
-| fuzzer | | fuzzer tests seem not enabled (see #6)|
-| intl, message, inspector, mkgrokdump, debugger | 857 (59%) | arm64.simulated build run-rate 64% (+1075/-0 tests) |
+| wasm-api-tests | +17/-0 (100%) | all passed |
+| fuzzer, mkgrokdump | | did not pick up any tests, similar to ARM64 (see #6)|
+| intl | +218/-0 (96%) | same run rate as ARM64 |
+| message | +296/-0 (48%) | same run-rate as ARM64 |
+| inspector | +253/-0 (48%) | same run-rate as ARM64 |
+| debugger | +308/-0 (97%) | same run-rate as ARM64 |
 
 To run one or more test suites listed below, specify your own simulated build directory, e.g.,
 ```
