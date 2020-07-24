@@ -45,9 +45,9 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest |4231(6524)(64%)|failed|
-| unittests | 3280(3282)(99%)| failed |
-| mjsunit | | |
+| cctest |4231(6524) 64%|failed|
+| unittests | 3280(3282) 99%| failed |
+| mjsunit | 4575(4816) 88%|failed |
 | wasm-spec-tests, wasm-js | disabled | |
 | wasm-api-tests |  | |
 | fuzzer | | fuzzer tests seem not enabled (see #6)|
