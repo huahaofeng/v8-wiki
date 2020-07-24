@@ -1,5 +1,10 @@
 This page describes how to build V8 for execution on risc-v hardware or risc-v qemu.
 ### Cross compiled
+#### Install Prerequisites
+```
+sudo apt install gawk texinfo
+```
+
 #### Build a riscv-toolchain
 ```
 $ git clone https://github.com/riscv/riscv-gnu-toolchain
