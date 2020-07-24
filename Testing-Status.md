@@ -1,5 +1,9 @@
 This page lists the latest test results for different builds.
 
+The statistics are presented in the following format
+- Test stats are listed as +passed/-failed (e.g., `+1000/-2`)
+- Run-rate is the percentage of total tests run (including both passed and failed tests), less than 100% run-rate means that some tests are skipped by the test driver (e.g., runs too long, or known failures that are being investigated). Skipped tests can be found in `<test-suite>.status` files.
+
 # Simulated v8-riscv testing
 
 The following stats are obtained from CI test runs and can be reproduced as
@@ -7,7 +11,8 @@ The following stats are obtained from CI test runs and can be reproduced as
 tools/run-tests.py --outdir=<your-simulated-build-dir> <test-suites>
 ```
 
-| Test Suite | Tests passed (run-rate)| Notes |
+
+| Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
 | cctest | +6515/-0 (99%) | all pass |
 | unittests | +3282/-0 (99%) | all pass |
@@ -27,6 +32,8 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 
 **TODO**
 - Add performance benchmark success rate
+- Add release build stats
+- Add stress-test stats
 
 # Cross-compiled v8-riscv testing
 
