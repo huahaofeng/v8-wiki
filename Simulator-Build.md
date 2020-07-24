@@ -1,4 +1,4 @@
-This page describes how to build V8 for execution on the built-in RISC-V simulator.
+This page describes how to build V8 for execution on the built-in RISC-V simulator. It is assumed that you have already followed the steps to [get the source](get-the-source).
 
 ## Install prerequisites
 
