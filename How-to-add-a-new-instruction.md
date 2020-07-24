@@ -59,4 +59,10 @@ Add a test for disassembly the new instruction in `test/cctest/test-disam-riscv6
 
 7. Use the new instruction
 
+Simply adding a new instruction to the `Assembler` does not mean that the instruction is generated during code-gen. You have to use these "assembler" APIs in the code-gen routines such as in `TurboAssembler` (`src/codegen/riscv64/macro-assembler-riscv64.cc`), in ASM built-in functions (`src/builtins/riscv64/builtins-riscv64.cc`), during the lowering from TF machine-node IR to target-specific codes (`src/compiler/backend/riscv64/code-generator-riscv64.cc`), in the lowering from WASM IR to target-specific codes in the liftoff-compiler (`src/wasm/riscv64/liftoff-assembler-riscv64.h`), in regexp assembler (`src/regexp/riscv64/regexp-assembler-riscv64.cc`).
+
+Sometimes a sequence of TF machine-node IRs may be represented by the new instruction being added. In this case, you need to introduce a new architecture-specific machine-node IR and add the new instruction to the instruction selector (`src/compiler/backend/riscv64/instruction-selector-riscv64.cc`), and a test case for the instruction selection (`test/unittests/riscv64/instruction-selection-riscv64-unittest.cc`).
+ 
+
+
 
