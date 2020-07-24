@@ -16,7 +16,7 @@ cp ./patch/build.patch ./build/
 cd ./build/
 git apply build.patch
 ```
-note: if prefix name of your riscv-toolchain is not riscv65-linux-gnu, please modify `toolprefix` of `gcc_toolchain("riscv64")` in `./build/toolchain/linux/BUIID.gn`.
+note: if prefix name of your riscv-toolchain is not riscv64-linux-gnu, please modify `toolprefix` of `gcc_toolchain("riscv64")` in `./build/toolchain/linux/BUIID.gn`.
 
 #### Configure with GN
   The following commands build an riscv64 executable for v8 . We use gn to configure the debug build as such: 
