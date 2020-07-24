@@ -28,7 +28,7 @@ If the binary is too large. You can add `symbol_level = 1` or `symbol_level = 0`
 
 #### build 
 ```
-ninja -j54
+ninja -j4
 ```
 
 ### Run on QEMU
