@@ -2,7 +2,7 @@ This page describes how to build V8 for execution on risc-v hardware or risc-v q
 ### Cross compiled
 #### Install Prerequisites
 ```
-sudo apt install gawk texinfo
+sudo apt install gawk texinfo zlib1g-dev
 ```
 
 #### Build a riscv-toolchain
