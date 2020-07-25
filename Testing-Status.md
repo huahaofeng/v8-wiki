@@ -43,24 +43,24 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest |4203(63%)|failed|
-| unittests | 3280(3282) 99%| 2 case failed|
-| mjsunit | 4566(4816) | |
+| cctest |4134/-2390|failed|
+| unittests | 3280/-2 99%| 2 case failed|
+| mjsunit | 4566/-306 | |
 | wasm-spec-tests, wasm-js | disabled | |
-| wasm-api-tests |5(17)|failed|
+| wasm-api-tests |5/-12|failed|
 | fuzzer | | fuzzer tests seem not enabled (see #6)|
-| message, inspector, mkgrokdump, debugger |305(857) 27%|  |
-|intl|25(218)|python script error|
+| message, inspector, mkgrokdump, debugger |305/-552 27%|may be error,i test it again|
+|intl|25/-193|python script error|
 
 ## Running on real hardware 
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest |4231(6524) 64%|failed|
-| unittests | 3280(3282) 99%| 2 case failed |
-| mjsunit | 4575(4816) 88%|failed |
+| cctest | +4231/-2293 (64%)|failed|
+| unittests | +3280/-2 99%| 2 case failed |
+| mjsunit | +4575/-241 88%|failed |
 | wasm-spec-tests, wasm-js | disabled | |
-| wasm-api-tests |5(17)|failed |
+| wasm-api-tests |+5/-12|failed |
 | fuzzer | | fuzzer tests seem not enabled (see #6)|
-|  message, inspector, mkgrokdump, debugger |855(857)|2 case failed|
-|intl|25(218)|python script error|
+| message, inspector, mkgrokdump, debugger |+855/-2|2 case failed|
+|intl|+25/-193|python script error|
