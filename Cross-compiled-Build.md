@@ -33,7 +33,7 @@ cd $V8_ROOT/v8
 ```
 ### apply a build patch
 ```
-mv ./patch/build.patch ./build
+mv ./patches/build.patch ./build
 cd ./build & git apply build.patch
 ```
 
