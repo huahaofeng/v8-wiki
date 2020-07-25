@@ -49,7 +49,7 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 | wasm-spec-tests, wasm-js | disabled | |
 | wasm-api-tests |5/-12|failed|
 | fuzzer | | fuzzer tests seem not enabled (see #6)|
-| message, inspector, mkgrokdump, debugger |305/-552 27%|may be error,i test it again|
+| message, inspector, mkgrokdump, debugger |305/-552 27%|may be error, test it again|
 |intl|25/-193|python script error|
 
 ## Running on real hardware 
