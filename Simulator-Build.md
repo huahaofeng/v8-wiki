@@ -30,3 +30,19 @@ ninja -C out/riscv64.sim -j8
 ```
 Note, `-j8` specifies to use 8 cores for the build and should be adjusted for your build machine.
 
+## Build v8 Release Simulated Build
+
+### Build with gm.py
+
+To only compile the release build:
+
+```bash
+tools/dev/gm.py riscv64.release
+```
+
+To compile and immediately run tests of the release build:
+
+```bash
+tools/dev/gm.py riscv64.release.check
+```
+
