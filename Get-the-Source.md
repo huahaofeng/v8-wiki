@@ -59,3 +59,5 @@ cp $V8_ROOT/v8/patches/build.patch $V8_ROOT/v8/build/
 cd $V8_ROOT/v8/build
 git apply build.patch
 ```
+
+_Next, continue to [Simulator Build](simulator-build) or [Cross-compiled Build](cross-compiled-build)_
