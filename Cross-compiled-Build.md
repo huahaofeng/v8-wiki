@@ -31,11 +31,6 @@ The following script will use `apt` to install any packages required for buildin
 cd $V8_ROOT/v8
 ./build/install-build-deps.sh
 ```
-### apply a build patch
-```
-mv ./patches/build.patch ./build
-cd ./build & git apply build.patch
-```
 
 Note: If the prefix of your RISC-V toolchain is not `riscv64-linux-gnu-`, please modify `toolprefix` of `gcc_toolchain("riscv64")` in `$V8_ROOT/v8/build/toolchain/linux/BUILD.gn`.
 
