@@ -66,7 +66,7 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 |intl|+25/-193|python script error|
 
 
-# Release Build v8-riscv testing
+# Simulated Release Build v8-riscv testing
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
