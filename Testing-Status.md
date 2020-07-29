@@ -64,3 +64,24 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 | fuzzer | | fuzzer tests seem not enabled (see #6)|
 | message, inspector, mkgrokdump, debugger |+855/-2|2 case failed|
 |intl|+25/-193|python script error|
+
+
+# Release Build v8-riscv testing
+
+The following stats are obtained from CI test runs and can be reproduced as
+```
+tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
+```
+
+| Test Suite | Test Status (run-rate)| Notes |
+| - | - | - |
+| cctest | +6505/-0 (99%) | |
+| unittests | +3281/-0 (99%) | all pass |
+| mjsunit | +4872/-1(96%) | 1 additional failure compared to debug build (issue opened) |
+| wasm-spec-tests, wasm-js | disabled | after pulling the latest from the latest V8 repo, more tests are failing, not yet investigated  |
+| wasm-api-tests | +17/-0 (100%) | all passed |
+| fuzzer, mkgrokdump | | did not pick up any tests, similar to ARM64 (see #6)|
+| intl | +218/-0 (96%) | |
+| message | +296/-0 (48%) | |
+| inspector | +253/-0 (48%) | |
+| debugger | +309/-0 (97%) | |
