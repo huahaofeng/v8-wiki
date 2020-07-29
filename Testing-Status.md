@@ -35,6 +35,26 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 - Add release build stats
 - Add stress-test stats
 
+## Testing with the stress option enabled
+
+The following stats are obtained from CI test runs and can be reproduced as
+```
+tools/run-tests.py --variants=stress --outdir=<your-simulated-debug-build-dir> <test-suites>
+```
+
+| Test Suite | Test Status (run-rate)| Notes |
+| - | - | - |
+| cctest | +6489/-0 (98%) | |
+| unittests | +0/-0 (100%) | No tests run with stress option enabled |
+| mjsunit | +4819/-33(95%) | ~30 additional failure compared to non stress build (issues opened see [#56](https://github.com/v8-riscv/v8/issues/56) and [#84](https://github.com/v8-riscv/v8/issues/84)) |
+| wasm-spec-tests, wasm-js | disabled | after pulling the latest from the latest V8 repo, more tests are failing, not yet investigated  |
+| wasm-api-tests | +0/-0 (100%) | No tests run with stress option enabled |
+| fuzzer, mkgrokdump | | did not pick up any tests, similar to ARM64 (see #6)|
+| intl | +218/-0 (96%) | |
+| message | +296/-0 (48%) | |
+| inspector | +253/-0 (48%) | |
+| debugger | +304/-4 (97%) | 4 additional failures compared to non-stress build (see [#56](https://github.com/v8-riscv/v8/issues/56))|
+
 # Cross-compiled v8-riscv testing
 
 ## Running in QEMU
