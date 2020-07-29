@@ -46,41 +46,52 @@ gn gen out/riscv64.native.debug --args='is_component_build=false is_debug=true t
 If the binary is too large. You can add `symbol_level = 1` or `symbol_level = 0` to `./out/riscv64.native.debug/arg.gn`. If symbol_level is 0, it means there is no debug-symbol in binary. Default value is 2.
 
 
-#### build
+#### Build with Ninja
 ```
-ninja -j4
+ninja -C out/riscv64.native.debug -j8
 ```
+
+Note, -j8 specifies to use 8 cores for the build and should be adjusted for your build machine.
 
 ### Run on QEMU
-#### Build qemu-system-riscv64
-clone the qemu:
+
+#### Download QEMU
+
+Clone QEMU:
 ```
+cd $V8_ROOT/
 git clone git@github.com:qemu/qemu.git
+cd $V8_ROOT/qemu
 git checkout v5.0.0
 ```
-#### Build it for riscv64:
+
+#### Build QEMU for riscv64
+
 ```
 ./configure --target-list=riscv64-softmmu && make -j 4
-sudo make install # if you want. Optional.
-```
-#### Download and Run fedora-riscv64-image:
-PLCT lab provide a script to run fedora-riscv64:[deploy_riscv64fedora_qemu.sh](https://github.com/isrc-cas/PLCT-Toolbox/blob/master/deploy_riscv64fedora_qemu.sh).
-run this script:
-```
-./deploy_riscv64fedora_qemu.sh
+sudo make install # Optional
 ```
 
-If can't download or download slowly fedora-riscv64 from https://mirror.iscas.ac.cn/, you can get it from https://dl.fedoraproject.org/pub/alt/risc-v/repo/virt-builder-images/images/ .
-Download `Fedora-Developer-Rawhide-*.raw.xz` as well as the matching `Fedora-Developer-Rawhide-*-fw_payload-uboot-qemu-virt-smode.elf`
-uncompress it before it can be used:
+#### Download Fedora and U-Boot Images
+
+From https://dl.fedoraproject.org/pub/alt/risc-v/repo/virt-builder-images/images/, download `Fedora-Developer-Rawhide-*.raw.xz` as well as the matching `Fedora-Developer-Rawhide-*-fw_payload-uboot-qemu-virt-smode.elf`:
+
 ```
-unxz Fedora-Developer-Rawhide-*.raw.xz
+wget https://dl.fedoraproject.org/pub/alt/risc-v/repo/virt-builder-images/images/Fedora-Developer-Rawhide-20191123.n.0-sda.raw.xz
+
+unxz -k Fedora-Developer-Rawhide-20191123.n.0-sda.raw.xz
+
+wget https://dl.fedoraproject.org/pub/alt/risc-v/repo/virt-builder-images/images/Fedora-Developer-Rawhide-20191123.n.0-fw_payload-uboot-qemu-virt-smode.elf
 ```
-#### run it on qemu:
+
+#### Run QEMU
+
+In the command below, `VER` is the version number from the files you downloaded above, for example, `20191123.n.0`.
+
+The default root password for this image is `fedora_rocks!`.
+
 ```
-## ${VER} is version number of Fedora-Developer-Rawhide-*.raw.xz and Fedora-Developer-Rawhide-*-fw_payload-uboot-qemu-virt-smode.elf.
-## I use ${VER}=20191123.n.0
-## default `root` passwd is `fedora_rocks!`
+export VER=20191123.n.0
 qemu-system-riscv64 \
   -nographic \
   -machine virt \
@@ -94,8 +105,43 @@ qemu-system-riscv64 \
   -device virtio-net-device,netdev=usernet \
   -netdev user,id=usernet,hostfwd=tcp::3333-:22
 ```
-**the SSH port number 22 of fedora is mapped to 3333.**
-use `scp -P 3333 your-file-want-to-copy-into root@localhost:~/` to copy files into/out from.'
 
+#### Copy to QEMU
 
-**Note: more info about Fedora-riscv ,please visit https://fedoraproject.org/wiki/Architectures/RISC-V/Installing**
+First, you'll need to enable root login over ssh with password. Add the following line to _/etc/ssh/sshd_config_:
+
+```
+PermitRootLogin=yes
+```
+
+Then restart the ssh server:
+
+```
+systemctl restart sshd.service
+```
+
+Now, you can use `scp` to copy files to the emulated machine. Note that the SSH port of the machine is mapped to 3333.
+
+```
+scp -P 3333 $V8_ROOT/v8/out/riscv64.native.debug/d8 $V8_ROOT/v8/out/riscv64.native.debug/snapshot_blob.bin root@localhost:~/.
+```
+
+Now, you are ready to run `d8` inside of the emulated RISC-V platform:
+
+```
+[root@fedora-riscv ~]# cat hello.js
+console.log("hello, world!");
+[root@fedora-riscv ~]# ./d8 hello.js
+hello, world!
+```
+
+**For more info about Fedora on RISC-V, please visit https://fedoraproject.org/wiki/Architectures/RISC-V/Installing**
+
+#### Script for Developers in China
+
+For developers within China, the PLCT lab provides a script to retrieve and run fedora-riscv64 from a local mirror: [deploy_riscv64fedora_qemu.sh](https://github.com/isrc-cas/PLCT-Toolbox/blob/master/deploy_riscv64fedora_qemu.sh).
+
+Run this script:
+```
+./deploy_riscv64fedora_qemu.sh
+```
