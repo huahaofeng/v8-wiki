@@ -95,9 +95,9 @@ tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6505/-0 (99%) | |
+| cctest | +6505/-0 (99%) | Some tests are skipped due to being killed see [#88](https://github.com/v8-riscv/v8/issues/88) |
 | unittests | +3281/-0 (99%) | all pass |
-| mjsunit | +4872/-1(96%) | 1 additional failure compared to debug build (issue opened) |
+| mjsunit | +4872/-4(96%) | Some tests are skipped due to being killed see [#89](https://github.com/v8-riscv/v8/issues/89) |
 | wasm-spec-tests, wasm-js | disabled | after pulling the latest from the latest V8 repo, more tests are failing, not yet investigated  |
 | wasm-api-tests | +17/-0 (100%) | all passed |
 | fuzzer, mkgrokdump | | did not pick up any tests, similar to ARM64 (see #6)|
@@ -105,3 +105,23 @@ tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 | message | +296/-0 (48%) | |
 | inspector | +253/-0 (48%) | |
 | debugger | +309/-0 (97%) | |
+
+## Testing with the stress option enabled
+
+The following stats are obtained from CI test runs and can be reproduced as
+```
+tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir> <test-suites>
+```
+
+| Test Suite | Test Status (run-rate)| Notes |
+| - | - | - |
+| cctest | +6478/-1 (99%) | Like in the non-stress some tests are skipped, 1 additional issue [#85](https://github.com/v8-riscv/v8/issues/85) |
+| unittests | +0/-0 (100%) | No unit tests run during stress testing |
+| mjsunit | +4819/-22(96%) | see issues [#85](https://github.com/v8-riscv/v8/issues/85), [#86](https://github.com/v8-riscv/v8/issues/86), [#87](https://github.com/v8-riscv/v8/issues/87) |
+| wasm-spec-tests, wasm-js | disabled | after pulling the latest from the latest V8 repo, more tests are failing, not yet investigated  |
+| wasm-api-tests | +0/-0 (100%) | No unit tests run during stress testing |
+| fuzzer, mkgrokdump | | did not pick up any tests, similar to ARM64 (see #6)|
+| intl | +217/-1 (96%) | see issue [#85](https://github.com/v8-riscv/v8/issues/85) |
+| message | +296/-1 (48%) | see issue [#85](https://github.com/v8-riscv/v8/issues/85) |
+| inspector | +253/-1 (48%) | see issue [#85](https://github.com/v8-riscv/v8/issues/85) |
+| debugger | +303/-6 (97%) | see issue [#85](https://github.com/v8-riscv/v8/issues/85) |
