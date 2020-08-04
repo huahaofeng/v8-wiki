@@ -6,6 +6,7 @@
   - [Run tests](run-tests)
 - Project Management
   - [Project roadmap](Project-Roadmap)
+  - [Monthly milestones](Monthly-milestones)
   - [Testing status](Testing-Status)
   - [Work groups](Work-groups)
 - For Developers
