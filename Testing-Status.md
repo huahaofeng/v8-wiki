@@ -103,13 +103,13 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir>
 | cctest | +6522/-2 (99%) | 2 cases failed (TODO: paste issue ID here)|
 | unittests | +3282/-0 (99%)| **PASS**|
 | mjsunit | +4881/-3 (96%) | 3 cases failed (TODO: paste issue ID here)|
-| wasm-spec-tests, wasm-js | disabled | |
-| wasm-api-tests |+5/-12|failed (2020-08-05)|
-| message|48% +296/-0|PASS?|
-| inspector|48% +253/-0|PASS?|
-| mkgrokdump|0% +0/-0|Skipped?|
-| debugger |97% +308/-0|PASS?|
-|intl  | +218/-0 (96%)| PASS? |
+| wasm-spec-tests, wasm-js | N/A  | Disabled |
+| wasm-api-tests |+5/-12 (100%)|failed (2020-08-05)|
+| intl  | +218/-0 (96%)| PASS? |
+| message| +296/-0 (48%) |PASS?|
+| inspector| +253/-0 (48%) |PASS?|
+| mkgrokdump| +0/-0 (0%)|Skipped?|
+| debugger | +308/-0 (97%)|PASS?|
 
 ## Running on HiFive Unleashed board 
 
