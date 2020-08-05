@@ -96,7 +96,7 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir>
 
 ## Running in QEMU
 
-- `hello-world.js` runs successfully in QEMU 5.0.0
+Running on QEMU 5.0.0 with fedora developer 20200108.
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
