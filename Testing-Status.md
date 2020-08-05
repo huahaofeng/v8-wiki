@@ -118,6 +118,6 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir>
 | wasm-spec-tests, wasm-js | disabled | |
 | wasm-api-tests |+5/-12|failed |
 | message, inspector, mkgrokdump, debugger |+856/-1|2 case failed|
-|intl|+25/-193|python script error|
+|intl|+217/-1|python script error|
 
 
