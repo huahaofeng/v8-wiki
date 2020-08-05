@@ -22,6 +22,8 @@ This work focuses on bringing the quality of v8-riscv to meet V8's upstreaming c
 
 ### RISC-V 32-bit support
 
+Currently, we focus on evaluating the feasibility and benefit of a 32-bit support (details see [issue #109](https://github.com/v8-riscv/v8/issues/109)).
+
 This work focuses on adding a new backend for RISC-V 32-bit. Following the convention of V8, 32- and 64-bit backends are completely separate backends. It involves a lot of backend development, but can leverage (copy) much of the RISC-V 64-bit backend code-base. Therefore, it better happens after we have a stable 64-bit native build. 
 
 This work requires good developers with strong software engineering skills and be reasonably familiar with the current RISC-V backend codebase. The priority of this work depends on community needs. If there is a strong need for a 32-bit backend, we may move up the priority. 
@@ -34,7 +36,7 @@ The performance work involves performance analysis and benchmarking. This is the
 
 ### Other ISA extensions
 
-Currently, v8-riscv only supports the basic instruction set (RV64I/32I and M, A, F, D, Zicsr extensions) that is absolutely needed for a functioning V8 backend. Beyond that, the `C` extension (compressed instruction set) is critical in producing smaller binaries. And `V` (vector) extensions are critical for supporting interesting multi-media or ML workload through V8's WebAssembly engine.
+Currently, v8-riscv only supports the basic instruction set (RV64I and M, A, F, D, Zicsr, Zifence extensions) that is absolutely needed for a functioning V8 backend. Beyond that, the `C` extension (compressed instruction set) is critical in producing smaller binaries. And `V` (vector) extensions are critical for supporting interesting multi-media or ML workload through V8's WebAssembly engine.
 
 We may also need to design the software architecture to support certain vendor-specific hardware extensions while preserving the portability of V8.
 
