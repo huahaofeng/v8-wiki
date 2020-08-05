@@ -100,13 +100,16 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir>
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +4134/-2390|failed|
-| unittests | +3280/-2 (99%)| 2 case failed|
-| mjsunit | +4566/-306 | |
+| cctest | +6522/-2 (99%) | 2 cases failed (TODO: paste issue ID here)|
+| unittests | +3282/-0 (99%)| **PASS**|
+| mjsunit | +4881/-3 (96%) | 3 cases failed (TODO: paste issue ID here)|
 | wasm-spec-tests, wasm-js | disabled | |
-| wasm-api-tests |+5/-12|failed|
-| message, inspector, mkgrokdump, debugger |+305/-552 (27%)|may be error, test it again|
-|intl  |  +25/-193|python script error|
+| wasm-api-tests |+5/-12|failed (2020-08-05)|
+| message|48% +296/-0|PASS?|
+| inspector|48% +253/-0|PASS?|
+| mkgrokdump|0% +0/-0|Skipped?|
+| debugger |97% +308/-0|PASS?|
+|intl  | +218/-0 (96%)| PASS? |
 
 ## Running on HiFive Unleashed board 
 
