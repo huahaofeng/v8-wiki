@@ -113,11 +113,11 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir>
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
 | cctest | +6524/-8 (99%)|failed|
-| unittests | +3293/-1 (99%)| 2 case failed |
+| unittests | +3293/-1 (99%)| 1 case failed |
 | mjsunit | +4876/-8(96%)|failed |
 | wasm-spec-tests, wasm-js | disabled | |
 | wasm-api-tests |+5/-12|failed |
-| message, inspector, mkgrokdump, debugger |+856/-1|2 case failed|
+| message, inspector, mkgrokdump, debugger |+856/-1|1 case failed|
 |intl|+217/-1|python script error|
 
 
