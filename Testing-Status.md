@@ -117,7 +117,7 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir>
 | mjsunit | +4876/-8(96%)|failed |
 | wasm-spec-tests, wasm-js | disabled | |
 | wasm-api-tests |+5/-12|failed |
-| message, inspector, mkgrokdump, debugger |+855/-2|2 case failed|
+| message, inspector, mkgrokdump, debugger |+856/-1|2 case failed|
 |intl|+25/-193|python script error|
 
 
