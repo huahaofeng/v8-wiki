@@ -6,7 +6,7 @@ This is the first milestone since the open-sourcing of v8-riscv.
 
 ### Native build enablement (milestone label: `native-build (09/04/2020)`)
 
-The goal is to achieve a high success rate (99%+) on `cctest` when running v8-riscv in QEMU or HiFive board. Currently, v8-riscv simulated build achieves 94%+ success rate, but, for native/qemu runs, the success rate is much lower (see [HiFive testing status](https://github.com/v8-riscv/v8/wiki/Testing-Status#running-on-hifive-unleashed-board)). In particular, `cctest` only achieves 64% success rate on HiFive. We choose `cctest` success rate as the target because most bugs can be exposed by `cctest` and the test cases in `cctest` are much easier to debug than other test suites.
+The goal is to achieve a high success rate (95%+) on `cctest` when running v8-riscv in QEMU or HiFive board. Currently, v8-riscv simulated build achieves 94%+ success rate, but, for native/qemu runs, the success rate is much lower (see [HiFive testing status](https://github.com/v8-riscv/v8/wiki/Testing-Status#running-on-hifive-unleashed-board)). In particular, `cctest` only achieves 64% success rate on HiFive. We choose `cctest` success rate as the target because most bugs can be exposed by `cctest` and the test cases in `cctest` are much easier to debug than other test suites.
 
 The milestone is the top priority for this month, and is tracked on the project board [here](https://github.com/v8-riscv/v8/projects/1).
 
