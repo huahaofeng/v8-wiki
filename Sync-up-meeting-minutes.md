@@ -1,3 +1,24 @@
+Date: 08/05/2020
+
+Agenda:
+- New attendee introduction
+- Follow-up from last meeting
+- [August milestones](https://github.com/v8-riscv/v8/wiki/Monthly-milestones) & project operation (Peng)
+- Cross-compiled and native build progress (Wei et al)
+- Work-group status update (all)
+
+Discussions:
+- Github wiki and RIOS documentation site: 1) Wei mentioned that RTS and markdown can be intermixed in documents, need to figure out whether 
+it is possible to have markdown document working w/ RIOS's RTS documentations; 2) find tools to automatically convert from markdown to reST format
+- RISCV32 support: Wei's team has experimented with building 32-bit V8 on Yocto/OpenEmbedded and encountered major toolchain issues (gdb and gcc?)
+
+Action items:
+- Resolve the synchronization of the github wiki and RIOS documentation site  (Ye)
+- Run simulated build failures in real hardware to see if they also fail in real hardware (Wei)
+- Set-up a mechanism to update testing status wiki (simulated, qemu, HiFive) with latest results before the bi-weekly developers' meeting (Wei) 
+- NodeJS demo video fro Global Forum talk (Yahan & Brice)
+
+--------------------------------------------
 Date: 07/22/2020 (6pm PT/9am Beijing)
 
 Agenda:
