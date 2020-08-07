@@ -112,6 +112,12 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 | debugger | +308/-0 (97%)|PASS?|
 
 ## Running on HiFive Unleashed board 
+HiFive Unleashed board details:
+| Parameter | |
+| - | - |
+| SoC | SiFive Freedom U540 SoC|
+| Memory |8GB DDR4 with ECC|
+|OS Version|Fedora Developer Rawhide [Fedora-Developer-Rawhide-20200108.n.0]|
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
