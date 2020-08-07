@@ -55,25 +55,41 @@ sim> disasm
 One can type `help` under the prompt to get a list of commands supported by the debugger:
 ```
 sim> help
-cont
-  continue execution (alias 'c')
-stepi
-  step one instruction (alias 'si')
-print <register> (e.g., `print a0`)
-  print register content (alias 'p')
-  use register name 'all' to print all GPRs
-  use register name 'allf' to print all GPRs and FPRs
-printobject <register>
-  print an object from a register (alias 'po')
-stack [<words>] (e.g., `stack 5`)
-  dump stack content, default dump 10 words)
-mem <address> [<words>] (`mem 0x234567 5`)
-  dump memory content, default dump 10 words)
-disasm [<instructions>] (e.g., disasm 30)
-disasm [<address/register>] (e.g., disasm pc) 
-disasm [[<address/register>] <instructions>]
-  disassemble code, default is 10 instructions
-  from pc (alias 'di')
+cont (alias 'c')
+  Continue execution
+stepi (alias 'si')
+  Step one instruction
+print (alias 'p')
+  print <register>
+  Print register content
+  Use register name 'all' to print all GPRs
+  Use register name 'allf' to print all GPRs and FPRs
+printobject (alias 'po')
+  printobject <register>
+  Print an object from a register
+stack
+  stack [<words>]
+  Dump stack content, default dump 10 words)
+mem
+  mem <address> [<words>]
+  Dump memory content, default dump 10 words)
+flags
+  print flags
+disasm (alias 'di')
+  disasm [<instructions>]
+  disasm [<address/register>] (e.g., disasm pc)
+  disasm [[<address/register>] <instructions>]
+  Disassemble code, default is 10 instructions
+  from pc
+gdb
+  Return to gdb if the simulator was started with gdb
+break (alias 'b')
+  break : list all breakpoints
+  break <address> : set / enable / disable a breakpoint.
+tbreak
+  tbreak : list all breakpoints
+  tbreak <address> : set / enable / disable a temporary breakpoint.
+  Set a breakpoint enabled only for one stop.
 ```
 
 Note: commands `break`, `stop`, and `gdb` are not yet supported.
@@ -96,6 +112,28 @@ void TurboAssembler::Assert(Condition cc, AbortReason reason, Register rs, Opera
 void TurboAssembler::Check(Condition cc, AbortReason reason, Register rs, Operand rt); 
 void TurboAssembler::Abort(AbortReason reason);
 ```
+
+In addition to `TurboAssembler` APIs, here are more  lower-level instructions:
+
+TODO: add a `Assembler::watch(uint32_t code)` just like `Assembler::stop(uint32_t code)` which is a warpper of `Assembler::break_(uint32_t code, bool break_as_stop)`
+
+```
+void Assembler::stop(uint32_t code = kMaxStopCode);
+void Assembler::break_(uint32_t code, bool break_as_stop = false);
+```
+
+The meaning of parameter `code` is at `constants-riscv64.h:169`.
+
+```
+// On RISC-V Simulator breakpoints can have different codes:
+// - Breaks between 0 and kMaxWatchpointCode are treated as simple watchpoints,
+//   the simulator will run through them and print the registers.
+// - Breaks between kMaxWatchpointCode and kMaxStopCode are treated as stop()
+//   instructions (see Assembler::stop()).
+// - Breaks larger than kMaxStopCode are simple breaks, dropping you into the
+//   debugger.
+```
+
 
 ## Flags summary
 
