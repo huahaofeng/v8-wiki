@@ -130,3 +130,10 @@ HiFive Unleashed board details:
 |intl|+217/-1|python script error|
 
 
+## Run node.js for riscv64 on Hifve board
+| Test Suite | Tests passed (run-rate)| Notes |
+| - | - | - |
+|all |+2834/-13(98%)||
+
+
+
