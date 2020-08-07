@@ -92,7 +92,16 @@ tbreak
   Set a breakpoint enabled only for one stop.
 ```
 
-Note: commands `break`, `stop`, and `gdb` are not yet supported.
+To make better use of the debugging commands, let me add more explanations.
+
+**break/tbreak**
+
+There is no number limit of break points in riscv64 simulator just like the arm64 simulator.
+
+**gdb**
+
+To make `gdb` command work well, you should assure that you start the simulator with gdb.
+
 
 ## Generate debugging code in generated codes
 
@@ -113,9 +122,9 @@ void TurboAssembler::Check(Condition cc, AbortReason reason, Register rs, Operan
 void TurboAssembler::Abort(AbortReason reason);
 ```
 
-In addition to `TurboAssembler` APIs, here are more  lower-level instructions:
+In addition to `TurboAssembler` APIs, here are more lower-level instructions:
 
-TODO: add a `Assembler::watch(uint32_t code)` just like `Assembler::stop(uint32_t code)` which is a warpper of `Assembler::break_(uint32_t code, bool break_as_stop)`
+TODO: add a `Assembler::watch(uint32_t code)` just like `Assembler::stop(uint32_t code)` which is a wrapper of `Assembler::break_(uint32_t code, bool break_as_stop)`
 
 ```
 void Assembler::stop(uint32_t code = kMaxStopCode);
@@ -133,6 +142,158 @@ The meaning of parameter `code` is at `constants-riscv64.h:169`.
 // - Breaks larger than kMaxStopCode are simple breaks, dropping you into the
 //   debugger.
 ```
+
+Let's see two examples to get how to use these instructions.
+
+**Source code**
+
+Source code looks like `test.js` example in [v8 dev](https://v8.dev/docs/debug-arm)
+
+```
+// Our optimized function.
+function add(a, b) {
+  return a + b;
+}
+
+// Typical cheat code enabled by --allow-natives-syntax.
+//%PrepareFunctionForOptimization(add);
+
+// Give the optimizing compiler type feedback so it'll speculate `a` and `b` are
+// numbers.
+res = add(1, 3);
+console.log(res);
+
+// And force it to optimize.
+%OptimizeFunctionOnNextCall(add);
+res = add(5, 7);
+console.log(res);
+```
+
+**Stop point**
+
+Let's insert a stop point before instruction `fmv.d.x` in `macro-assembler-riscv64.cc:2183`
+
+```
+void TurboAssembler::Move(FPURegister dst, uint64_t src) {
+  // Handle special values first.
+  if (src == bit_cast<uint64_t>(0.0) && has_double_zero_reg_set_) {
+    Move_d(dst, kDoubleRegZero);
+  } else if (src == bit_cast<uint64_t>(-0.0) && has_double_zero_reg_set_) {
+    Neg_d(dst, kDoubleRegZero);
+  } else {
+    if (dst == kDoubleRegZero) {
+      DCHECK(src == bit_cast<uint64_t>(0.0));
+      stop(127);  //Here it is            <------------------
+      fmv_d_x(dst, zero_reg);
+      has_double_zero_reg_set_ = true;
+    } else {
+      UseScratchRegisterScope temps(this);
+      Register scratch = temps.Acquire();
+      li(scratch, Operand(src));
+      fmv_d_x(dst, scratch);
+    }
+  }
+}
+```
+
+It will enter the simulator debugger when `ebreak` and the followed `lui` are executed, which are emited by `void Assembler::break_(uint32_t code, bool break_as_stop = false);`
+
+```
+$ out/riscv64.sim/d8 --allow-natives-syntax --stop_sim_at 1 ../test.js
+  0x0000563adbd2a660   f9810113       addi      sp, sp, -104
+sim> break 0x0000563adbd2a6c0
+Set a breakpoint at 0x563adbd2a6c0
+sim> c
+Hit a breakpoint at 0x563adbd2a6c0.
+  0x0000563adbd2a6c0   01213827       fsd       fs2, 16(sp)
+sim> di
+  0x563adbd2a6c0   01213827       fsd       fs2, 16(sp)
+  0x563adbd2a6c4   00913427       fsd       fs1, 8(sp)
+  0x563adbd2a6c8   00813027       fsd       fs0, 0(sp)
+  0x563adbd2a6cc   00100073       ebreak
+  0x563adbd2a6d0   0007f037       lui       zero_reg, 0x7f
+  0x563adbd2a6d4   f2000cd3       fmv.d.x   fs9, zero_reg
+  0x563adbd2a6d8   00050b13       mv        s6, a0
+  0x563adbd2a6dc   fff00493       li        s1, -1
+  0x563adbd2a6e0   00200913       li        s2, 2
+  0x563adbd2a6e4   00200993       li        s3, 2
+sim> c
+Simulator hit stop (127)
+  0x0000563adbd2a6d4   f2000cd3       fmv.d.x   fs9, zero_reg
+sim> stop info all
+Stop information:
+stop 127  - 0x7f :      Enabled,        counter = 1
+sim> c
+4
+12
+```
+
+**Watch point**
+
+Insert a watch point(0 <= code <= kMaxWatchpointCode) in the same place as the previous example.
+
+```
+void TurboAssembler::Move(FPURegister dst, uint64_t src) {
+  // Handle special values first.
+  if (src == bit_cast<uint64_t>(0.0) && has_double_zero_reg_set_) {
+    Move_d(dst, kDoubleRegZero);
+  } else if (src == bit_cast<uint64_t>(-0.0) && has_double_zero_reg_set_) {
+    Neg_d(dst, kDoubleRegZero);
+  } else {
+    if (dst == kDoubleRegZero) {
+      DCHECK(src == bit_cast<uint64_t>(0.0));
+      break_(31, false);   //Here it is            <------------------
+      fmv_d_x(dst, zero_reg);
+      has_double_zero_reg_set_ = true;
+    } else {
+      UseScratchRegisterScope temps(this);
+      Register scratch = temps.Acquire();
+      li(scratch, Operand(src));
+      fmv_d_x(dst, scratch);
+    }
+  }
+}
+```
+
+The simulator ran through `watchpoint 31` and printed the registers, and it would not enter the simulator debugger.
+
+```
+$ out/riscv64.sim/d8 --allow-natives-syntax --stop_sim_at 25 ../test.js
+  0x0000563dd31546c0   01213827       fsd       fs2, 16(sp)
+sim> di
+  0x563dd31546c0   01213827       fsd       fs2, 16(sp)
+  0x563dd31546c4   00913427       fsd       fs1, 8(sp)
+  0x563dd31546c8   00813027       fsd       fs0, 0(sp)
+  0x563dd31546cc   00100073       ebreak
+  0x563dd31546d0   0001f037       lui       zero_reg, 0x1f
+  0x563dd31546d4   f2000cd3       fmv.d.x   fs9, zero_reg
+  0x563dd31546d8   00050b13       mv        s6, a0
+  0x563dd31546dc   fff00493       li        s1, -1
+  0x563dd31546e0   00200913       li        s2, 2
+  0x563dd31546e4   00200993       li        s3, 2
+sim> c
+
+---- watchpoint 31  marker:   1  (instr count:       28 ) --------------------------------------------
+ ra: 0xfffffffffffffffe             -2   sp: 0x00007fd2e9bf9ef8 140543841509112  gp: 0x0000000000000000              0
+ tp: 0x0000000000000000              0   fp: 0x0000000000000000              0   pc: 0x0000563dd31546d4 94823534380756
+ a0: 0x0000563dd5bbc7d0  94823578847184          a1: 0x000000080f640471     34617951345
+ a2: 0x0000002e1665f109    197944275209          a3: 0x00000084eb5c15c1    570884363713
+ a4: 0x0000000000000000               0          a5: 0x0000000000000000               0
+ a6: 0x0000000000000000               0          a7: 0x0000000000000000               0
+ s1: 0x0000000000000000               0          s2: 0x0000000000000000               0
+ s3: 0x0000000000000000               0          s4: 0x0000000000000000               0
+ s5: 0x0000000000000000               0          s6: 0x0000000000000000               0
+ s7: 0x0000000000000000               0          s8: 0x0000000000000000               0
+ s9: 0x0000000000000000               0         s10: 0x0000000000000000               0
+s11: 0x0000000000000000               0
+ t0: 0x0000000000000000               0          t1: 0x0000000000000000               0
+ t2: 0x0000000000000000               0          t3: 0x0000000000000000               0
+ t4: 0x0000000000000000               0          t5: 0x0000000000000000               0
+ t6: 0x0000000000000000               0
+4
+12
+```
+
 
 
 ## Flags summary
