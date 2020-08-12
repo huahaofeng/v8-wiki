@@ -25,17 +25,8 @@ Assuming `V8_ROOT` is defined to some root directory for your v8 work:
 mkdir $V8_ROOT
 cd $V8_ROOT
 fetch v8
-cd v8
-git checkout 8.1.268
 ```
 You can now browse the original v8 code under _$V8_ROOT/v8_. For now, we checkout the tag `8.1.268` until we rebase the RISC-V changes on top of a newer version of the upstream code.
-
-Due to an incompatibility between our branch and the current third-party tools that are checked out by the v8 fetch, we need to go in and checkout an older version of _icu_ to prevent a build error:
-
-```
-cd third_party/icu
-git checkout dbd3825b31041d782c5b504c59dcfb5ac7dda08c
-```
 
 ## Checkout the RISC-V Branch
 
