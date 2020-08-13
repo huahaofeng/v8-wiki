@@ -38,7 +38,7 @@ git remote add riscv https://github.com/v8-riscv/v8.git
 # or alternatively using ssh
 git remote add riscv git@github.com:v8-riscv/v8.git
 git fetch riscv
-git checkout riscv-porting-dev
+git checkout riscv64
 ```
 
 ## Patch the Chromium Build Toolchain
