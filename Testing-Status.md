@@ -122,7 +122,7 @@ HiFive Unleashed board details:
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
 | cctest | +6518/-6 (99%)|failed|
-| unittests | +3293/-1 (99%)| 1 case failed |
+| unittests | +3282/-0 (99%)| pass |
 | mjsunit | +4876/-9(96%)|failed |
 | wasm-spec-tests, wasm-js | disabled | |
 | wasm-api-tests |+5/-12|failed |
