@@ -13,8 +13,10 @@ $ cd riscv-gnu-toolchain
 $ git submodule update --init --recursive
 
 ./configure --prefix=/opt/riscv
-make linux
+sudo make linux -j<n>
 ```
+where `n` is the number of processes to run parallel build.
+
 Be sure to add the path to this new toolchain to your path:
 
 ```
