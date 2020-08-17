@@ -1,8 +1,8 @@
 - [Home](home)
 - Getting Started
   - [Get the source](get-the-source)
-  - [Simulator build](simulator-build)
   - [Cross-compiled build](cross-compiled-build)
+  - [Simulator build](simulator-build)
   - [Run tests](run-tests)
 - Project Management
   - [Project roadmap](Project-Roadmap)
