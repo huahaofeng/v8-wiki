@@ -34,7 +34,18 @@ cd $V8_ROOT/v8
 ./build/install-build-deps.sh
 ```
 
-Note: If the prefix of your RISC-V toolchain is not `riscv64-linux-gnu-`, please modify `toolprefix` of `gcc_toolchain("riscv64")` in `$V8_ROOT/v8/build/toolchain/linux/BUILD.gn`.
+### Configure `toolprefix`
+
+Make sure you have followed the [Patch the Chromium Toolchain step](https://github.com/v8-riscv/v8/wiki/get-the-source#patch-the-chromium-build-toolchain) on the [Get the Source](https://github.com/v8-riscv/v8/wiki/get-the-source) page.
+
+The applied batch will set the appropriate configuration for `riscv64`-related targets in `$V8_ROOT/v8/build/toolchain/linux/BUILD.gn`. By default, the RISC-V toolchain prefix (`toolprefix`)  of `gcc_toolchain("riscv64")` is set to `riscv64-linux-gnu-`. If on your system, the RISC-V toolchain prefix is not `riscv64-linux-gnu-`, you need to modify the setting for `toolprefix`. 
+
+For instance, if your RISCV toolchain has the prefix of `riscv64-unknown-linux-gnu`, then make the following changes to `$V8_ROOT/v8/build/toolchain/linux/BUILD.gn`
+```
+gcc_toolchain("riscv64") {
+  toolprefix = "riscv64-unknown-linux-gnu"
+  ...
+```
 
 ### Build v8 for RISC-V Simulation of an x86-64 Host
 
