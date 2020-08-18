@@ -13,9 +13,9 @@ $ cd riscv-gnu-toolchain
 $ git submodule update --init --recursive
 
 ./configure --prefix=/opt/riscv
-sudo make linux -j<n>
+sudo make linux -j8
 ```
-where `n` is the number of processes to run parallel build.
+Note `-j8` specifies parallel build with 8 processes, and should be adjusted to the number of cores on your machines. 
 
 Be sure to add the path to this new toolchain to your path:
 
