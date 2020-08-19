@@ -127,7 +127,7 @@ HiFive Unleashed board details:
 | wasm-spec-tests, wasm-js | disabled | |
 | wasm-api-tests |+5/-12|failed |
 | message, inspector, mkgrokdump, debugger |+902/-0|pass|
-|intl|+212/0||
+|intl|+212/0(96%)||
 
 
 ## Run node.js for riscv64 on Hifve board
