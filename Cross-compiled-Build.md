@@ -100,8 +100,6 @@ wget https://dl.fedoraproject.org/pub/alt/risc-v/repo/virt-builder-images/images
 
 In the command below, `VER` is the version number from the files you downloaded above, for example, `20191123.n.0`.
 
-The default root password for this image is `fedora_rocks!`.
-
 ```
 export VER=20191123.n.0
 qemu-system-riscv64 \
@@ -118,9 +116,42 @@ qemu-system-riscv64 \
   -netdev user,id=usernet,hostfwd=tcp::3333-:22
 ```
 
-#### Copy to QEMU
+Once qemu is brought up, you will see the following prompt:
+```
+Welcome to the Fedora/RISC-V disk image
+https://fedoraproject.org/wiki/Architectures/RISC-V
 
-First, you'll need to enable root login over ssh with password. Add the following line to _/etc/ssh/sshd_config_:
+Build date: Sat Nov 23 12:47:19 UTC 2019
+
+Kernel 5.4.0-0.rc7.git0.1.1.riscv64.fc32.riscv64 on an riscv64 (ttyS0)
+
+The root password is 'fedora_rocks!'.
+root password logins are disabled in SSH starting Fedora 31.
+User 'riscv' with password 'fedora_rocks!' in 'wheel' group is provided.
+
+To install new packages use 'dnf install ...'
+
+To upgrade disk image use 'dnf upgrade --best'
+
+If DNS isn’t working, try editing ‘/etc/yum.repos.d/fedora-riscv.repo’.
+
+For updates and latest information read:
+https://fedoraproject.org/wiki/Architectures/RISC-V
+
+Fedora/RISC-V
+-------------
+Koji:               http://fedora.riscv.rocks/koji/
+SCM:                http://fedora.riscv.rocks:3000/
+Distribution rep.:  http://fedora.riscv.rocks/repos-dist/
+Koji internal rep.: http://fedora.riscv.rocks/repos/
+fedora-riscv login: 
+```
+
+The default root password for this image is `fedora_rocks!`.
+
+#### Copy V8 to QEMU
+
+Inside the QEMU console, you'll need to enable root login over ssh with password. Add the following line to _/etc/ssh/sshd_config_:
 
 ```
 PermitRootLogin=yes
@@ -129,16 +160,18 @@ PermitRootLogin=yes
 Then restart the ssh server:
 
 ```
-systemctl restart sshd.service
+[root@fedora-riscv ~]# systemctl restart sshd.service
 ```
 
-Now, you can use `scp` to copy files to the emulated machine. Note that the SSH port of the machine is mapped to 3333.
+Now, you can use `scp` from a regular terminal on the same machine (not the qemu terminal) to copy files to the emulated machine. Note that the SSH port of the machine is mapped to 3333.
 
 ```
-scp -P 3333 $V8_ROOT/v8/out/riscv64.native.debug/d8 $V8_ROOT/v8/out/riscv64.native.debug/snapshot_blob.bin root@localhost:~/.
+[joesmith@your-local-terminal] scp -P 3333 $V8_ROOT/v8/out/riscv64.native.debug/d8 $V8_ROOT/v8/out/riscv64.native.debug/snapshot_blob.bin root@localhost:~/.
 ```
 
-Now, you are ready to run `d8` inside of the emulated RISC-V platform:
+#### Run V8 on QEMU
+
+Now, you are ready to run `d8` inside the qemu console:
 
 ```
 [root@fedora-riscv ~]# cat hello.js
