@@ -100,7 +100,10 @@ wget https://dl.fedoraproject.org/pub/alt/risc-v/repo/virt-builder-images/images
 
 In the command below, `VER` is the version number from the files you downloaded above, for example, `20191123.n.0`.
 
+Let `FEDORA_IMAGE_DIR` be the directory that contains `Fedora-Developer-Rawhide-20191123.n.0-fw_payload-uboot-qemu-virt-smode.elf` and
+`Fedora-Developer-Rawhide-20191123.n.0-sda.raw` (downloaded by following the previous step).
 ```
+cd <FEDORA_IMAGE_DIR>
 export VER=20191123.n.0
 qemu-system-riscv64 \
   -nographic \
