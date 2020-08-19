@@ -123,7 +123,7 @@ HiFive Unleashed board details:
 | - | - | - |
 | cctest | +6946/+0 (99%)|failed|
 | unittests | +3282/-2 (99%)| failed|
-| mjsunit | +4591/-7(96%)|failed |
+| mjsunit | +5019/-4(96%)|failed |
 | wasm-spec-tests, wasm-js | disabled | |
 | wasm-api-tests |+5/-12|failed |
 | message, inspector, mkgrokdump, debugger |+856/-1|1 case failed|
