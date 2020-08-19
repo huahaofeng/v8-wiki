@@ -38,19 +38,18 @@ cd $V8_ROOT/v8
 
 Make sure you have followed the [Patch the Chromium Toolchain step](https://github.com/v8-riscv/v8/wiki/get-the-source#patch-the-chromium-build-toolchain) on the [Get the Source](https://github.com/v8-riscv/v8/wiki/get-the-source) page.
 
-The applied batch will set the appropriate configuration for `riscv64`-related targets in `$V8_ROOT/v8/build/toolchain/linux/BUILD.gn`. By default, the RISC-V toolchain prefix (`toolprefix`)  of `gcc_toolchain("riscv64")` is set to `riscv64-linux-gnu-`. If on your system, the RISC-V toolchain prefix is not `riscv64-linux-gnu-`, you need to modify the setting for `toolprefix`. 
-
-For instance, if your RISCV toolchain has the prefix of `riscv64-unknown-linux-gnu`, then make the following changes to `$V8_ROOT/v8/build/toolchain/linux/BUILD.gn`
+The patch defines  `riscv64` toolchain configurations in `$V8_ROOT/v8/build/toolchain/linux/BUILD.gn`. By default, the `toolprefix`  of `gcc_toolchain("riscv64")` is set to `riscv64-linux-gnu-`. If your system uses a different RISC-V toolchain prefix, the setting for `toolprefix` needs to be manually updated. For instance, if your RISCV toolchain has the prefix of `riscv64-unknown-linux-gnu`, then make the following changes to `$V8_ROOT/v8/build/toolchain/linux/BUILD.gn`
 ```
 gcc_toolchain("riscv64") {
   toolprefix = "riscv64-unknown-linux-gnu"
   ...
 ```
 
-### Build v8 for RISC-V Simulation of an x86-64 Host
+### Cross-compile v8 as RISC-V binary on an x86-64 Host
 
 #### Configure with GN
-The following commands build an riscv64 executable for v8 . We use gn to configure the debug build as such:
+
+The following commands build an riscv64 executable for v8 . We use `gn` to configure the debug build as such:
 
 ```
 gn gen out/riscv64.native.debug --args='is_component_build=false is_debug=true target_cpu="riscv64" v8_target_cpu="riscv64" use_goma=false goma_dir="None" treat_warnings_as_errors=false'
