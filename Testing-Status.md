@@ -126,7 +126,7 @@ HiFive Unleashed board details:
 | mjsunit | +5019/-4(96%)|failed |
 | wasm-spec-tests, wasm-js | disabled | |
 | wasm-api-tests |+5/-12|failed |
-| message, inspector, mkgrokdump, debugger |+856/-1|1 case failed|
+| message, inspector, mkgrokdump, debugger |+902/-0|pass|
 |intl|+218/0||
 
 
