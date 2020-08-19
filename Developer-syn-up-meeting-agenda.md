@@ -1,8 +1,8 @@
-Date: 08/05/2020 6pm PT
+Date: 08/19/2020 6pm PT
 
 **Agenda**
-- New attendee introduction
+- New attendee introduction & announcement
 - Follow-up from last meeting
-- August milestones & project operation (Peng)
-- Cross-compiled and native build progress (Wei et al)
-- Work-group status update (all)
+- Technical content: how to debug v8 (Brice)
+- 09/04 milestone progress and issue status (Peng)
+- Open discussions (all)
