@@ -9,11 +9,11 @@ Agenda:
 
 Discussions:
 - Heads up on September goals: optimization, C-extension, V8 upstream, v8-riscv release
-- Optimization discussion: development track will focus on low-hanging performance optimizations (e.g., constant pool, function prologue/epilogue optimization, improve codegen in TurboAssembler and code-generator), performance track will do some performance analysis on benchmarks (e.g., compare against MIPS64) and tools development
+- Optimization: two tracks 1) development track will focus on low-hanging performance optimizations (e.g., constant pool, function prologue/epilogue optimization, improve codegen in TurboAssembler and code-generator), 2) performance track will do some performance analysis on benchmarks (e.g., compare against MIPS64) and tools development
 - C-extension discussion: 1) RISC-V is a custom modular ISA, how to detect which extensions are supported by the hardware (deal w/ the ISA fragmentation and complexity); 2) estimate the code-size benefit of C-extension
 
 Action items:
-- Run CI on external cloud instance and send the result back to github via REST API (Wei)
+- Enable CI on external cloud instance (need to send the result back to github via REST API) (Wei)
 - Setup NodeJS repo under V8 (Brice)
 - PLCT team sign Google CLA (Wei)
 - Capture all qemu & HiFive board failures into issues (Wei)
