@@ -1,4 +1,4 @@
-This page describes how to build V8 for execution on the built-in RISC-V simulator. It is assumed that you have already followed the steps to [get the source](get-the-source).
+This page describes how to build V8 for execution on the built-in RISC-V simulator. It is assumed that you have already followed the steps to [get the source](Get-the-Source).
 
 ## Install prerequisites
 
@@ -30,7 +30,7 @@ ninja -C out/riscv64.sim -j8
 ```
 Note, `-j8` specifies to use 8 cores for the build and should be adjusted for your build machine.
 
-_Next, continue to [Run Tests](run-tests)_
+_Next, continue to [Run Tests](Run-Tests)_
 
 ## Build v8 Release Simulated Build
 
