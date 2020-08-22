@@ -358,7 +358,7 @@ These PCs can then be mapped to the output from `--trace-sim`, to track the code
 
 ## Trace Analyzer
 
-We have developed a tool to help analyze a simulator trace. It is available in the repository at [tools/riscv/analyze.py](/swlab/swe/v8/blob/riscv-porting-dev/tools/riscv/analyze.py). It is designed to read the output of a simulation run with the flags `--print-all-code` and `--trace-sim`. Write this output to a file, as in this example:
+We have developed a tool to help analyze a simulator trace. It is available in the repository at [tools/riscv/analyze.py](https://github.com/swlab/swe/v8/blob/riscv-porting-dev/tools/riscv/analyze.py). It is designed to read the output of a simulation run with the flags `--print-all-code` and `--trace-sim`. Write this output to a file, as in this example:
 
 ```
 $ ./cctest --print-all-code -trace-sim test-interpreter-intrinsics/Call &> out
