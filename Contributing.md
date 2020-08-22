@@ -38,7 +38,7 @@ tools/run-tests.py --outdir=out/riscv64.sim cctest \
 
 Please run this same suite of tests locally before opening your PR to avoid wasting any one's time.
 
-All pull requests must be reviewed and approved by at least one owner before being accepted. Please also review ["Using Git"](using-git) and ensure that your commit messages follow the guidelines laid out there.
+All pull requests must be reviewed and approved by at least one owner before being accepted. Please also review ["Using Git"](https://github.com/v8-riscv/v8/wiki/Contributing/using-git) and ensure that your commit messages follow the guidelines laid out there.
 
 ## Contributing to the Documentation
 
