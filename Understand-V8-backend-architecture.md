@@ -781,7 +781,7 @@ I32_BINOP(xor, xor_)
 
 ### MIPS64 Register Usage Convention
 
-See [Registers](Registers/)
+See [Registers](https://github.com/v8-riscv/v8/wiki/Registers/)
 
 ### Calling Convention
 
