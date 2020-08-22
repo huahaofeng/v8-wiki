@@ -3,7 +3,7 @@
 ### Agenda:
 - New attendee introduction & announcement
 - Follow-up from last meeting
-- Technical content: how to debug v8 (Brice) - [slides](media/Debugging.pptx)
+- Technical content: how to debug v8 (Brice) - [slides](https://github.com/v8-riscv/v8/wiki/media/Debugging.pptx)
 - 09/04 milestone progress (latest testing status) (Peng et al)
 - Open discussion: optimizations (all)
 
