@@ -1,3 +1,4 @@
+# V8-RISCV
 **Welcome to the v8-riscv wiki**
 
 This is an on-going project to develop the RISC-V backend for the V8 JavaScript Engine. After a few months of intensive development, we have built a sufficient MVP (Minimal Viable Product) for the RISC-V64 port, which currently passes over 94% (15,000+) standard V8 test cases using v8-riscv64 simulated build. We have also established a sustainable porting methodology and development best practices that we feel confident invite a broader community participation. We welcome you joining our development effort. Plenty of supports are still needed for a complete and high-performing V8 on RISC-V.
@@ -7,10 +8,10 @@ This repo will be the community home for some time before the code-base is upstr
 RISC-V ISA specification is found [here](https://riscv.org/specifications/), and RISC-V standard ABI can be found [here](https://github.com/riscv/riscv-elf-psabi-doc/).
 
 ## Getting Started
-- [Get the source](get-the-source)
-- [Cross-compiled build (running on QEMU/HiFive)](cross-compiled-build)
-- [Simulator build (for developers running on x86)](simulator-build)
-- [Run tests](run-tests)
+- [Get the source](Get-the-Source)
+- [Cross-compiled build (running on QEMU/HiFive)](Cross-compiled-Build)
+- [Simulator build (for developers running on x86)](Simulator-Build)
+- [Run tests](Run-Tests)
 
 ## Project Management
 - [Project roadmap](Project-Roadmap)
@@ -19,7 +20,7 @@ RISC-V ISA specification is found [here](https://riscv.org/specifications/), and
 
 ## For Developers
 - [Setup VSCode](VSCode-Setup)
-- [How to contribute](contributing)
+- [How to contribute](Contributing)
 - [How to debug V8](How-to-debug-V8)
 
 ## RISC-V Backend Design Doc
