@@ -33,7 +33,7 @@ Note that constants like `kRTypeMask` is defined in `constants-riscv64.h` and is
 
 ### 4. Test the instruction
 
-Once an instruction is added to the `Assembler` and the `Simulator`, it can be tested under the [simulator build](simulator-build) run. The new instruction needs to be added `test/cctest/test-assembler-riscv64.cc` 
+Once an instruction is added to the `Assembler` and the `Simulator`, it can be tested under the [simulator build](Simulator-Build) run. The new instruction needs to be added `test/cctest/test-assembler-riscv64.cc` 
 ```
 UTEST_R2_FORM_WITH_OP(add, int64_t, LARGE_INT_EXCEED_32_BIT, MIN_VAL_IMM12, +)
 ```
