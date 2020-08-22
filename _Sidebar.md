@@ -1,9 +1,9 @@
-- [Home](home)
+- [Home](Home)
 - Getting Started
-  - [Get the source](get-the-source)
-  - [Cross-compiled build](cross-compiled-build)
-  - [Simulator build](simulator-build)
-  - [Run tests](run-tests)
+  - [Get the source](Get-the-Source)
+  - [Cross-compiled build](Cross-compiled-Build)
+  - [Simulator build](Simulator-Build)
+  - [Run tests](Run-Tests)
 - Project Management
   - [Project roadmap](Project-Roadmap)
   - [Monthly milestones](Monthly-milestones)
@@ -11,7 +11,7 @@
   - [Work groups](Work-groups)
 - For Developers
   - [Setup VSCode](VSCode-Setup)
-  - [How to contribute](contributing)
+  - [How to contribute](Contributing)
   - [How to debug V8](How-to-debug-V8)
 - RISC-V Backend Design Doc
   - [Understand V8 backend architecture](Understand-V8-backend-architecture)
