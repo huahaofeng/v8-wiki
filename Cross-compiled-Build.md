@@ -1,4 +1,4 @@
-This page describes how to build V8 for execution on RISC-V hardware or RISC-V QEMU.  It is assumed that you have already followed the steps to [get the source](get-the-source).
+This page describes how to build V8 for execution on RISC-V hardware or RISC-V QEMU.  It is assumed that you have already followed the steps to [get the source](Get-the-Source).
 
 ## RISC-V Toolchain
 ### Install Prerequisites
@@ -36,7 +36,7 @@ cd $V8_ROOT/v8
 
 ### Configure `toolprefix`
 
-Make sure you have followed the [Patch the Chromium Toolchain step](https://github.com/v8-riscv/v8/wiki/get-the-source#patch-the-chromium-build-toolchain) on the [Get the Source](https://github.com/v8-riscv/v8/wiki/get-the-source) page.
+Make sure you have followed the [Patch the Chromium Toolchain step](https://github.com/v8-riscv/v8/wiki/Get-the-Source#patch-the-chromium-build-toolchain) on the [Get the Source](https://github.com/v8-riscv/v8/wiki/Get-the-Source) page.
 
 The patch defines  `riscv64` toolchain configurations in `$V8_ROOT/v8/build/toolchain/linux/BUILD.gn`. By default, the `toolprefix`  of `gcc_toolchain("riscv64")` is set to `riscv64-linux-gnu-`. If your system uses a different RISC-V toolchain prefix, the setting for `toolprefix` needs to be manually updated. For instance, if your RISCV toolchain has the prefix of `riscv64-unknown-linux-gnu`, then make the following changes to `$V8_ROOT/v8/build/toolchain/linux/BUILD.gn`
 ```
