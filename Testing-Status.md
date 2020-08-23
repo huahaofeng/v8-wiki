@@ -37,7 +37,7 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6942/-4 (99%) | 4 cases failed (TODO: paste issue ID here)|
+| cctest | +6942/-4 (99%) | 4 cases failed #192 #193 #194|
 | unittests | +3726/-1 (99%)| 1 failed #174|
 | mjsunit | +5019/-4 (96%) | 3 failed, 1 CRASHED #177 #178 #179|
 | wasm-spec-tests, wasm-js | to be added  |  |
