@@ -37,16 +37,16 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6522/-2 (99%) | 2 cases failed (TODO: paste issue ID here)|
-| unittests | +3282/-0 (99%)| **PASS**|
-| mjsunit | +4881/-3 (96%) | 3 cases failed (TODO: paste issue ID here)|
+| cctest | +6942/-4 (99%) | 4 cases failed (TODO: paste issue ID here)|
+| unittests | +3726/-1 (99%)| 1 failed #174|
+| mjsunit | +5019/-4 (96%) | 3 failed, 1 CRASHED #177 #178 #179|
 | wasm-spec-tests, wasm-js | to be added  |  |
-| wasm-api-tests |+5/-12 (100%)|failed (2020-08-05)|
-| intl  | +218/-0 (96%)| PASS? |
+| wasm-api-tests |+5/-12 (100%)| 12 failed (2020-08-23)|
+| intl  | +212/-0 (96%)| PASS? |
 | message| +296/-0 (48%) |PASS?|
-| inspector| +253/-0 (48%) |PASS?|
+| inspector| +309/-0 (48%) |PASS?|
 | mkgrokdump| +0/-0 (0%)|Skipped?|
-| debugger | +308/-0 (97%)|PASS?|
+| debugger | +316/-0 (97%)|PASS?|
 
 # Running on x86 via simulated v8-riscv build
 
