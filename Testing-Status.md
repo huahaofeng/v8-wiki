@@ -39,7 +39,7 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 | - | - | - |
 | cctest | +6942/-4 (99%) | 4 cases failed #192 #193 #194|
 | unittests | +3726/-1 (99%)| 1 failed #174|
-| mjsunit | +5019/-4 (96%) | 3 failed, 1 CRASHED #177 #178 #179|
+| mjsunit | +5020/-3 (96%) | 3 failed #177 #178 #179|
 | wasm-spec-tests, wasm-js | to be added  |  |
 | wasm-api-tests |+5/-12 (100%)| 12 failed (2020-08-23)|
 | intl  | +212/-0 (96%)| PASS? |
