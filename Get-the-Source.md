@@ -26,7 +26,7 @@ mkdir $V8_ROOT
 cd $V8_ROOT
 fetch v8
 ```
-You can now browse the original v8 code under _$V8_ROOT/v8_. For now, we checkout the tag `8.1.268` until we rebase the RISC-V changes on top of a newer version of the upstream code.
+You can now browse the original v8 code under _$V8_ROOT/v8_.
 
 ## Checkout the RISC-V Branch
 
