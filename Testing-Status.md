@@ -18,12 +18,12 @@ HiFive Unleashed board details:
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
 | cctest | +6946/+0 (99%)|pass|
-| unittests | +3282/-2 (99%)| failed #174 #175|
-| mjsunit | +5019/-4(96%)|failed |
+| unittests | +3282/-2 | failed #174 #175|
+| mjsunit | +5019/-4 |failed |
 | wasm-spec-tests, wasm-js | to be added | |
 | wasm-api-tests |+5/-12|failed |
 | message, inspector, mkgrokdump, debugger |+902/-0|pass|
-|intl|+212/0(96%)||
+|intl|+212/0 ||
 
 ## NodeJS test suite
 
@@ -37,16 +37,16 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6942/-4 (99%) | 4 cases failed #192 #193 #194|
-| unittests | +3726/-1 (99%)| 1 failed #174|
-| mjsunit | +5020/-3 (96%) | 3 failed #177 #178 #179|
+| cctest | +6942/-4  | 4 cases failed #192 #193 #194|
+| unittests | +3726/-1 | 1 failed #174|
+| mjsunit | +5020/-3 | 3 failed #177 #178 #179|
 | wasm-spec-tests, wasm-js | to be added  |  |
-| wasm-api-tests |+5/-12 (100%)| 12 failed (2020-08-23)|
-| intl  | +212/-0 (96%)| PASS? |
-| message| +296/-0 (48%) |PASS?|
-| inspector| +309/-0 (48%) |PASS?|
-| mkgrokdump| +0/-0 (0%)|Skipped?|
-| debugger | +316/-0 (97%)|PASS?|
+| wasm-api-tests |+5/-12 | 12 failed (2020-08-23)|
+| intl  | +212/-0 | PASS |
+| message| +296/-0  |PASS|
+| inspector| +309/-0  |PASS?
+| mkgrokdump| +0/-0 |Skipped|
+| debugger | +316/-0 |PASS|
 
 # Running on x86 via simulated v8-riscv build
 
