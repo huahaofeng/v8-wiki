@@ -41,6 +41,15 @@ git fetch riscv
 git checkout riscv64
 ```
 
+## Retrieve the matching dependencies
+
+The `gclient` tool will retrieve the dependencies that match to this particular branch.
+
+```
+cd $V8_ROOT/v8
+gclient sync --with_branch_heads --with_tags
+```
+
 ## Patch the Chromium Build Toolchain
 
 Since this port is not yet upstream, we will also need to apply one patch to the build files which have been fetched from a separate repository. We have added a patchfile under _patches/build.patch_ to simplify this step. Apply this patch in the _build/_ directory:
