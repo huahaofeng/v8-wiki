@@ -124,8 +124,6 @@ void TurboAssembler::Abort(AbortReason reason);
 
 In addition to `TurboAssembler` APIs, here are more lower-level instructions:
 
-TODO: add a `Assembler::watch(uint32_t code)` just like `Assembler::stop(uint32_t code)` which is a wrapper of `Assembler::break_(uint32_t code, bool break_as_stop)`
-
 ```
 void Assembler::stop(uint32_t code = kMaxStopCode);
 void Assembler::break_(uint32_t code, bool break_as_stop = false);
