@@ -1,8 +1,7 @@
-Date: 08/19/2020 6pm PT
+Date: 09/02/2020 6pm PT
 
 **Agenda**
-- New attendee introduction & announcement
-- Follow-up from last meeting
-- Technical content: how to debug v8 (Brice)
-- 09/04 milestone progress ([latest testing status](https://github.com/v8-riscv/v8/wiki/Testing-Status)) (Peng et al)
-- Open discussion: optimizations (all)
+- Follow-up from the last meeting
+- 09/04 milestone summary([latest testing status](https://github.com/v8-riscv/v8/wiki/Testing-Status)) (Peng et al)
+- Monthly milestones for September 
+- Open discussion (e.g., 32-bit build?)
