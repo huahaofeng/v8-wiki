@@ -35,16 +35,18 @@ HiFive Unleashed board details:
 
 Running on QEMU 5.0.0 with fedora developer 20200108.
 
+`commit 5417ef17a123aa969d09c2d0669f839c5ab55757`
+
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6942/-4  | 4 cases failed #192 #193 #194|
-| unittests | +3726/-1 | 1 failed #174|
-| mjsunit | +5020/-3 | 3 failed #177 #178 #179|
+| cctest | +6942/-5  | 5 cases failed #192|
+| unittests | +3728/-1 | 1 failed #174|
+| mjsunit | +5023/-3 | 3 failed #177 #179|
 | wasm-spec-tests, wasm-js | to be added  |  |
-| wasm-api-tests |+5/-12 | 12 failed (2020-08-23)|
+| wasm-api-tests |+15/-2 | 2 failed #204|
 | intl  | +212/-0 | PASS |
-| message| +296/-0  |PASS|
-| inspector| +309/-0  |PASS?
+| message| +309/-0  |PASS|
+| inspector| +277/-0  |PASS?|
 | mkgrokdump| +0/-0 |Skipped|
 | debugger | +316/-0 |PASS|
 
