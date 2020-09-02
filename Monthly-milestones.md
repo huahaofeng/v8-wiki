@@ -1,5 +1,20 @@
 This wiki documents our monthly project milestones. Please refer to [here](Project-Roadmap) for overall project roadmap and porting strategies.
 
+
+***
+
+## Milestones (Due 10/09/2020)
+
+We will focus on steps to bringing V8/Nodes to the community and start on optimizing performance
+
+### Upstream to V8
+
+### NodeJS to Fedora (?)
+
+### Code-gen Optimization
+
+***
+
 ## Milestones (due 09/04/2020)
 
 This is the first milestone since the open-sourcing of v8-riscv. 
