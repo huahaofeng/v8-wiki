@@ -106,9 +106,9 @@ tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 commit:5417ef17a123aa969d09c2d0669f839c5ab55757
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6946/-1 (99%) | Some tests are skipped due to being killed see [#88](https://github.com/v8-riscv/v8/issues/88) |
+| cctest | +6946/-9 (99%) | Some tests are skipped due to being killed see [#88](https://github.com/v8-riscv/v8/issues/88) |
 | unittests | +3281/-0 (99%) | all pass |
-| mjsunit | +4872/-4(96%) | Some tests are skipped due to being killed see [#89](https://github.com/v8-riscv/v8/issues/89) |
+| mjsunit | +4872/-24(97%) | Some tests are skipped due to being killed see [#89](https://github.com/v8-riscv/v8/issues/89) |
 | wasm-spec-tests, wasm-js | to be added |  |
 | wasm-api-tests | +17/-0 (100%) | all passed |
 | intl | +218/-0 (96%) | same run rate as ARM64|
