@@ -9,9 +9,17 @@ We will focus on steps to bringing V8/Nodes to the community and start on optimi
 
 ### Upstream to V8
 
-### NodeJS to Fedora (?)
+We have satisfied most of the requirements from the previous meeting w/ V8 team (e.g., rebase, stress-opt, release build testing, refactoring). Need to go through the upstream (code review) process and resolve any issues raised. The actual timing of the upstream depends on input from V8 team.
+
+V8 upstream is also the prerequisite for releasing NodeJS to Fedora.
+
+### NodeJS to Fedora preparation
+
+Focus on brining up native build (as opposed to cross-compiled build).
 
 ### Code-gen Optimization
+
+Start to investigate performance and track performance numbers.
 
 ***
 
