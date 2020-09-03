@@ -77,6 +77,12 @@ cd $V8_ROOT/qemu
 git checkout v5.0.0
 ```
 
+#### Install Prerequisites
+
+```
+sudo apt-get install libglib2.0-dev libpixman-1-dev
+```
+
 #### Build QEMU for riscv64
 
 ```
