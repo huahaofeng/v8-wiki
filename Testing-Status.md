@@ -17,13 +17,14 @@ HiFive Unleashed board details:
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6946/+0 (99%)|pass|
-| unittests | +3282/-2 | failed #174 #175|
-| mjsunit | +5019/-4 |failed |
+| cctest | +6946/-1 (99%)|pass|
+| unittests | +3727/0 | |
+| mjsunit | +5048/-39 |failed |
 | wasm-spec-tests, wasm-js | to be added | |
 | wasm-api-tests |+5/-12|failed |
-| message, inspector, mkgrokdump, debugger |+902/-0|pass|
-|intl|+212/0 ||
+| message|+309/-3(99%)|failed|
+|inspector|+277/-0(48%)||
+|intl|+213/-17 ||
 
 ## NodeJS test suite
 
