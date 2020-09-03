@@ -1,18 +1,35 @@
+## Date: 09/02/2020 6pm PT
+
+### Agenda
+- Follow-up from the last meeting
+- 09/04 milestone summary(latest testing status) (Peng et al)
+- Monthly milestones for 09/07 ~ 10/09
+
+### Discussions
+- Agreed on Sept-October milestones: focus on V8 upstream, get started on performance work
+
+### Action items
+- Enable external CI cloud instance (Wei expects to complete by next Monday, otherwise pass WIP PR to Brice)
+- Send instructions on how to run Node tests to Brice (Yahan)
+- NodeJS setup (carried over from last meeting, Yahan/Brice)
+- Automate generation of testing status and add release build results for QEMU/HiFive next time (Wei)
+- Prioritize failures exposed by release and stress-opt and identify critical ones (Peng)
+
 ## Date: 08/19/2020 6pm PT
 
-### Agenda:
+### Agenda
 - New attendee introduction & announcement
 - Follow-up from last meeting
 - Technical content: how to debug v8 (Brice) - [slides](https://github.com/v8-riscv/v8/wiki/media/Debugging.pptx)
 - 09/04 milestone progress (latest testing status) (Peng et al)
 - Open discussion: optimizations (all)
 
-### Discussions:
+### Discussions
 - Heads up on September goals: optimization, C-extension, V8 upstream, v8-riscv release
 - Optimization: two tracks 1) development track will focus on low-hanging performance optimizations (e.g., constant pool, function prologue/epilogue optimization, improve codegen in TurboAssembler and code-generator), 2) performance track will do some performance analysis on benchmarks (e.g., compare against MIPS64) and tools development
 - C-extension discussion: 1) RISC-V is a custom modular ISA, how to detect which extensions are supported by the hardware (deal w/ the ISA fragmentation and complexity); 2) estimate the code-size benefit of C-extension
 
-### Action items:
+### Action items
 - Enable CI on external cloud instance (need to send the result back to github via REST API) (Wei)
 - Setup NodeJS repo under V8 (Brice)
 - PLCT team sign Google CLA (Wei)
