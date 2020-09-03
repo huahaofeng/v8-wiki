@@ -111,9 +111,9 @@ commit:5417ef17a123aa969d09c2d0669f839c5ab55757
 | mjsunit | +4872/-39(97%) | Some tests are skipped due to being killed see [#89](https://github.com/v8-riscv/v8/issues/89) |
 | wasm-spec-tests, wasm-js | to be added |  |
 | wasm-api-tests | +17/-0 (100%) | all passed |
-| intl | +218/-0 (96%) | same run rate as ARM64|
-| message | +296/-0 (48%) | same run rate as ARM64|
-| inspector | +253/-0 (48%) | same run rate as ARM64|
+| intl | +213/-17 (96%) | |
+| message | +309/-3 (48%) | same run rate as ARM64|
+| inspector | +277/-0 (48%) | same run rate as ARM64|
 | debugger | +309/-0 (97%) | same run rate as ARM64|
 
 ## Release build w/ the stress options
