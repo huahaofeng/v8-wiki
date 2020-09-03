@@ -103,10 +103,10 @@ The following stats are obtained from CI test runs and can be reproduced as
 ```
 tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 ```
-
+commit:5417ef17a123aa969d09c2d0669f839c5ab55757
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6505/-0 (99%) | Some tests are skipped due to being killed see [#88](https://github.com/v8-riscv/v8/issues/88) |
+| cctest | +6946/-1 (99%) | Some tests are skipped due to being killed see [#88](https://github.com/v8-riscv/v8/issues/88) |
 | unittests | +3281/-0 (99%) | all pass |
 | mjsunit | +4872/-4(96%) | Some tests are skipped due to being killed see [#89](https://github.com/v8-riscv/v8/issues/89) |
 | wasm-spec-tests, wasm-js | to be added |  |
