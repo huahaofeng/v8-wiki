@@ -30,7 +30,7 @@ HiFive Unleashed board details:
 benchmark
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| sunspider| +6946/-1 (99%)|pass|
+| sunspider| ||
 
 
 ## NodeJS test suite
