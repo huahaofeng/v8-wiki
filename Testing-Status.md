@@ -13,7 +13,7 @@ HiFive Unleashed board details:
 | Memory |8GB DDR4 with ECC|
 |OS Version|Fedora Developer Rawhide [Fedora-Developer-Rawhide-20200108.n.0]|
 
-## V8 test suite
+## V8 test suite debug build
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
@@ -30,20 +30,51 @@ HiFive Unleashed board details:
 benchmark
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| sunspider| ||
+| sunspider|TODO|N/A|
+| octane|TODO|N/A|
+| kraken|TODO|N/A|
+
+## V8 test suite release build
+
+| Test Suite | Tests passed (run-rate)| Notes |
+| - | - | - |
+| cctest | TODO |TODO|
+| unittests | TODO | TODO|
+| mjsunit | TODO |TODO |
+| wasm-spec-tests| TODO |TODO |
+| wasm-js | TODO | TODO|
+| wasm-api-tests |TODO|TODO |
+| message|TODO|TODO|
+|inspector|TODO|TODO|
+|intl|TODO |TODO|
+
+benchmark
+| Test Suite | Tests passed (run-rate)| Notes |
+| - | - | - |
+| sunspider|TODO|N/A|
+| octane|TODO|N/A|
+| kraken|TODO|N/A|
 
 
-## NodeJS test suite
+## NodeJS test suite (Debug Build)
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
 |all |+2834/-13(98%)||
+
+## NodeJS test suite (Release Build)
+
+| Test Suite | Tests passed (run-rate)| Notes |
+| - | - | - |
+|all |TODO||
 
 # Running in QEMU
 
 Running on QEMU 5.0.0 with fedora developer 20200108.
 
 `commit 5417ef17a123aa969d09c2d0669f839c5ab55757`
+
+## Debug Build
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
@@ -57,6 +88,22 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 | inspector| +277/-0  |PASS?|
 | mkgrokdump| +0/-0 |Skipped|
 | debugger | +316/-0 |PASS|
+
+## Release Build
+
+| Test Suite | Tests passed (run-rate)| Notes |
+| - | - | - |
+| cctest | TODO | N/A |
+| unittests | TODO | N/A |
+| mjsunit | TODO | N/A |
+| wasm-spec-tests| TODO | N/A |
+| wasm-js | TODO | N/A |
+| wasm-api-tests | TODO | N/A |
+| intl  | TODO | N/A |
+| message| TODO | N/A |
+| inspector| TODO | N/A |
+| mkgrokdump| TODO | N/A |
+| debugger | TODO | N/A |
 
 # Running on x86 via simulated v8-riscv build
 
