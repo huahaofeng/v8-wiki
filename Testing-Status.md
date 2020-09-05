@@ -78,7 +78,7 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6942/-5 (%99) | https://github.com/v8-riscv/v8/issues/216 https://github.com/v8-riscv/v8/issues/214 https://github.com/v8-riscv/v8/issues/213 https://github.com/v8-riscv/v8/issues/192 https://github.com/v8-riscv/v8/issues/130|
+| cctest | +6947/-5 (%99) | https://github.com/v8-riscv/v8/issues/216 https://github.com/v8-riscv/v8/issues/214 https://github.com/v8-riscv/v8/issues/213 https://github.com/v8-riscv/v8/issues/192 https://github.com/v8-riscv/v8/issues/130|
 | unittests | +3728/-1 | 1 failed #174|
 | mjsunit | +5023/-3 | 3 failed #177 #179|
 | wasm-spec-tests, wasm-js | to be added  |  |
