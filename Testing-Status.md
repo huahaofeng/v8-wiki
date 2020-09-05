@@ -13,7 +13,7 @@ HiFive Unleashed board details:
 | Memory |8GB DDR4 with ECC|
 |OS Version|Fedora Developer Rawhide [Fedora-Developer-Rawhide-20200108.n.0]|
 
-## V8 test suite debug build
+## V8 test suite debug build on hifive
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
@@ -34,7 +34,7 @@ benchmark
 | octane|TODO|N/A|
 | kraken|TODO|N/A|
 
-## V8 test suite release build
+## V8 test suite release build on hifve
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
