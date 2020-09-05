@@ -118,7 +118,7 @@ tools/run-tests.py --outdir=<your-simulated-build-dir> <test-suites>
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6515/-0 (99%) | all passed |
+| cctest | +6938/-0 (99%) | all passed |
 | unittests | +3282/-0 (99%) | all passed |
 | mjsunit | +4882/-0(96%) | ~20 additional failures for riscv64 are currently skipped (issues opened)|
 | wasm-spec-tests, wasm-js | to-be-added |  |
@@ -142,14 +142,15 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-debug-build-dir> <
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6489/-0 (98%) | |
+| cctest | +6489/-0 (98%) | PASS|
 | unittests | +0/-0 (100%) | No tests run with stress option enabled |
-| mjsunit | +4819/-33(95%) | ~30 additional failure compared to non stress build (issues opened see [#56](https://github.com/v8-riscv/v8/issues/56) and [#84](https://github.com/v8-riscv/v8/issues/84)) |
-| wasm-spec-tests, wasm-js | to be added|  |
+| mjsunit | +4989/-0(95%) | PASS |
+
+| wasm-spec-tests, wasm-js | +61/-0 %54|  |
 | wasm-api-tests | +0/-0 (100%) | No tests run with stress option enabled |
-| intl | +218/-0 (96%) | same run rate as ARM64|
-| message | +296/-0 (48%) |same run rate as ARM64 |
-| inspector | +253/-0 (48%) | same run rate as ARM64|
+| intl | +218/-0 (96%) | PASS same run rate as ARM64|
+| message | +296/-0 (48%) |PASS same run rate as ARM64 |
+| inspector | +253/-0 (48%) | PASS same run rate as ARM64|
 | debugger | +304/-4 (97%) | 4 additional failures compared to non-stress build (see [#56](https://github.com/v8-riscv/v8/issues/56))|
 
 ## Release build testing w/ default options
