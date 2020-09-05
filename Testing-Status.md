@@ -145,9 +145,9 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-debug-build-dir> <
 | cctest | +6489/-0 (98%) | PASS|
 | unittests | +0/-0 (100%) | No tests run with stress option enabled |
 | mjsunit | +4989/-0(95%) | PASS |
-
-| wasm-spec-tests, wasm-js | +61/-0 %54|  |
-| wasm-api-tests | +0/-0 (100%) | No tests run with stress option enabled |
+| wasm-spec-tests | +177/-0 %45| PASS |
+| wasm-js | +61/-0 %54| PASS |
+| wasm-api-tests | +0/-0 | No tests run with stress option enabled |
 | intl | +218/-0 (96%) | PASS same run rate as ARM64|
 | message | +296/-0 (48%) |PASS same run rate as ARM64 |
 | inspector | +253/-0 (48%) | PASS same run rate as ARM64|
