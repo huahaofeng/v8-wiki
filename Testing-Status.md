@@ -121,7 +121,8 @@ tools/run-tests.py --outdir=<your-simulated-build-dir> <test-suites>
 | cctest | +6938/-0 (99%) | all passed |
 | unittests | +3282/-0 (99%) | all passed |
 | mjsunit | +4882/-0(96%) | ~20 additional failures for riscv64 are currently skipped (issues opened)|
-| wasm-spec-tests, wasm-js | to-be-added |  |
+| wasm-spec-tests | to-be-added |  |
+| wasm-js | to-be-added |  |
 | wasm-api-tests | +17/-0 (100%) | all passed |
 | intl | +218/-0 (96%) | same run rate as ARM64 |
 | message | +296/-0 (48%) | same run-rate as ARM64 |
@@ -151,7 +152,7 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-debug-build-dir> <
 | intl | +218/-0 (96%) | PASS same run rate as ARM64|
 | message | +296/-0 (48%) |PASS same run rate as ARM64 |
 | inspector | +253/-0 (48%) | PASS same run rate as ARM64|
-| debugger | +304/-4 (97%) | 4 additional failures compared to non-stress build (see [#56](https://github.com/v8-riscv/v8/issues/56))|
+| debugger | +304/-0 (97%) | PASS|
 
 ## Release build testing w/ default options
 
@@ -162,9 +163,9 @@ tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 commit:5417ef17a123aa969d09c2d0669f839c5ab55757
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6946/-9 (99%) | Some tests are skipped due to being killed see [#88](https://github.com/v8-riscv/v8/issues/88) |
+| cctest | +6946/-0 (99%) | waiting for #88 to be closed |
 | unittests | +3281/-0 (99%) | all pass |
-| mjsunit | +4872/-24(97%) | Some tests are skipped due to being killed see [#89](https://github.com/v8-riscv/v8/issues/89) |
+| mjsunit | +4872/-0 (97%) | PASS) |
 | wasm-spec-tests, wasm-js | to be added |  |
 | wasm-api-tests | +17/-0 (100%) | all passed |
 | intl | +218/-0 (96%) | same run rate as ARM64|
