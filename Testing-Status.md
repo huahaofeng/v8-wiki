@@ -118,16 +118,16 @@ tools/run-tests.py --outdir=<your-simulated-build-dir> <test-suites>
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6938/-0 (99%) | all passed |
-| unittests | +3282/-0 (99%) | all passed |
-| mjsunit | +4882/-0(96%) | ~20 additional failures for riscv64 are currently skipped (issues opened)|
-| wasm-spec-tests | to-be-added |  |
-| wasm-js | to-be-added |  |
-| wasm-api-tests | +17/-0 (100%) | all passed |
-| intl | +218/-0 (96%) | same run rate as ARM64 |
-| message | +296/-0 (48%) | same run-rate as ARM64 |
-| inspector | +253/-0 (48%) | same run-rate as ARM64 |
-| debugger | +308/-0 (97%) | same run-rate as ARM64 |
+| cctest | +6938/-0 (99%) | PASS |
+| unittests | +3731/-0 (99%) | all passed |
+| mjsunit | +5026/-0(96%) | PASS |
+| wasm-spec-tests | +177/-0 (45%) | PASS? |
+| wasm-js | +61/-0 (54%) | PASS? |
+| wasm-api-tests | +17/-0 (88%) | PASS |
+| intl | +212/-0 (96%) | same run rate as ARM64 |
+| message | +309/-0 (48%) | same run-rate as ARM64 |
+| inspector | +277/-0 (48%) | same run-rate as ARM64 |
+| debugger | +316/-0 (97%) | same run-rate as ARM64 |
 
 To run one or more test suites listed below, specify your own simulated build directory, e.g.,
 ```
@@ -143,16 +143,16 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-debug-build-dir> <
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6489/-0 (98%) | PASS|
+| cctest | +6912/-0 (98%) | PASS|
 | unittests | +0/-0 (100%) | No tests run with stress option enabled |
 | mjsunit | +4989/-0(95%) | PASS |
 | wasm-spec-tests | +177/-0 %45| PASS |
 | wasm-js | +61/-0 %54| PASS |
 | wasm-api-tests | +0/-0 | No tests run with stress option enabled |
-| intl | +218/-0 (96%) | PASS same run rate as ARM64|
-| message | +296/-0 (48%) |PASS same run rate as ARM64 |
-| inspector | +253/-0 (48%) | PASS same run rate as ARM64|
-| debugger | +304/-0 (97%) | PASS|
+| intl | +212/-0 (96%) | PASS same run rate as ARM64|
+| message | +309/-0 (48%) |PASS same run rate as ARM64 |
+| inspector | +277/-0 (48%) | PASS same run rate as ARM64|
+| debugger | +315/-0 (97%) | PASS|
 
 ## Release build testing w/ default options
 
