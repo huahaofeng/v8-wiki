@@ -26,6 +26,8 @@ HiFive Unleashed board details:
 | message|+309/-3(99%)|failed|
 |inspector|+277/-0(48%)||
 |intl|+213/-17 ||
+| mkgrokdump| TODO | TODO |
+| debugger | TODO| TODO |
 
 benchmark
 | Test Suite | Tests passed (run-rate)| Notes |
@@ -44,9 +46,11 @@ benchmark
 | wasm-spec-tests| TODO |TODO |
 | wasm-js | TODO | TODO|
 | wasm-api-tests |TODO|TODO |
+|intl|TODO |TODO|
 | message|TODO|TODO|
 |inspector|TODO|TODO|
-|intl|TODO |TODO|
+| mkgrokdump| TODO | TODO |
+| debugger | TODO| TODO |
 
 benchmark
 | Test Suite | Tests passed (run-rate)| Notes |
@@ -174,15 +178,16 @@ tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 commit:5417ef17a123aa969d09c2d0669f839c5ab55757
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6946/-0 (99%) | waiting for #88 to be closed |
-| unittests | +3281/-0 (99%) | all pass |
-| mjsunit | +4872/-0 (97%) | PASS) |
-| wasm-spec-tests, wasm-js | to be added |  |
-| wasm-api-tests | +17/-0 (100%) | all passed |
-| intl | +218/-0 (96%) | same run rate as ARM64|
-| message | +296/-0 (48%) | same run rate as ARM64|
-| inspector | +253/-0 (48%) | same run rate as ARM64|
-| debugger | +309/-0 (97%) | same run rate as ARM64|
+| cctest | 6935 (99%) -10 | **10 tests failed** http://paste.ubuntu.com/p/GtzhhJJkc4/ |
+| unittests | +3723/-0 (99%) | PASSED http://paste.ubuntu.com/p/YPxNdGK2x4/|
+| mjsunit | 5043 (97%) -25 | **25 tests failed** http://paste.ubuntu.com/p/7T7RFyJ2H2/) |
+| wasm-spec-tests | 177 (45%) -0 | pass |
+| wasm-js | 62 (55%) -0 | pass |
+| wasm-api-tests | 15 (88%) -0 | all passed |
+| intl | 212 (96%) -0 | same run rate as ARM64|
+| message | 309 (48%) -0 | same run rate as ARM64|
+| inspector | 277 (48%) -0 | same run rate as ARM64|
+| debugger | 317 (97%) -0 | same run rate as ARM64|
 
 ## Release build w/ the stress options
 
@@ -193,17 +198,19 @@ The following stats are obtained from CI test runs and can be reproduced as
 tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir> <test-suites>
 ```
 
-| Test Suite | Test Status (run-rate)| Notes |
+| Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6478/-1 (99%) | Like in the non-stress some tests are skipped, 1 additional issue [#85](https://github.com/v8-riscv/v8/issues/85) |
-| unittests | +0/-0 (100%) | No unit tests run during stress testing |
-| mjsunit | +4819/-22(96%) | see issues [#85](https://github.com/v8-riscv/v8/issues/85), [#86](https://github.com/v8-riscv/v8/issues/86), [#87](https://github.com/v8-riscv/v8/issues/87) |
-| wasm-spec-tests, wasm-js | to be added |  |
-| wasm-api-tests | +0/-0 (100%) | No unit tests run during stress testing |
-| intl | +217/-1 (96%) | see issue [#85](https://github.com/v8-riscv/v8/issues/85) |
-| message | +296/-1 (48%) | see issue [#85](https://github.com/v8-riscv/v8/issues/85) |
-| inspector | +253/-1 (48%) | see issue [#85](https://github.com/v8-riscv/v8/issues/85) |
-| debugger | +303/-6 (97%) | see issue [#85](https://github.com/v8-riscv/v8/issues/85) |
+| cctest | TODO |TODO|
+| unittests | TODO | TODO|
+| mjsunit | TODO |TODO |
+| wasm-spec-tests| TODO |TODO |
+| wasm-js | TODO | TODO|
+| wasm-api-tests |TODO|TODO |
+|intl|TODO |TODO|
+| message|TODO|TODO|
+|inspector|TODO|TODO|
+| mkgrokdump| TODO | TODO |
+| debugger | TODO| TODO |
 
 
 
