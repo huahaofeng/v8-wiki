@@ -53,8 +53,8 @@ MandreelLatency:    274.1 |
      Typescript:    200.8 |
          Octane:    280.7 S
 ```
-| octane|TODO|N/A|
-| kraken|TODO|N/A|
+octane  
+kraken
 
 ## V8 test suite release build on hifve
 
