@@ -70,7 +70,7 @@ benchmark
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-|all |TODO||
+|all |+2910/-35(100%)||
 
 # Running in QEMU
 
