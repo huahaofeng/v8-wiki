@@ -49,8 +49,8 @@ benchmark
 |intl|+212/-0(96%)|pass|
 | message|+309/-0(48%)|pass|
 |inspector|+277/-0(48%)|pass|
-| mkgrokdump| TODO | TODO |
-| debugger | +317/-0(97%)| TODO |
+| mkgrokdump| 0 (0%) -0 | skip |
+| debugger | +317/-0(97%)| pass|
 
 benchmark
 | Test Suite | Tests passed (run-rate)| Notes |
