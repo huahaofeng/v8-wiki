@@ -41,7 +41,7 @@ benchmark
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
 | cctest | +6932/-11(99%)|failed|
-| unittests | +0/-0 | failed|
+| unittests | +3727/0 | pass|
 | mjsunit | +5016/-27(97%) |failed|
 | wasm-spec-tests|+72/-5(45%)|failed|
 | wasm-js | +64/-0(52%) | pass|
