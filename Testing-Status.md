@@ -40,15 +40,15 @@ benchmark
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | TODO |TODO|
-| unittests | TODO | TODO|
-| mjsunit | TODO |TODO |
-| wasm-spec-tests| TODO |TODO |
-| wasm-js | TODO | TODO|
-| wasm-api-tests |TODO|TODO |
-|intl|TODO |TODO|
-| message|TODO|TODO|
-|inspector|TODO|TODO|
+| cctest | +6932/-11(99%)|failed|
+| unittests | +0/-0 | failed|
+| mjsunit | +5016/-27(97%) |failed|
+| wasm-spec-tests|+72/-5(45%)|failed|
+| wasm-js | +64/-0(52%) | pass|
+| wasm-api-tests |+15/-0(88%)|pass|
+|intl|+212/-0(96%)|pass|
+| message|+309/-0(48%)|pass|
+|inspector|+277/-0(48%)|pass|
 | mkgrokdump| TODO | TODO |
 | debugger | TODO| TODO |
 
