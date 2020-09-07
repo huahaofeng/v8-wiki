@@ -30,9 +30,29 @@ HiFive Unleashed board details:
 | debugger | TODO| TODO |
 
 benchmark
-| Test Suite | Tests passed (run-rate)| Notes |
-| - | - | - |
-| sunspider|TODO|N/A|
+sunspider
+```
+      benchmark:    score |
+==========================+
+       Richards:    684.2 |
+      DeltaBlue:     65.6 S
+         Crypto:    276.4 S
+       RayTrace:    577.8 |
+    EarleyBoyer:    313.2 |
+         RegExp:     29.0 |
+          Splay:    425.4 |
+   SplayLatency:   1394.3 S
+   NavierStokes:    615.9 S
+          PdfJS:    120.6 |
+       Mandreel:    201.3 |
+MandreelLatency:    274.1 |
+        Gameboy:    140.8 |
+       CodeLoad:    853.7 |
+          Box2D:    129.2 |
+           zlib:    976.4 |
+     Typescript:    200.8 |
+         Octane:    280.7 S
+```
 | octane|TODO|N/A|
 | kraken|TODO|N/A|
 
