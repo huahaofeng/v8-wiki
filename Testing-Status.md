@@ -50,7 +50,7 @@ benchmark
 | message|+309/-0(48%)|pass|
 |inspector|+277/-0(48%)|pass|
 | mkgrokdump| TODO | TODO |
-| debugger | TODO| TODO |
+| debugger | +317/-0(97%)| TODO |
 
 benchmark
 | Test Suite | Tests passed (run-rate)| Notes |
