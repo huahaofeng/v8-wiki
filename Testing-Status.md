@@ -200,18 +200,14 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir>
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | TODO |TODO|
-| unittests | TODO | TODO|
-| mjsunit | TODO |TODO |
-| wasm-spec-tests| TODO |TODO |
-| wasm-js | TODO | TODO|
-| wasm-api-tests |TODO|TODO |
-|intl|TODO |TODO|
-| message|TODO|TODO|
-|inspector|TODO|TODO|
-| mkgrokdump| TODO | TODO |
-| debugger | TODO| TODO |
-
-
-
-
+| cctest | + 6918 / -9 （ -98% 6982 ） | http://paste.ubuntu.com/p/WnB78vQ9QC/ |
+| unittests | + 0 / 0 （ 0% 3736 ） | http://paste.ubuntu.com/p/zTB6JrcB2b/ |
+| mjsunit | + 5025 / -23 （ -96% 5197 ） | http://paste.ubuntu.com/p/p8XgfdWY3X/ |
+| wasm-spec-tests | + 177 / 0 （ -45% 387 ） | http://paste.ubuntu.com/p/k3DtYPQfc7/ |
+| wasm-js | + 61 / 0 （ -54% 111 ） | http://paste.ubuntu.com/p/ntKVB7kw4f/ |
+| wasm-api-tests | + 0 / 0 （ 0% 17 ） | http://paste.ubuntu.com/p/SKh63TsJpg/ |
+| intl | + 212 / 0 （ -96% 219 ） | http://paste.ubuntu.com/p/j7FsDgdkjF/ |
+| message | + 309 / 0 （ -48% 637 ） | http://paste.ubuntu.com/p/xpJxPphbRF/ |
+| inspector | + 277 / 0 （ -48% 571 ） | http://paste.ubuntu.com/p/xJDpS8MTDP/ |
+| mkgrokdump | + 0 / 0 （ 0% 1 ） | http://paste.ubuntu.com/p/wgS8cgvPXT/ |
+| debugger | + 316 / 0 （ -97% 324 ） | http://paste.ubuntu.com/p/mTH69gxH3G/ |
