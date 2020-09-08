@@ -26,8 +26,8 @@ HiFive Unleashed board details:
 | message|+309/-3(99%)|failed|
 |inspector|+277/-0(48%)||
 |intl|+213/-17 ||
-| mkgrokdump| TODO | TODO |
-| debugger | TODO| TODO |
+| mkgrokdump| +0/-0 | skip|
+| debugger | +317/-0(97%)| pass |
 
 ## benchmark  
 sunspider
