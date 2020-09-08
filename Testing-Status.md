@@ -86,7 +86,27 @@ MandreelLatency:    274.1 |
          Octane:    280.7 S
 --------------------------+
 ```
-#### kraken  
+#### kraken 
+                               benchmark:    score |
+===================================================+
+
+
+                           ai-astar-orig:   6215.3 |
+               audio-beat-detection-orig:   6354.3 |
+                          audio-dft-orig:   5213.4 |
+                          audio-fft-orig:   3538.3 |
+                   audio-oscillator-orig:   4374.5 |
+              imaging-gaussian-blur-orig:   8097.9 |
+                   imaging-darkroom-orig:   6246.3 |
+                 imaging-desaturate-orig:   4205.5 |
+               json-parse-financial-orig:   2842.0 |
+           json-stringify-tinderbox-orig:   1005.8 |
+                stanford-crypto-aes-orig:   6651.4 |
+                stanford-crypto-ccm-orig:   9653.2 |
+             stanford-crypto-pbkdf2-orig:   8109.6 |
+   stanford-crypto-sha256-iterative-orig:   2857.0 |
+                                  Kraken:  75364.7 |
+---------------------------------------------------+ 
 
 ## V8 test suite release build on hifve
 
