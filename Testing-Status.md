@@ -32,6 +32,38 @@ HiFive Unleashed board details:
 ## benchmark  
 sunspider
 ```
+                               benchmark:    score |
+===================================================+
+                3d-raytrace-sunspider:       2049.1|   
+           access-binary-trees-sunspider:    384.2 |
+               access-fannkuch-sunspider:   1382.4 |
+                  access-nbody-sunspider:    475.9 |
+                 access-nsieve-sunspider:    894.6 |
+      bitops-3bit-bits-in-byte-sunspider:    184.3 |
+           bitops-bits-in-byte-sunspider:    192.9 |
+            bitops-bitwise-and-sunspider:    276.8 |
+            bitops-nsieve-bits-sunspider:   1009.5 |
+         controlflow-recursive-sunspider:    280.3 |
+                    crypto-aes-sunspider:   1389.5 |
+                    crypto-md5-sunspider:   1079.7 |
+                   crypto-sha1-sunspider:   1327.5 |
+             date-format-tofte-sunspider:   1327.2 |
+             date-format-xparb-sunspider:   1917.7 |
+                   math-cordic-sunspider:    572.0 |
+             math-partial-sums-sunspider:   1552.3 |
+            math-spectral-norm-sunspider:    361.5 |
+                    regexp-dna-sunspider:    210.9 |
+                 string-base64-sunspider:   2596.0 |
+                  string-fasta-sunspider:   1496.0 |
+               string-tagcloud-sunspider:   1868.5 |
+            string-unpack-code-sunspider:   2184.5 |
+         string-validate-input-sunspider:   1422.5 |
+                               SunSpider:  29477.0 |
+---------------------------------------------------+
+
+```
+octane  
+```
       benchmark:    score |
 ==========================+
        Richards:    684.2 |
@@ -53,7 +85,6 @@ MandreelLatency:    274.1 |
      Typescript:    200.8 |
          Octane:    280.7 S
 ```
-octane  
 kraken
 
 ## V8 test suite release build on hifve
