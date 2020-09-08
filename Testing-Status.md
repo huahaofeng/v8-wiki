@@ -84,6 +84,7 @@ MandreelLatency:    274.1 |
            zlib:    976.4 |
      Typescript:    200.8 |
          Octane:    280.7 S
+--------------------------+
 ```
 kraken
 
