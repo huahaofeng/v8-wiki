@@ -89,8 +89,6 @@ MandreelLatency:    274.1 |
 #### kraken 
                                benchmark:    score |
 ===================================================+
-
-
                            ai-astar-orig:   6215.3 |
                audio-beat-detection-orig:   6354.3 |
                           audio-dft-orig:   5213.4 |
