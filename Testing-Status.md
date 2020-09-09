@@ -20,7 +20,7 @@ HiFive Unleashed board details:
 | cctest | +6946/-1 (99%)|pass|
 | unittests | +3727/0 | |
 | mjsunit | +5048/-39 |failed |
-| wasm-spec-tests| +0/-0 | |
+| wasm-spec-tests| +172/-5(45%) |failed|
 | wasm-js | +63/-0(51%) | |
 | wasm-api-tests |+5/-12|failed |
 | message|+309/-3(99%)|failed|
