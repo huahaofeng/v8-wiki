@@ -29,7 +29,12 @@ HiFive Unleashed board details:
 | mkgrokdump| +0/-0 | skip|
 | debugger | +317/-0(97%)| pass |
 
-
+### benchmark
+| Test Suite | Tests passed (run-rate)| Notes |
+| - | - | - |
+| sunspider|TODO|N/A|
+| octane|TODO|N/A|
+| kraken|TODO|N/A|
 
 ## V8 test suite release build on hifve
 
@@ -47,14 +52,84 @@ HiFive Unleashed board details:
 | mkgrokdump| 0 (0%) -0 | skip |
 | debugger | +317/-0(97%)| pass|
 
-benchmark
-| Test Suite | Tests passed (run-rate)| Notes |
-| - | - | - |
-| sunspider|TODO|N/A|
-| octane|TODO|N/A|
-| kraken|TODO|N/A|
+### benchmark  
+#### sunspider  
+```
+                               benchmark:    score |
+===================================================+
+                3d-raytrace-sunspider:       2049.1|   
+           access-binary-trees-sunspider:    384.2 |
+               access-fannkuch-sunspider:   1382.4 |
+                  access-nbody-sunspider:    475.9 |
+                 access-nsieve-sunspider:    894.6 |
+      bitops-3bit-bits-in-byte-sunspider:    184.3 |
+           bitops-bits-in-byte-sunspider:    192.9 |
+            bitops-bitwise-and-sunspider:    276.8 |
+            bitops-nsieve-bits-sunspider:   1009.5 |
+         controlflow-recursive-sunspider:    280.3 |
+                    crypto-aes-sunspider:   1389.5 |
+                    crypto-md5-sunspider:   1079.7 |
+                   crypto-sha1-sunspider:   1327.5 |
+             date-format-tofte-sunspider:   1327.2 |
+             date-format-xparb-sunspider:   1917.7 |
+                   math-cordic-sunspider:    572.0 |
+             math-partial-sums-sunspider:   1552.3 |
+            math-spectral-norm-sunspider:    361.5 |
+                    regexp-dna-sunspider:    210.9 |
+                 string-base64-sunspider:   2596.0 |
+                  string-fasta-sunspider:   1496.0 |
+               string-tagcloud-sunspider:   1868.5 |
+            string-unpack-code-sunspider:   2184.5 |
+         string-validate-input-sunspider:   1422.5 |
+                               SunSpider:  29477.0 |
+---------------------------------------------------+
 
-
+```
+#### octane   
+```
+      benchmark:    score |
+==========================+
+       Richards:    684.2 |
+      DeltaBlue:     65.6 S
+         Crypto:    276.4 S
+       RayTrace:    577.8 |
+    EarleyBoyer:    313.2 |
+         RegExp:     29.0 |
+          Splay:    425.4 |
+   SplayLatency:   1394.3 S
+   NavierStokes:    615.9 S
+          PdfJS:    120.6 |
+       Mandreel:    201.3 |
+MandreelLatency:    274.1 |
+        Gameboy:    140.8 |
+       CodeLoad:    853.7 |
+          Box2D:    129.2 |
+           zlib:    976.4 |
+     Typescript:    200.8 |
+         Octane:    280.7 S
+--------------------------+
+```
+#### kraken 
+```
+                               benchmark:    score |
+===================================================+
+                           ai-astar-orig:   6215.3 |
+               audio-beat-detection-orig:   6354.3 |
+                          audio-dft-orig:   5213.4 |
+                          audio-fft-orig:   3538.3 |
+                   audio-oscillator-orig:   4374.5 |
+              imaging-gaussian-blur-orig:   8097.9 |
+                   imaging-darkroom-orig:   6246.3 |
+                 imaging-desaturate-orig:   4205.5 |
+               json-parse-financial-orig:   2842.0 |
+           json-stringify-tinderbox-orig:   1005.8 |
+                stanford-crypto-aes-orig:   6651.4 |
+                stanford-crypto-ccm-orig:   9653.2 |
+             stanford-crypto-pbkdf2-orig:   8109.6 |
+   stanford-crypto-sha256-iterative-orig:   2857.0 |
+                                  Kraken:  75364.7 |
+---------------------------------------------------+ 
+```
 
 ## NodeJS test suite (Debug Build)
 
