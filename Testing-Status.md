@@ -88,6 +88,26 @@ octane
 ---------------------------------------------------+----------+--------+
 ```
 kraken
+```
+                               benchmark:    score |  master_ |      % |
+===================================================+==========+========+
+                           ai-astar-orig:   6184.6 |   6197.3 |    0.2 |
+               audio-beat-detection-orig:   6330.7 |   6329.2 |        |
+                          audio-dft-orig:   5271.4 |   5280.0 |    0.2 |
+                          audio-fft-orig:   3530.1 |   3527.9 |        |
+                   audio-oscillator-orig:   4358.9 |   4360.5 |        |
+              imaging-gaussian-blur-orig:   8068.8 |   8069.2 |        |
+                   imaging-darkroom-orig:   6232.2 |   6234.7 |        |
+                 imaging-desaturate-orig:   4206.6 |   4211.6 |    0.1 |
+               json-parse-financial-orig:   2841.4 |   2841.7 |        |
+           json-stringify-tinderbox-orig:   1010.4 |   1010.5 |        |
+                stanford-crypto-aes-orig:   6609.9 |   6631.5 |    0.3 |
+                stanford-crypto-ccm-orig:   9544.2 |   9565.3 |    0.2 |
+             stanford-crypto-pbkdf2-orig:   8068.4 |   8085.6 |    0.2 |
+   stanford-crypto-sha256-iterative-orig:   2838.5 |   2842.8 |    0.2 |
+                                  Kraken:  75096.0 |  75187.8 |    0.1 |
+---------------------------------------------------+----------+--------+
+```
 
 ## V8 test suite release build on hifve
 
