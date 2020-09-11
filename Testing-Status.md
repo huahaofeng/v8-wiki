@@ -30,11 +30,64 @@ HiFive Unleashed board details:
 | debugger | +317/-0(97%)| pass |
 
 ### benchmark
-| Test Suite | Tests passed (run-rate)| Notes |
-| - | - | - |
-| sunspider|TODO|N/A|
-| octane|TODO|N/A|
-| kraken|TODO|N/A|
+sunspider
+```
+                               benchmark:    score |  master_ |      % |
+===================================================+==========+========+
+                      3d-morph-sunspider:   1159.4 |   1160.0 |        |
+                   3d-raytrace-sunspider:   2039.7 |   2043.7 |    0.2 |
+           access-binary-trees-sunspider:    381.3 |    380.8 |   -0.1 |
+               access-fannkuch-sunspider:   1391.4 |   1390.6 |        |
+                  access-nbody-sunspider:    475.4 |    475.1 |        |
+                 access-nsieve-sunspider:    903.8 |    903.3 |        |
+      bitops-3bit-bits-in-byte-sunspider:    185.0 |    184.5 |   -0.3 |
+           bitops-bits-in-byte-sunspider:    190.6 |    190.6 |        |
+            bitops-bitwise-and-sunspider:    274.5 |    274.5 |        |
+            bitops-nsieve-bits-sunspider:   1021.8 |   1021.4 |        |
+         controlflow-recursive-sunspider:    280.0 |    280.4 |    0.1 |
+                    crypto-aes-sunspider:   1374.8 |   1375.9 |        |
+                    crypto-md5-sunspider:   1070.7 |   1069.9 |        |
+                   crypto-sha1-sunspider:   1322.8 |   1322.9 |        |
+             date-format-tofte-sunspider:   1315.8 |   1315.9 |        |
+             date-format-xparb-sunspider:   1886.7 |   1885.8 |        |
+                   math-cordic-sunspider:    562.4 |    562.4 |        |
+             math-partial-sums-sunspider:   1546.1 |   1546.1 |        |
+            math-spectral-norm-sunspider:    357.0 |    356.2 |   -0.2 |
+                    regexp-dna-sunspider:    210.2 |    210.2 |        |
+                 string-base64-sunspider:   2586.0 |   2586.4 |        |
+                  string-fasta-sunspider:   1495.1 |   1495.5 |        |
+               string-tagcloud-sunspider:   1854.5 |   1855.2 |        |
+            string-unpack-code-sunspider:   2182.4 |   2181.1 |        |
+         string-validate-input-sunspider:   1409.1 |   1410.8 |    0.1 |
+                               SunSpider:  29311.1 |  29315.7 |        |
+---------------------------------------------------+----------+--------+
+```
+octane
+```
+                               benchmark:    score |  master_ |      % |
+===================================================+==========+========+
+
+                                Richards:    691.3 |    691.7 |        |
+                               DeltaBlue:     64.3 |     86.4 S  -25.6 |
+                                  Crypto:    288.6 S    284.8 S    1.3 |
+                                RayTrace:    584.3 |    578.4 S    1.0 |
+                             EarleyBoyer:    315.3 |    311.4 S    1.3 |
+                                  RegExp:     29.1 |     29.1 |        |
+                                   Splay:    423.2 |    427.3 |   -1.0 |
+                            SplayLatency:   1601.2 S   1739.3 S   -7.9 |
+                            NavierStokes:    621.1 |    623.4 |   -0.4 |
+                                   PdfJS:    121.4 |    121.4 |        |
+                                Mandreel:    199.6 |    200.2 |   -0.3 |
+                         MandreelLatency:    274.2 |    274.4 |        |
+                                 Gameboy:    140.8 |    140.8 |        |
+                                CodeLoad:    851.2 |    853.9 |   -0.3 |
+                                   Box2D:    130.6 |    128.6 S    1.6 |
+                                    zlib:    977.3 |    976.1 |    0.1 |
+                              Typescript:    203.2 |    201.9 |    0.6 |
+                                  Octane:    286.4 S    289.8 S   -1.2 |
+---------------------------------------------------+----------+--------+
+```
+kraken
 
 ## V8 test suite release build on hifve
 
