@@ -20,25 +20,15 @@ As mentioned above, we will follow the [guidelines](https://v8.dev/docs/contribu
 > ```
 > The presubmit script uses a linter from Google, cpplint.py. It is part of depot_tools, and it must be in your PATH — so if you have depot_tools in your PATH, everything should just work.
 
-Our CI job will run tests as well. These tests must all pass in order for your pull request to be considered. The CI job runs the following command to test a build.
+Our CI job will run tests as well. These tests must all pass in order for your pull request to be considered. The CI job runs the following script to test a build.
 
 ```
-tools/run-tests.py --outdir=out/riscv64.sim cctest \
-                                            unittests \
-                                            wasm-api-tests \
-                                            wasm-js \
-                                            wasm-spec-tests \
-                                            mjsunit \
-                                            intl \
-                                            message \
-                                            debugger \
-                                            inspector \
-                                            mkgrokdump
+v8-riscv-tools/test-riscv.sh
 ```
 
 Please run this same suite of tests locally before opening your PR to avoid wasting any one's time.
 
-All pull requests must be reviewed and approved by at least one owner before being accepted. Please also review ["Using Git"](https://github.com/v8-riscv/v8/wiki/Contributing/using-git) and ensure that your commit messages follow the guidelines laid out there.
+All pull requests must be reviewed and approved by at least one owner before being accepted. Please also review ["Using Git"](using-git) and ensure that your commit messages follow the guidelines laid out there.
 
 ## Contributing to the Documentation
 
