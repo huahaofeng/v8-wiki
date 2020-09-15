@@ -17,17 +17,17 @@ HiFive Unleashed board details:
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6946/-1 (99%)|pass|
+| cctest | +6946/-1 |pass|
 | unittests | +3727/0 | |
 | mjsunit | +5048/-39 |failed |
-| wasm-spec-tests| +172/-5(45%) |failed|
-| wasm-js | +63/-0(51%) | |
+| wasm-spec-tests| +172/-5 |failed|
+| wasm-js | +63/-0 | |
 | wasm-api-tests |+5/-12|failed |
-| message|+309/-3(99%)|failed|
-|inspector|+277/-0(48%)||
+| message|+309/-3|failed|
+|inspector|+277/-0||
 |intl|+213/-17 ||
 | mkgrokdump| +0/-0 | skip|
-| debugger | +317/-0(97%)| pass |
+| debugger | +317/-0| pass |
 
 ### benchmark
 sunspider
@@ -113,17 +113,17 @@ kraken
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6932/-11(99%)|failed|
+| cctest | +6932/-11|failed|
 | unittests | +3727/0 | pass|
-| mjsunit | +5016/-27(97%) |failed|
-| wasm-spec-tests|+72/-5(45%)|failed|
-| wasm-js | +64/-0(52%) | pass|
-| wasm-api-tests |+15/-0(88%)|pass|
-|intl|+212/-0(96%)|pass|
-| message|+309/-0(48%)|pass|
-|inspector|+277/-0(48%)|pass|
-| mkgrokdump| 0 (0%) -0 | skip |
-| debugger | +317/-0(97%)| pass|
+| mjsunit | +5016/-27 |failed|
+| wasm-spec-tests|+72/-5|failed|
+| wasm-js | +64/-0 | pass|
+| wasm-api-tests |+15/-0|pass|
+|intl|+212/-0|pass|
+| message|+309/-0|pass|
+|inspector|+277/-0|pass|
+| mkgrokdump| 0/-0 | skip |
+| debugger | +317/-0| pass|
 
 ### benchmark  
 #### sunspider  
@@ -208,13 +208,13 @@ MandreelLatency:    274.1 |
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-|all |+2834/-13(98%)||
+|all |+2834/-13||
 
 ## NodeJS test suite (Release Build)
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-|all |+2910/-35(100%)||
+|all |+2910/-35||
 
 # Running in QEMU
 
@@ -228,17 +228,17 @@ last update: 20200906
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6947/-5 (%99) | [#216](https://github.com/v8-riscv/v8/issues/216) [#214](https://github.com/v8-riscv/v8/issues/214) [#213](https://github.com/v8-riscv/v8/issues/213) [#192](https://github.com/v8-riscv/v8/issues/192) [#130](https://github.com/v8-riscv/v8/issues/130) http://paste.ubuntu.com/p/hcPsjFcx9B/|
-| unittests | +3729/-1 (99%)| 1 failed [#174](https://github.com/v8-riscv/v8/issues/174) http://paste.ubuntu.com/p/DGmyPdjnJP/|
-| mjsunit | +5026/-3 (96%) | 3 failed #177 #179 http://paste.ubuntu.com/p/bqgYRHQYJb/|
-| wasm-spec-tests | +172/-5 (45%) | http://paste.ubuntu.com/p/xhgCMj9mHm/ |
-| wasm-js | +61/-0 (54%) |  |
-| wasm-api-tests |+15/-0 (88%) | |
-| intl  | +212/-0 (96%) | PASS |
-| message| +309/-0  (48%) |PASS|
-| inspector| +277/-0 (48%) |PASS?|
+| cctest | +6947/-5  | [#216](https://github.com/v8-riscv/v8/issues/216) [#214](https://github.com/v8-riscv/v8/issues/214) [#213](https://github.com/v8-riscv/v8/issues/213) [#192](https://github.com/v8-riscv/v8/issues/192) [#130](https://github.com/v8-riscv/v8/issues/130) http://paste.ubuntu.com/p/hcPsjFcx9B/|
+| unittests | +3729/-1 | 1 failed [#174](https://github.com/v8-riscv/v8/issues/174) http://paste.ubuntu.com/p/DGmyPdjnJP/|
+| mjsunit | +5026/-3  | 3 failed #177 #179 http://paste.ubuntu.com/p/bqgYRHQYJb/|
+| wasm-spec-tests | +172/-5  | http://paste.ubuntu.com/p/xhgCMj9mHm/ |
+| wasm-js | +61/-0  |  |
+| wasm-api-tests |+15/-0  | |
+| intl  | +212/-0  | PASS |
+| message| +309/-0   |PASS|
+| inspector| +277/-0  |PASS?|
 | mkgrokdump| +0/-0 |Skipped|
-| debugger | +316/-0 (97%)|PASS|
+| debugger | +316/-0 |PASS|
 
 ## Release Build
 
@@ -246,17 +246,17 @@ last update: 20200906
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | 6944 (99%) -11 | http://paste.ubuntu.com/p/G4xf83jfPF/ |
-| unittests | 3721 (99%) -0 | http://paste.ubuntu.com/p/X4KRBq8d68/ |
-| mjsunit | 5043 (97%) -25 |http://paste.ubuntu.com/p/vTMbMNwS43/ |
-| wasm-spec-tests| 177 (45%) -5 | http://paste.ubuntu.com/p/Dhnt3gFx88/ |
-| wasm-js | 62 (55%) -0 | PASS |
-| wasm-api-tests | 15 (88%) -0 | PASS |
-| intl  | 212 (96%) -0 | PASS |
-| message| 309 (48%) -0 | PASS |
-| inspector| 277 (48%) -0 | PASS |
-| mkgrokdump| 0 (0%) -0 | skip |
-| debugger | 317 (97%) -0 | PASS |
+| cctest | 6944/-11 | http://paste.ubuntu.com/p/G4xf83jfPF/ |
+| unittests | 3721/-0 | http://paste.ubuntu.com/p/X4KRBq8d68/ |
+| mjsunit | 5043/-25 |http://paste.ubuntu.com/p/vTMbMNwS43/ |
+| wasm-spec-tests| 177/-5 | http://paste.ubuntu.com/p/Dhnt3gFx88/ |
+| wasm-js | 62/-0 | PASS |
+| wasm-api-tests | 15/-0 | PASS |
+| intl  | 212/-0 | PASS |
+| message| 309/-0 | PASS |
+| inspector| 277/-0 | PASS |
+| mkgrokdump| 0/-0 | skip |
+| debugger | 317/-0 | PASS |
 
 # Running on x86 via simulated v8-riscv build
 
@@ -273,16 +273,16 @@ tools/run-tests.py --outdir=<your-simulated-build-dir> <test-suites>
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6938/-0 (99%) | PASS |
-| unittests | +3731/-0 (99%) | all passed |
-| mjsunit | +5026/-0(96%) | PASS |
-| wasm-spec-tests | +177/-0 (45%) | PASS? |
-| wasm-js | +61/-0 (54%) | PASS? |
-| wasm-api-tests | +17/-0 (88%) | PASS |
-| intl | +212/-0 (96%) | same run rate as ARM64 |
-| message | +309/-0 (48%) | same run-rate as ARM64 |
-| inspector | +277/-0 (48%) | same run-rate as ARM64 |
-| debugger | +316/-0 (97%) | same run-rate as ARM64 |
+| cctest | +6938/-0  | PASS |
+| unittests | +3731/-0  | all passed |
+| mjsunit | +5026/-0 | PASS |
+| wasm-spec-tests | +177/-0  | PASS? |
+| wasm-js | +61/-0  | PASS? |
+| wasm-api-tests | +17/-0  | PASS |
+| intl | +212/-0  | same run rate as ARM64 |
+| message | +309/-0  | same run-rate as ARM64 |
+| inspector | +277/-0  | same run-rate as ARM64 |
+| debugger | +316/-0  | same run-rate as ARM64 |
 
 To run one or more test suites listed below, specify your own simulated build directory, e.g.,
 ```
@@ -300,16 +300,16 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-debug-build-dir> <
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6912/-0 (98%) | PASS|
-| unittests | +0/-0 (100%) | No tests run with stress option enabled |
-| mjsunit | +4989/-0(95%) | PASS |
-| wasm-spec-tests | +177/-0 %45| PASS |
-| wasm-js | +61/-0 %54| PASS |
+| cctest | +6912/-0  | PASS|
+| unittests | +0/-0  | No tests run with stress option enabled |
+| mjsunit | +4989/-0 | PASS |
+| wasm-spec-tests | +177/-0 | PASS |
+| wasm-js | +61/-0 | PASS |
 | wasm-api-tests | +0/-0 | No tests run with stress option enabled |
-| intl | +212/-0 (96%) | PASS same run rate as ARM64|
-| message | +309/-0 (48%) |PASS same run rate as ARM64 |
-| inspector | +277/-0 (48%) | PASS same run rate as ARM64|
-| debugger | +315/-0 (97%) | PASS|
+| intl | +212/-0  | PASS same run rate as ARM64|
+| message | +309/-0  |PASS same run rate as ARM64 |
+| inspector | +277/-0  | PASS same run rate as ARM64|
+| debugger | +315/-0  | PASS|
 
 ## Release build testing w/ default options
 
@@ -322,16 +322,16 @@ tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 commit:5417ef17a123aa969d09c2d0669f839c5ab55757
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | 6935 (99%) -10 | **10 tests failed** http://paste.ubuntu.com/p/GtzhhJJkc4/ |
-| unittests | +3723/-0 (99%) | PASSED http://paste.ubuntu.com/p/YPxNdGK2x4/|
-| mjsunit | 5043 (97%) -25 | **25 tests failed** http://paste.ubuntu.com/p/7T7RFyJ2H2/) |
-| wasm-spec-tests | 177 (45%) -0 | pass |
-| wasm-js | 62 (55%) -0 | pass |
-| wasm-api-tests | 15 (88%) -0 | all passed |
-| intl | 212 (96%) -0 | same run rate as ARM64|
-| message | 309 (48%) -0 | same run rate as ARM64|
-| inspector | 277 (48%) -0 | same run rate as ARM64|
-| debugger | 317 (97%) -0 | same run rate as ARM64|
+| cctest | 6935/-10 | **10 tests failed** http://paste.ubuntu.com/p/GtzhhJJkc4/ |
+| unittests | +3723/-0  | PASSED http://paste.ubuntu.com/p/YPxNdGK2x4/|
+| mjsunit | 5043/-25 | **25 tests failed** http://paste.ubuntu.com/p/7T7RFyJ2H2/) |
+| wasm-spec-tests | 177/-0 | pass |
+| wasm-js | 62/-0 | pass |
+| wasm-api-tests | 15/-0 | all passed |
+| intl | 212/-0 | same run rate as ARM64|
+| message | 309/-0 | same run rate as ARM64|
+| inspector | 277/-0 | same run rate as ARM64|
+| debugger | 317/-0 | same run rate as ARM64|
 
 ## Release build w/ the stress options
 
@@ -344,14 +344,14 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir>
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | + 6918 / -9 （ -98% 6982 ） | http://paste.ubuntu.com/p/WnB78vQ9QC/ |
-| unittests | + 0 / 0 （ 0% 3736 ） | http://paste.ubuntu.com/p/zTB6JrcB2b/ |
-| mjsunit | + 5025 / -23 （ -96% 5197 ） | http://paste.ubuntu.com/p/p8XgfdWY3X/ |
-| wasm-spec-tests | + 177 / 0 （ -45% 387 ） | http://paste.ubuntu.com/p/k3DtYPQfc7/ |
-| wasm-js | + 61 / 0 （ -54% 111 ） | http://paste.ubuntu.com/p/ntKVB7kw4f/ |
-| wasm-api-tests | + 0 / 0 （ 0% 17 ） | http://paste.ubuntu.com/p/SKh63TsJpg/ |
-| intl | + 212 / 0 （ -96% 219 ） | http://paste.ubuntu.com/p/j7FsDgdkjF/ |
-| message | + 309 / 0 （ -48% 637 ） | http://paste.ubuntu.com/p/xpJxPphbRF/ |
-| inspector | + 277 / 0 （ -48% 571 ） | http://paste.ubuntu.com/p/xJDpS8MTDP/ |
-| mkgrokdump | + 0 / 0 （ 0% 1 ） | http://paste.ubuntu.com/p/wgS8cgvPXT/ |
-| debugger | + 316 / 0 （ -97% 324 ） | http://paste.ubuntu.com/p/mTH69gxH3G/ |
+| cctest | +6918/-9  | http://paste.ubuntu.com/p/WnB78vQ9QC/ |
+| unittests | +0 / 0  | http://paste.ubuntu.com/p/zTB6JrcB2b/ |
+| mjsunit | +5025/-23  | http://paste.ubuntu.com/p/p8XgfdWY3X/ |
+| wasm-spec-tests | +177 / 0  | http://paste.ubuntu.com/p/k3DtYPQfc7/ |
+| wasm-js | +61 / 0  | http://paste.ubuntu.com/p/ntKVB7kw4f/ |
+| wasm-api-tests | +0 / 0  | http://paste.ubuntu.com/p/SKh63TsJpg/ |
+| intl | +212 / 0  | http://paste.ubuntu.com/p/j7FsDgdkjF/ |
+| message | +309 / 0  | http://paste.ubuntu.com/p/xpJxPphbRF/ |
+| inspector | +277 / 0  | http://paste.ubuntu.com/p/xJDpS8MTDP/ |
+| mkgrokdump | +0 / 0  | http://paste.ubuntu.com/p/wgS8cgvPXT/ |
+| debugger | +316 / 0  | http://paste.ubuntu.com/p/mTH69gxH3G/ |
