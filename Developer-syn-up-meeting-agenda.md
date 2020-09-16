@@ -1,7 +1,8 @@
-Date: 09/02/2020 6pm PT
+Date: 09/16/2020 6pm PT
 
 **Agenda**
+- Announcement (V8 global forum talk, V8 upstream prep)
 - Follow-up from the last meeting
-- 09/04 milestone summary([latest testing status](https://github.com/v8-riscv/v8/wiki/Testing-Status)) (Peng et al)
-- [Monthly milestones](Monthly-milestones) for 09/07 ~ 10/09 
-- Open discussion (e.g., 32-bit build?)
+- Update on CI and Node native build (Brice)
+- C-extension support discussion (Peng et al)
+- Open discussion
