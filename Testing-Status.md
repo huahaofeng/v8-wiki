@@ -116,7 +116,7 @@ kraken
 | cctest | +6932/-11|failed|
 | unittests | +3727/0 | pass|
 | mjsunit | +5016/-27 |failed|
-| wasm-spec-tests|+72/-5|failed|
+| wasm-spec-tests|+172/-5|failed|
 | wasm-js | +64/-0 | pass|
 | wasm-api-tests |+15/-0|pass|
 |intl|+212/-0|pass|
