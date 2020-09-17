@@ -1,3 +1,25 @@
+## Date: 09/16/2020 6pm PT
+
+### Agenda
+- Announcement (V8 global forum talk, V8 upstream prep)
+- Follow-up from the last meeting
+- Update on CI and Node native build (Brice)
+- C-extension support discussion (Peng et al)
+- Open discussion
+
+### Highlights
+- Finally, CI is restored
+- Cross-building of NodeJS is streamlined, script in the repo, instruction on the wiki 
+- Agreed on the partition of C-extension support among Chao, Derek, Liqiang, and Thomas
+
+### Action items
+- Prioritize failures exposed by release and stress-opt and identify critical ones (Peng, carried from last week)
+- Discuss w/ Fedora team members on the next steps to resolve dependence on other tools (cipd, etc) (Brice)
+- Investigate style guide and other requirements for V8 upstreaming (Brice)
+- Open an issue on generating optimized codes for atomic constructs (Peng)
+- For bi-weekly testing status update on the wiki, add the delta compared to the previous report (Wei)
+- For the comprehensive CI tests (after a PR is approved), if there is regression, report it on Slack and notify owners of the PRs involved (Wei)
+
 ## Date: 09/02/2020 6pm PT
 
 ### Agenda
