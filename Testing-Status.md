@@ -27,7 +27,7 @@ HiFive Unleashed board details:
 |inspector|+277/-0||
 |intl|+212/-0 |PASS|
 | mkgrokdump| +0/-0 | skip|
-| debugger | +317/-0| pass |
+| debugger | +316/-0| pass |
 
 ### benchmark
 sunspider
