@@ -40,5 +40,5 @@ RISC-V ISA specification is found [here](https://riscv.org/specifications/), and
    | Meeting ID| 876 4151 0603 |
    | Passcode | 714793 |
    | Meeting agenda | [Meeting agenda (09/16)](Developer-syn-up-meeting-agenda) |
-   | Last meeting minutes | [Meeting minutes (09/02)](Sync-up-meeting-minutes)|
+   | Last meeting minutes | [Meeting minutes (09/16)](Sync-up-meeting-minutes)|
 - [Content sharing](Content-sharing)
