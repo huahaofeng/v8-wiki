@@ -25,7 +25,7 @@ HiFive Unleashed board details:
 | wasm-api-tests |+5/-12|failed |
 | message|+309/-3|failed|
 |inspector|+277/-0||
-|intl|+213/-17 ||
+|intl|+212/-0 |PASS|
 | mkgrokdump| +0/-0 | skip|
 | debugger | +317/-0| pass |
 
