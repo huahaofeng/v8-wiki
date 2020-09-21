@@ -17,6 +17,7 @@ HiFive Unleashed board details:
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
+|unittests|+ 3721/-   0|success|
 |cctest|+ 6949/-   2|failed|
 |mjsunit|+ 5023/-   3|failed|
 |intl|+ 212/-   0|success|
@@ -111,17 +112,16 @@ kraken
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6932/-11|failed|
-| unittests | +3727/0 | pass|
-| mjsunit | +5016/-27 |failed|
-| wasm-spec-tests|+172/-5|failed|
-| wasm-js | +64/-0 | pass|
-| wasm-api-tests |+15/-0|pass|
-|intl|+212/-0|pass|
-| message|+309/-0|pass|
-|inspector|+277/-0|pass|
-| mkgrokdump| 0/-0 | skip |
-| debugger | +317/-0| pass|
+|unittests|+ 3721/-   0|success|
+|mjsunit|+ 5016/-  27|failed|
+|intl|+ 212/-   0|success|
+|message|+ 309/-   0|success|
+|inspector|+ 277/-   0|success|
+|mkgrokdump|+   0/-   0|success|
+|debugger|+ 317/-   0|success|
+|wasm-js|+  62/-   0|success|
+|wasm-spec-tests|+ 174/-   5|failed|
+|wasm-api-tests|+  15/-   0|success|
 
 ### benchmark  
 #### sunspider  
