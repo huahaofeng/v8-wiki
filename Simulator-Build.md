@@ -36,7 +36,7 @@ _Next, continue to [Run Tests](Run-Tests)_
 
 ### Build with gm.py
 
-To only compile the release build:
+To only compile the release build (note: this only builds `d8` but none of the test binaries):
 
 ```bash
 tools/dev/gm.py riscv64.release
