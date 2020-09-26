@@ -1,5 +1,3 @@
-[[_TOC_]]
-
 ## Cross compiling RISC-V header file location
 
 ```json
