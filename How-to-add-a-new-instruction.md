@@ -1,5 +1,15 @@
 For an evolving ISA like RISC-V, it is common that we will have support for new instructions or new ISA extensions to the backend. In this post, we explain the steps to add a new instruction to an existing backend. In this case, we use the riscv64 backend as an example, but the process is similar to other backends as well.
 
+- [1. Add constants (`src/codegen/riscv64/constants-riscv64.h`)](#1-add-constants---src-codegen-riscv64-constants-riscv64h--)
+- [2. Add to the assembler (`src/codegen/riscv64/assembler-riscv64.h/cc`)](#2-add-to-the-assembler---src-codegen-riscv64-assembler-riscv64h-cc--)
+- [3. Add to the simulator (`src/codegen/riscv64/simulator-riscv64.h/cc`)](#3-add-to-the-simulator---src-codegen-riscv64-simulator-riscv64h-cc--)
+- [4. Test the instruction](#4-test-the-instruction)
+- [5. Add to the disassembler (`src/diagnostics/riscv64/disasm-riscv64.h/cc`)](#5-add-to-the-disassembler---src-diagnostics-riscv64-disasm-riscv64h-cc--)
+- [6. Test disassembler](#6-test-disassembler)
+- [7. Use the new instruction](#7-use-the-new-instruction)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ### 1. Add constants (`src/codegen/riscv64/constants-riscv64.h`)
 
 `constants-riscv64.h` defines constants that are related to instruction classes and encodings that are shared by the `Assembler`, `Disasm`, and `Simulator`. You will need to add new opcode to `enum Opcode_t` and other constants if it uses a new instruction format.  Sometimes, a new instruction uses a new class of registers. Then one needs to add new register classes to `register-riscv64.h`.  
