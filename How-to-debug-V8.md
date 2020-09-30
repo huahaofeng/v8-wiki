@@ -1,3 +1,5 @@
+**Table of Content**
+
 - [Overall strategy](#overall-strategy)
   * [Build options for debugging](#build-options-for-debugging)
   * [Useful flags for debugging](#useful-flags-for-debugging)
