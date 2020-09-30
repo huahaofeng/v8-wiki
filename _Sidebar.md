@@ -16,7 +16,6 @@
 - RISC-V Backend Design Doc
   - [Understand V8 backend architecture](Understand-V8-backend-architecture)
   - [How to add a new instruction](How-to-add-a-new-instruction)
-  - How to develop a new backend
 - Community operation
   - [Join our Slack](https://forms.office.com/Pages/ResponsePage.aspx?id=8o_uD7KjGECcdTodVZH-3OiciJKG_BJHrqMNgnsFFqtUNlRUNEQ5QUgxNk0wVEVaTjJBTDNOMDNIQS4u)
   - Attend developer meetings
