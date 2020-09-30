@@ -1,4 +1,13 @@
-The V8 project uses Google's [`depot_tools`](https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up) to manage the source code. For this fork, we will first follow [the instructions from v8](https://v8.dev/docs/source-code) and use these tools to retrieve all of the required source from the core project. Then we will use `git` directly to retrieve the branch with the RISC-V port.
+The V8 project uses Google's [`depot_tools`](https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up) to manage the source code. For this fork, we will first follow [the instructions from v8](https://v8.dev/docs/source-code) and use these tools to retrieve all of the required sources from the core project. Then we will use `git` directly to retrieve the branch with the RISC-V port.
+
+- [Installing `depot_tools`](#installing--depot-tools-)
+- [Checkout V8 Source from Google](#checkout-v8-source-from-google)
+- [Checkout the RISC-V Branch](#checkout-the-risc-v-branch)
+- [Retrieve the matching dependencies](#retrieve-the-matching-dependencies)
+- [Patch the Chromium Build Toolchain](#patch-the-chromium-build-toolchain)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## Installing `depot_tools`
 
