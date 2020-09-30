@@ -1,8 +1,32 @@
+
 This page lists the latest test results for different builds. The statistics are presented in the following format
 - Test stats are listed as +passed/-failed (e.g., `+1000/-2`)
 - Run-rate is the percentage of total tests run (including both passed and failed tests), less than 100% run-rate means that some tests are skipped by the test driver (e.g., runs too long, or known failures that are being investigated). Skipped tests can be found in `<test-suite>.status` files.
 
-Note that `fuzzer` and `mkgrokdump` suites are excluded because they do not run any tests (similar to other targets).
+Note that `mkgrokdump` suite is excluded because it does not run any tests.
+
+- [Running on HiFive Unleashed board](#running-on-hifive-unleashed-board)
+  * [V8 test suite debug build on hifive](#v8-test-suite-debug-build-on-hifive)
+    + [benchmark](#benchmark)
+  * [V8 test suite release build on hifve](#v8-test-suite-release-build-on-hifve)
+    + [benchmark](#benchmark-1)
+      - [sunspider](#sunspider)
+      - [octane](#octane)
+      - [kraken](#kraken)
+  * [NodeJS test suite (Debug Build)](#nodejs-test-suite--debug-build-)
+  * [NodeJS test suite (Release Build)](#nodejs-test-suite--release-build-)
+- [Running in QEMU](#running-in-qemu)
+  * [Debug Build](#debug-build)
+  * [Release Build](#release-build)
+- [Running on x86 via simulated v8-riscv build](#running-on-x86-via-simulated-v8-riscv-build)
+  * [Debug build w/ default options](#debug-build-w--default-options)
+  * [Debug build w/ stress options](#debug-build-w--stress-options)
+  * [Release build testing w/ default options](#release-build-testing-w--default-options)
+  * [Release build w/ the stress options](#release-build-w--the-stress-options)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+***
 
 # Running on HiFive Unleashed board
  
