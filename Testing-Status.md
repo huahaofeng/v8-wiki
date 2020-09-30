@@ -218,42 +218,42 @@ MandreelLatency:    274.1 |
 
 Running on QEMU 5.0.0 with fedora developer 20200108.
 
-`commit 5417ef17a123aa969d09c2d0669f839c5ab55757`
+`commit 4950b382671c20e1900d02164d705178960502da`
 
 ## Debug Build
 
-last update: 20200906
+last update: 20200930
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6947/-5  | [#216](https://github.com/v8-riscv/v8/issues/216) [#214](https://github.com/v8-riscv/v8/issues/214) [#213](https://github.com/v8-riscv/v8/issues/213) [#192](https://github.com/v8-riscv/v8/issues/192) [#130](https://github.com/v8-riscv/v8/issues/130) http://paste.ubuntu.com/p/hcPsjFcx9B/|
-| unittests | +3729/-1 | 1 failed [#174](https://github.com/v8-riscv/v8/issues/174) http://paste.ubuntu.com/p/DGmyPdjnJP/|
-| mjsunit | +5026/-3  | 3 failed #177 #179 http://paste.ubuntu.com/p/bqgYRHQYJb/|
-| wasm-spec-tests | +172/-5  | http://paste.ubuntu.com/p/xhgCMj9mHm/ |
-| wasm-js | +61/-0  |  |
-| wasm-api-tests |+15/-0  | |
+| cctest | +6969/-5  | http://paste.ubuntu.com/p/xTnfpNwhP4/ [#216](https://github.com/v8-riscv/v8/issues/216) [#214](https://github.com/v8-riscv/v8/issues/214) [#213](https://github.com/v8-riscv/v8/issues/213) [#192](https://github.com/v8-riscv/v8/issues/192) [#130](https://github.com/v8-riscv/v8/issues/130) |
+| unittests | +3728/0 | PASS |
+| mjsunit | +5023/-3  | http://paste.ubuntu.com/p/JqTVVbD6gf/|
+| wasm-spec-tests | +172/-5  | http://paste.ubuntu.com/p/NPB5n42Hg8/ |
+| wasm-js | +61/-0  | PASS |
+| wasm-api-tests |+15/-0  | PASS |
 | intl  | +212/-0  | PASS |
 | message| +309/-0   |PASS|
 | inspector| +277/-0  |PASS?|
-| mkgrokdump| +0/-0 |Skipped|
+| mkgrokdump| +1/-0 |Skipped|
 | debugger | +316/-0 |PASS|
 
 ## Release Build
 
-last update: 20200906
+last update: 20200930
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | 6944/-11 | http://paste.ubuntu.com/p/G4xf83jfPF/ |
-| unittests | 3721/-0 | http://paste.ubuntu.com/p/X4KRBq8d68/ |
-| mjsunit | 5043/-25 |http://paste.ubuntu.com/p/vTMbMNwS43/ |
-| wasm-spec-tests| 177/-5 | http://paste.ubuntu.com/p/Dhnt3gFx88/ |
+| cctest | 6968/-3 | http://paste.ubuntu.com/p/W9jMHQqzq3/ 11 -> 3 failures had been fixed |
+| unittests | 3721/-0 | PASS |
+| mjsunit | 5039/-4 | http://paste.ubuntu.com/p/Qdnm6h5NSW/ 25 -> 4|
+| wasm-spec-tests| 172/-5 | http://paste.ubuntu.com/p/YYxWZGQ3Pk/ 5 -> 5|
 | wasm-js | 62/-0 | PASS |
 | wasm-api-tests | 15/-0 | PASS |
 | intl  | 212/-0 | PASS |
 | message| 309/-0 | PASS |
 | inspector| 277/-0 | PASS |
-| mkgrokdump| 0/-0 | skip |
+| mkgrokdump| 1/-0 | PASS |
 | debugger | 317/-0 | PASS |
 
 # Running on x86 via simulated v8-riscv build
@@ -262,7 +262,7 @@ The simulated build is built w/ x86 as host architecture and riscv64 as target a
 
 ## Debug build w/ default options
 
-last update: 20200906
+last update: 20200930
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -271,16 +271,16 @@ tools/run-tests.py --outdir=<your-simulated-build-dir> <test-suites>
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6938/-0  | PASS |
-| unittests | +3731/-0  | all passed |
+| cctest | +6965/-0  | PASS |
+| unittests | +3731/-0  | PASS |
 | mjsunit | +5026/-0 | PASS |
-| wasm-spec-tests | +177/-0  | PASS? |
-| wasm-js | +61/-0  | PASS? |
-| wasm-api-tests | +17/-0  | PASS |
-| intl | +212/-0  | same run rate as ARM64 |
-| message | +309/-0  | same run-rate as ARM64 |
-| inspector | +277/-0  | same run-rate as ARM64 |
-| debugger | +316/-0  | same run-rate as ARM64 |
+| wasm-spec-tests | +179/-0  | PASS |
+| wasm-js | +61/-0  | PASS |
+| wasm-api-tests | +15/-0  | PASS |
+| intl | +212/-0  | PASS |
+| message | +309/-0  | PASS |
+| inspector | +277/-0  | PASS |
+| debugger | +316/-0  | PASS |
 
 To run one or more test suites listed below, specify your own simulated build directory, e.g.,
 ```
@@ -289,7 +289,7 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 
 ## Debug build w/ stress options
 
-last update: 20200906
+last update: 20200930
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -298,20 +298,20 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-debug-build-dir> <
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6912/-0  | PASS|
+| cctest | +6939/-0  | PASS|
 | unittests | +0/-0  | No tests run with stress option enabled |
 | mjsunit | +4989/-0 | PASS |
-| wasm-spec-tests | +177/-0 | PASS |
+| wasm-spec-tests | +179/-0 | PASS |
 | wasm-js | +61/-0 | PASS |
 | wasm-api-tests | +0/-0 | No tests run with stress option enabled |
-| intl | +212/-0  | PASS same run rate as ARM64|
-| message | +309/-0  |PASS same run rate as ARM64 |
-| inspector | +277/-0  | PASS same run rate as ARM64|
+| intl | +212/-0  | PASS |
+| message | +309/-0  |PASS |
+| inspector | +277/-0  | PASS |
 | debugger | +315/-0  | PASS|
 
 ## Release build testing w/ default options
 
-last update: 20200906
+last update: 20200930
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -320,20 +320,20 @@ tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 commit:5417ef17a123aa969d09c2d0669f839c5ab55757
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | 6935/-10 | **10 tests failed** http://paste.ubuntu.com/p/GtzhhJJkc4/ |
-| unittests | +3723/-0  | PASSED http://paste.ubuntu.com/p/YPxNdGK2x4/|
-| mjsunit | 5043/-25 | **25 tests failed** http://paste.ubuntu.com/p/7T7RFyJ2H2/) |
-| wasm-spec-tests | 177/-0 | pass |
-| wasm-js | 62/-0 | pass |
-| wasm-api-tests | 15/-0 | all passed |
-| intl | 212/-0 | same run rate as ARM64|
-| message | 309/-0 | same run rate as ARM64|
-| inspector | 277/-0 | same run rate as ARM64|
-| debugger | 317/-0 | same run rate as ARM64|
+| cctest | 6962/-0 | PASS 10 -> 0 |
+| unittests | +3723/-0  | PASS |
+| mjsunit | 5041/-2 | 25 -> 2 [log](http://paste.ubuntu.com/p/tJZBybndNK/) |
+| wasm-spec-tests | 179/-0 | PASS |
+| wasm-js | 62/-0 | PASS |
+| wasm-api-tests | 15/-0 | PASS |
+| intl | 212/-0 | PASS |
+| message | 309/-0 | PASS |
+| inspector | 277/-0 | PASS |
+| debugger | 317/-0 | PASS |
 
 ## Release build w/ the stress options
 
-last update: 20200906
+last update: 20200930
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -342,14 +342,14 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir>
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6918/-9  | http://paste.ubuntu.com/p/WnB78vQ9QC/ |
-| unittests | +0 / 0  | http://paste.ubuntu.com/p/zTB6JrcB2b/ |
-| mjsunit | +5025/-23  | http://paste.ubuntu.com/p/p8XgfdWY3X/ |
-| wasm-spec-tests | +177 / 0  | http://paste.ubuntu.com/p/k3DtYPQfc7/ |
-| wasm-js | +61 / 0  | http://paste.ubuntu.com/p/ntKVB7kw4f/ |
-| wasm-api-tests | +0 / 0  | http://paste.ubuntu.com/p/SKh63TsJpg/ |
-| intl | +212 / 0  | http://paste.ubuntu.com/p/j7FsDgdkjF/ |
-| message | +309 / 0  | http://paste.ubuntu.com/p/xpJxPphbRF/ |
-| inspector | +277 / 0  | http://paste.ubuntu.com/p/xJDpS8MTDP/ |
-| mkgrokdump | +0 / 0  | http://paste.ubuntu.com/p/wgS8cgvPXT/ |
-| debugger | +316 / 0  | http://paste.ubuntu.com/p/mTH69gxH3G/ |
+| cctest | +6936/-0  | PASS 9 -> 0 |
+| unittests | +0 / 0  | Skipped |
+| mjsunit | +5002/-0  | PASS 23 -> 0 |
+| wasm-spec-tests | +179 / 0  | PASS |
+| wasm-js | +61 / 0  | PASS |
+| wasm-api-tests | +0 / 0  | Skipped |
+| intl | +212 / 0  | PASS |
+| message | +309 / 0  | PASS |
+| inspector | +277 / 0  | PASS |
+| mkgrokdump | +0 / 0  | PASS |
+| debugger | +316 / 0  | PASS |
