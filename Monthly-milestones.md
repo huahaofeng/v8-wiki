@@ -1,5 +1,15 @@
 This wiki documents our monthly project milestones. Please refer to [here](Project-Roadmap) for overall project roadmap and porting strategies.
 
+- [Milestones (Due 10/09/2020)](#milestones--due-10-09-2020-)
+  * [Upstream to V8](#upstream-to-v8)
+  * [Performance Optimizations](#performance-optimizations)
+  * [NodeJS to Fedora preparation](#nodejs-to-fedora-preparation)
+- [Milestones (due 09/04/2020)](#milestones--due-09-04-2020-)
+  * [Native-run enablement (milestone label: `native-run (09/04/2020)`)](#native-run-enablement--milestone-label---native-run--09-04-2020---)
+  * [Upstream preparation (milestone label: `upstream-prep (09/04/2020)` )](#upstream-preparation--milestone-label---upstream-prep--09-04-2020----)
+  * [Initial NodeJS bring-up (milestone label: `nodejs (09/04/2020)`)](#initial-nodejs-bring-up--milestone-label---nodejs--09-04-2020---)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ***
 
