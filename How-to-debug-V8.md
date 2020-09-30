@@ -1,3 +1,26 @@
+- [Overall strategy](#overall-strategy)
+  * [Build options for debugging](#build-options-for-debugging)
+  * [Useful flags for debugging](#useful-flags-for-debugging)
+- [Debug under simulated run](#debug-under-simulated-run)
+  * [Use simulator trace (`--trace-sim`)](#use-simulator-trace-----trace-sim--)
+  * [Use simulator debugger (`--stop-at-sim`)](#use-simulator-debugger-----stop-at-sim--)
+  * [Generate debugging code in generated codes](#generate-debugging-code-in-generated-codes)
+  * [Flags summary](#flags-summary)
+- [Connect simulated trace to generated code](#connect-simulated-trace-to-generated-code)
+  * [Use `print-all-code`](#use--print-all-code-)
+  * [Use code comments](#use-code-comments)
+  * [Trace Analyzer](#trace-analyzer)
+- [Dump TF compiler IR via Turbolizer](#dump-tf-compiler-ir-via-turbolizer)
+  * [Generate TF sea-of-nodes](#generate-tf-sea-of-nodes)
+  * [Setup turbolizer](#setup-turbolizer)
+- [JS-level debugging](#js-level-debugging)
+  * [Use `%OptimizeFunctionOnNextCall` to force JIT](#use---optimizefunctiononnextcall--to-force-jit)
+  * [DebugPrint](#debugprint)
+- [Performance debugging](#performance-debugging)
+  * [`countInstr.py` tool](#-countinstrpy--tool)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 # Overall strategy
 
 - Simplify the test cases
@@ -14,7 +37,7 @@ When running `d8` or `cctest` in `gdb`, it will be useful to add the flag `v8_op
 - `--single-threaded`: disable background threads
 - `--jitless`: disable JIT code generation
 
-# Debugging under simulated build run
+# Debug under simulated run
 
 ## Use simulator trace (`--trace-sim`)
 
@@ -523,3 +546,9 @@ DebugPrint: 0x717ba952c1: [JSSet]
  - dependent code: 0x007a63740289 <Other heap object (WEAK_FIXED_ARRAY_TYPE)>
  - construction counter: 0
 ```
+
+# Performance debugging
+
+## `countInstr.py` tool
+
+__ TO BE ADDED __
