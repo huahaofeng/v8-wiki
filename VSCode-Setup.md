@@ -1,3 +1,13 @@
+**Table of Content**
+- [Cross compiling RISC-V header file location](#cross-compiling-risc-v-header-file-location)
+- [VSCode Setup](#vscode-setup)
+  * [Code Formatting](#code-formatting)
+  * [.vscode/c_cpp_properties.json](#vscode-c-cpp-propertiesjson)
+  * [.vscode/launch.json](#vscode-launchjson)
+  * [.vscode/tasks.json](#vscode-tasksjson)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Cross compiling RISC-V header file location
 
 ```json
