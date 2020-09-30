@@ -1,5 +1,14 @@
 This page describes how to build V8 for execution on the built-in RISC-V simulator. It is assumed that you have already followed the steps to [get the source](Get-the-Source).
 
+- [Install prerequisites](#install-prerequisites)
+- [Build v8 for RISC-V Simulation of an x86-64 Host](#build-v8-for-risc-v-simulation-of-an-x86-64-host)
+  * [Configure with GN](#configure-with-gn)
+  * [Build with Ninja](#build-with-ninja)
+- [Build v8 Release Simulated Build](#build-v8-release-simulated-build)
+  * [Build with gm.py](#build-with-gmpy)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Install prerequisites
 
 The following script will use `apt` to install any packages required for building v8. You will need `sudo` access to install the packages.
