@@ -1,5 +1,27 @@
 This page describes how to build V8 for execution on RISC-V hardware or RISC-V QEMU.  It is assumed that you have already followed the steps to [get the source](Get-the-Source).
 
+- [RISC-V Toolchain](#risc-v-toolchain)
+  * [Install Prerequisites](#install-prerequisites)
+  * [Build Toolchain](#build-toolchain)
+- [V8 Build](#v8-build)
+  * [Install prerequisites](#install-prerequisites)
+  * [Configure `toolprefix`](#configure--toolprefix-)
+  * [Cross-compile v8 as RISC-V binary on an x86-64 Host](#cross-compile-v8-as-risc-v-binary-on-an-x86-64-host)
+    + [Configure with GN](#configure-with-gn)
+    + [Build with Ninja](#build-with-ninja)
+  * [Run on QEMU](#run-on-qemu)
+    + [Download QEMU](#download-qemu)
+    + [Install Prerequisites](#install-prerequisites-1)
+    + [Build QEMU for riscv64](#build-qemu-for-riscv64)
+    + [Download Fedora and U-Boot Images](#download-fedora-and-u-boot-images)
+    + [Run QEMU](#run-qemu)
+    + [Copy V8 to QEMU](#copy-v8-to-qemu)
+    + [Run V8 on QEMU](#run-v8-on-qemu)
+    + [Script for Developers in China](#script-for-developers-in-china)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## RISC-V Toolchain
 ### Install Prerequisites
 ```
