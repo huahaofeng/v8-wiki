@@ -3,8 +3,6 @@ This page lists the latest test results for different builds. The statistics are
 - Test stats are listed as +passed/-failed (e.g., `+1000/-2`)
 - Run-rate is the percentage of total tests run (including both passed and failed tests), less than 100% run-rate means that some tests are skipped by the test driver (e.g., runs too long, or known failures that are being investigated). Skipped tests can be found in `<test-suite>.status` files.
 
-Note that `mkgrokdump` suite is excluded because it does not run any tests.
-
 - [Running on HiFive Unleashed board](#running-on-hifive-unleashed-board)
   * [V8 test suite debug build on hifive](#v8-test-suite-debug-build-on-hifive)
     + [benchmark](#benchmark)
