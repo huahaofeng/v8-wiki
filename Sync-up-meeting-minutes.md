@@ -5,7 +5,7 @@
 - Open discussion
 
 ### Highlights
-- Significant failed case reduction from the previous run (2 week's ago), CI test-status reporting more comprehensive 
+- Many test failures are resolved compared to status of two-weeks ago 
 - We discussed how to find a reasonable path to distribute V8/Node binary to end-users
 
 ### Action items
