@@ -1,3 +1,19 @@
+## Date: 09/30/2020 6pm PT
+
+### Agenda
+- Follow-up from the last meeting
+- Open discussion
+
+### Highlights
+- Significant failed case reduction from the previous run (2 week's ago), CI test-status reporting more comprehensive 
+- We discussed how to find a reasonable path to distribute V8/Node binary to end-users
+
+### Action items
+- Check w/ V8 team whether building w/ LLVM is a requirement for upstream (Peng)
+- Define exactly what needs to be done to solve the tools dependency for native build (required by both Debian and Fedora) and open an issue to track it (Brice)
+- Setup a 3rd party package distribution of our cross-compiled V8/Node binary (Wei)
+- Present a comparison of J-extension's pointer-masking proposal and V8's compressed pointer feature (Peng)
+
 ## Date: 09/16/2020 6pm PT
 
 ### Agenda
