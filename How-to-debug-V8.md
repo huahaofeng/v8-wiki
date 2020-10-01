@@ -553,4 +553,11 @@ DebugPrint: 0x717ba952c1: [JSSet]
 
 ## `countInstr.py` tool
 
-__ TO BE ADDED __
+usage:
+```
+python3 ./v8-riscv-tools/CountInstr.py path_to_riscv_d8 path_to_mips_d8  [args of d8]
+```
+example:
+```
+python3 ./v8-riscv-tools/CountInstr.py ./out/riscv64.sim/d8 ./out/mips64el.debug/d8 test.js --test --enable-slow-check
+```
