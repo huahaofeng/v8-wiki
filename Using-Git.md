@@ -98,7 +98,7 @@ The commit message should follow a particular format to make it easy to read and
 
 Many editors will have plugins or settings to help you with the formatting of these messages.
 
-If your commit is related to or closes an issue, be sure to include a line like this at the end of your message, and GitLab will automatically link it with the issue and/or close the issue:
+If your commit is related to or closes an issue, be sure to include a line like this at the end of your message, and GitHub will automatically link it with the issue and/or close the issue:
 
 ```
 See #23
