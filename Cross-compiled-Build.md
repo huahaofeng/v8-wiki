@@ -200,6 +200,8 @@ Now, you can use `scp` from a regular terminal on the same machine (not the qemu
 [joesmith@your-local-terminal] scp -P 3333 $V8_ROOT/v8/out/riscv64.native.debug/d8 $V8_ROOT/v8/out/riscv64.native.debug/snapshot_blob.bin root@localhost:~/.
 ```
 
+To log into your QEMU instance from another terminal on the same server, `ssh -p 3333 root@localhost`.
+
 #### Run V8 on QEMU
 
 Now, you are ready to run `d8` inside the qemu console:
