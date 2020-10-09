@@ -39,8 +39,8 @@ HiFive Unleashed board details:
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-|cctest|+ 6970/-   2|failed|
-|unittests|+3727/- 0|success|
+|cctest|+ 6973/-   2|success|
+|unittests|+ 3272/- 0|success|
 |mjsunit|+ 5022/-   4|failed|
 |intl|+ 212/-   0|success|
 |message|+ 309/-   0|success|
