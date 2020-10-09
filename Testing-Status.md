@@ -146,7 +146,7 @@ kraken
 |wasm-api-tests|+  15/-   0|success|
 
 ### benchmark  
-#### sunspider  
+sunspider  
 ```
                                benchmark:    score |
 ===================================================+
@@ -178,7 +178,7 @@ kraken
 ---------------------------------------------------+
 
 ```
-#### octane   
+octane   
 ```
       benchmark:    score |
 ==========================+
@@ -202,7 +202,7 @@ MandreelLatency:    274.1 |
          Octane:    280.7 S
 --------------------------+
 ```
-#### kraken 
+kraken 
 ```
                                benchmark:    score |
 ===================================================+
