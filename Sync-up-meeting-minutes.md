@@ -1,3 +1,27 @@
+## Date: 10/14/2020 6pm PT
+### Agenda
+
+- Announcement (J-extension group)
+- V8 upstream update (Brice: rebase, cpid, using gcc tool-chain)
+- Follow-up from the last meeting
+- Additional C-extension support discussion (Peng et al)
+- Open discussions
+
+### Highlights
+- Wei updated us the recent reorg/changes in RISC-V international taskgroup organization, there may be opportunities for us to take some initiatives or participate in other workgroups
+- Discussed how to generate C-extension instructions in macro-assembler: may need to teach register allocator to generate instructions that satisfy constraints of C-extension instructions (i.e., smaller groups of registers and reusing 1st operand as destination register)
+
+### Action items
+
+- Update testing status for this week (Wei)
+- Attend code-size optimization workgroup (Peng, Wei)
+- Add a wiki page to summarize how our codebase satisfies the upstream criteria (Brice)
+- Give a presentation to compare J-extension proposal and V8's compressed-pointer implementation (carried over from last week, Peng)
+- Setup 3rd party  package distribution of our cross-compiled V8/Node binary (carried over from last week, Wei)
+- Give a presentation on how V8 register allocator works (Liqiang and Derek)
+- Define milestone for this month, especially define the performance analysis requirement (Peng)
+- Give a presentation on benchmark performance comparison between RISC-V and MIPS64 (Wei?)
+
 ## Date: 09/30/2020 6pm PT
 
 ### Agenda
