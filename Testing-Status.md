@@ -241,21 +241,21 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 
 ## Debug Build
 
-last update: 20200930
+last update: 202001015
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6969/-5  | http://paste.ubuntu.com/p/xTnfpNwhP4/ [#216](https://github.com/v8-riscv/v8/issues/216) [#214](https://github.com/v8-riscv/v8/issues/214) [#213](https://github.com/v8-riscv/v8/issues/213) [#192](https://github.com/v8-riscv/v8/issues/192) [#130](https://github.com/v8-riscv/v8/issues/130) |
-| unittests | +3728/0 | PASS |
-| mjsunit | +5023/-3  | http://paste.ubuntu.com/p/JqTVVbD6gf/|
-| wasm-spec-tests | +172/-5  | http://paste.ubuntu.com/p/NPB5n42Hg8/ |
-| wasm-js | +61/-0  | PASS |
-| wasm-api-tests |+15/-0  | PASS |
-| intl  | +212/-0  | PASS |
-| message| +309/-0   |PASS|
-| inspector| +277/-0  |PASS?|
-| mkgrokdump| +1/-0 |Skipped|
-| debugger | +316/-0 |PASS|
+|cctest|+ 6970/-   6|failed|
+|unittests|+ 3728/-   0|success|
+|mjsunit|+ 5023/-   3|failed|
+|intl|+ 212/-   0|success|
+|message|+ 309/-   0|success|
+|inspector|+ 277/-   0|success|
+|mkgrokdump|+   0/-   0|success|
+|debugger|+ 316/-   0|success|
+|wasm-js|+  61/-   0|success|
+|wasm-spec-tests|+ 174/-   5|failed|
+|wasm-api-tests|+  17/-   0|success|
 
 ## Release Build
 
