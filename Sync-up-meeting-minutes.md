@@ -21,6 +21,7 @@
 - Give a presentation on how V8 register allocator works (Liqiang and Derek)
 - Define milestone for this month, especially define the performance analysis requirement (Peng)
 - Give a presentation on benchmark performance comparison between RISC-V and MIPS64 (Wei?)
+- Create issues for the next steps of C-extension implementation and assign (Peng)
 
 ## Date: 09/30/2020 6pm PT
 
