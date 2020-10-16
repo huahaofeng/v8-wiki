@@ -263,17 +263,17 @@ last update: 20200930
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | 6968/-3 | http://paste.ubuntu.com/p/W9jMHQqzq3/ 11 -> 3 failures had been fixed |
-| unittests | 3721/-0 | PASS |
-| mjsunit | 5039/-4 | http://paste.ubuntu.com/p/Qdnm6h5NSW/ 25 -> 4|
-| wasm-spec-tests| 172/-5 | http://paste.ubuntu.com/p/YYxWZGQ3Pk/ 5 -> 5|
-| wasm-js | 62/-0 | PASS |
-| wasm-api-tests | 15/-0 | PASS |
-| intl  | 212/-0 | PASS |
-| message| 309/-0 | PASS |
-| inspector| 277/-0 | PASS |
-| mkgrokdump| 1/-0 | PASS |
-| debugger | 317/-0 | PASS |
+|cctest|+ 6969/-   4|failed|
+|unittests|+ 3721/-   0|success|
+|mjsunit|+ 5039/-   4|failed|
+|intl|+ 212/-   0|success|
+|message|+ 309/-   0|success|
+|inspector|+ 277/-   0|success|
+|mkgrokdump|+   0/-   0|success|
+|debugger|+ 317/-   0|success|
+|wasm-js|+  62/-   0|success|
+|wasm-spec-tests|+ 174/-   5|failed|
+|wasm-api-tests|+  17/-   0|success|
 
 # Running on x86 via simulated v8-riscv build
 
