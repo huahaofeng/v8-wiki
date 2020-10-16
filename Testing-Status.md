@@ -245,7 +245,7 @@ last update: 202001015
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-|cctest|+ 6970/-   6|failed|
+|cctest|+ 6971/-   5|NaNBox failed is ignored|
 |unittests|+ 3728/-   0|success|
 |mjsunit|+ 5023/-   3|failed|
 |intl|+ 212/-   0|success|
@@ -263,7 +263,7 @@ last update: 20200930
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-|cctest|+ 6969/-   4|failed|
+|cctest|+ 6970/-   3|failed,NaNBox failed is ignored|
 |unittests|+ 3721/-   0|success|
 |mjsunit|+ 5039/-   4|failed|
 |intl|+ 212/-   0|success|
