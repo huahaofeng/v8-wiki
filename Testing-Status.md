@@ -131,8 +131,9 @@ kraken
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-|unittests|+ 3721/-   0|success|
-|mjsunit|+ 5016/-  27|failed|
+|unittests|+ 3720/- 0|success|
+|cctest|+ 6969/-   4|failed|
+|mjsunit|+ 5037/-   6|failed|
 |intl|+ 212/-   0|success|
 |message|+ 309/-   0|success|
 |inspector|+ 277/-   0|success|
@@ -140,7 +141,7 @@ kraken
 |debugger|+ 317/-   0|success|
 |wasm-js|+  62/-   0|success|
 |wasm-spec-tests|+ 174/-   5|failed|
-|wasm-api-tests|+  15/-   0|success|
+|wasm-api-tests|+  17/-   0|success|
 
 ### benchmark  
 sunspider  
