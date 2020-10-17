@@ -36,7 +36,7 @@ HiFive Unleashed board details:
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-|cctest|+ 6973/-   2|success|
+|cctest|+ 6973/-   2| failed |
 |unittests|+ 3272/- 0|success|
 |mjsunit|+ 5022/-   4|failed|
 |intl|+ 212/-   0|success|
@@ -242,39 +242,39 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 
 ## Debug Build
 
-last update: 202001015
+last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-|cctest|+ 6971/-   5|NaNBox failed is ignored|
-|unittests|+ 3728/-   0|success|
-|mjsunit|+ 5023/-   3|failed|
-|intl|+ 212/-   0|success|
-|message|+ 309/-   0|success|
-|inspector|+ 277/-   0|success|
-|mkgrokdump|+   0/-   0|success|
-|debugger|+ 316/-   0|success|
-|wasm-js|+  61/-   0|success|
-|wasm-spec-tests|+ 174/-   5|failed|
-|wasm-api-tests|+  17/-   0|success|
+| cctest | +6976 / -7 | 5->7, NaNBox failed is ignored [log](http://paste.ubuntu.com/p/P6rQDhbbNJ/) |
+| unittests | +3728 / -0 | [log](http://paste.ubuntu.com/p/vFYfnvMM49/) |
+| mjsunit | +5026 / -2 | 3->2 [log](http://paste.ubuntu.com/p/HCPY5TRB4p/) |
+| wasm-spec-tests | +179 / -5 | 5->5 [log](http://paste.ubuntu.com/p/3rhzZWVxWz/) |
+| wasm-js | +61 / -0 | [log](http://paste.ubuntu.com/p/cNrdGyQCgq/) |
+| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/SBSbMNPZKy/) |
+| intl | +212 / -0 | [log](http://paste.ubuntu.com/p/Wt93CfJSHQ/) |
+| message | +309 / -0 | [log](http://paste.ubuntu.com/p/xV8vMbHj85/) |
+| inspector | +277 / -0 | [log](http://paste.ubuntu.com/p/7SxhVCXRTM/) |
+| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/xpYMNgWjCQ/) |
+| debugger | +316 / -0 | [log](http://paste.ubuntu.com/p/qRmWzPBbQt/) |
 
 ## Release Build
 
-last update: 20200930
+last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-|cctest|+ 6970/-   3|failed,NaNBox failed is ignored|
-|unittests|+ 3721/-   0|success|
-|mjsunit|+ 5039/-   4|failed|
-|intl|+ 212/-   0|success|
-|message|+ 309/-   0|success|
-|inspector|+ 277/-   0|success|
-|mkgrokdump|+   0/-   0|success|
-|debugger|+ 317/-   0|success|
-|wasm-js|+  62/-   0|success|
-|wasm-spec-tests|+ 174/-   5|failed|
-|wasm-api-tests|+  17/-   0|success|
+| cctest | +6973 / -4 | 3->4, NaNBox failed is ignored [log](http://paste.ubuntu.com/p/KFzYJM7nFg/) |
+| unittests | +3721 / -0 | [log](http://paste.ubuntu.com/p/YDpQ9YsFhX/) |
+| mjsunit | +5043 / -4 | 4->4 [log](http://paste.ubuntu.com/p/CtrcGCRbwf/) |
+| wasm-spec-tests | +179 / -5 | 5->5 [log](http://paste.ubuntu.com/p/KzmtXDDWW7/) |
+| wasm-js | +62 / -0 | [log](http://paste.ubuntu.com/p/cD4S6q4x4B/) |
+| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/6GmMqZ5gQy/) |
+| intl | +212 / -0 | [log](http://paste.ubuntu.com/p/bndF4FhHDB/) |
+| message | +309 / -0 | [log](http://paste.ubuntu.com/p/nRHfD8hvhG/) |
+| inspector | +277 / -0 | [log](http://paste.ubuntu.com/p/PMcY3CdVND/) |
+| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/kQh5J4qJGN/) |
+| debugger | +317 / -0 | [log](http://paste.ubuntu.com/p/dsj3fv6mMk/) |
 
 # Running on x86 via simulated v8-riscv build
 
@@ -282,7 +282,7 @@ The simulated build is built w/ x86 as host architecture and riscv64 as target a
 
 ## Debug build w/ default options
 
-last update: 20200930
+last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -291,25 +291,27 @@ tools/run-tests.py --outdir=<your-simulated-build-dir> <test-suites>
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6965/-0  | PASS |
-| unittests | +3731/-0  | PASS |
-| mjsunit | +5026/-0 | PASS |
-| wasm-spec-tests | +179/-0  | PASS |
-| wasm-js | +61/-0  | PASS |
-| wasm-api-tests | +15/-0  | PASS |
-| intl | +212/-0  | PASS |
-| message | +309/-0  | PASS |
-| inspector | +277/-0  | PASS |
-| debugger | +316/-0  | PASS |
+| cctest | +6967 / -0 | [log](http://paste.ubuntu.com/p/PDShMXphVM/) |
+| unittests | +3731 / -0 | [log](http://paste.ubuntu.com/p/8mgjcNnp9N/) |
+| mjsunit | +5026 / -0 | [log](http://paste.ubuntu.com/p/ZdrxNR3pJ8/) |
+| wasm-spec-tests | +179 / -0 | [log](http://paste.ubuntu.com/p/vQrNhFsyMR/) |
+| wasm-js | +61 / -0 | [log](http://paste.ubuntu.com/p/3vpnnqc45h/) |
+| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/pJ8RcJTT3x/) |
+| intl | +212 / -0 | [log](http://paste.ubuntu.com/p/JTyhgYmn22/) |
+| message | +309 / -0 | [log](http://paste.ubuntu.com/p/xm4DdK2QPs/) |
+| inspector | +277 / -0 | [log](http://paste.ubuntu.com/p/GHTwrwb6hN/) |
+| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/2QyzxFNm3H/) |
+| debugger | +316 / -0 | [log](http://paste.ubuntu.com/p/RZj3fSdfCw/) |
 
 To run one or more test suites listed below, specify your own simulated build directory, e.g.,
+
 ```
 tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 ```
 
 ## Debug build w/ stress options
 
-last update: 20200930
+last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -318,42 +320,45 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-debug-build-dir> <
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +6939/-0  | PASS|
-| unittests | +0/-0  | No tests run with stress option enabled |
-| mjsunit | +4989/-0 | PASS |
-| wasm-spec-tests | +179/-0 | PASS |
-| wasm-js | +61/-0 | PASS |
-| wasm-api-tests | +0/-0 | No tests run with stress option enabled |
-| intl | +212/-0  | PASS |
-| message | +309/-0  |PASS |
-| inspector | +277/-0  | PASS |
-| debugger | +315/-0  | PASS|
+| cctest | +6941 / -0 | [log](http://paste.ubuntu.com/p/NKr95ZqwFC/) |
+| unittests | +0 / -0 | [log](http://paste.ubuntu.com/p/nXCmK4txq8/) |
+| mjsunit | +4989 / -0 | [log](http://paste.ubuntu.com/p/5vbf6krZs6/) |
+| wasm-spec-tests | +179 / -0 | [log](http://paste.ubuntu.com/p/pnkKqsSjBx/) |
+| wasm-js | +61 / -0 | [log](http://paste.ubuntu.com/p/YKcrnHqrgW/) |
+| wasm-api-tests | +0 / -0 | [log](http://paste.ubuntu.com/p/dkTDrvmm6y/) |
+| intl | +212 / -0 | [log](http://paste.ubuntu.com/p/MtG6m7DW5g/) |
+| message | +309 / -0 | [log](http://paste.ubuntu.com/p/hDGXnTkQW4/) |
+| inspector | +277 / -0 | [log](http://paste.ubuntu.com/p/rTXgjknCfv/) |
+| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/b2bm9776XV/) |
+| debugger | +315 / -0 | [log](http://paste.ubuntu.com/p/wdgRCjhWBB/) |
 
 ## Release build testing w/ default options
 
-last update: 20200930
+last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
 
 The following stats are obtained from CI test runs and can be reproduced as
+
 ```
 tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 ```
-commit:5417ef17a123aa969d09c2d0669f839c5ab55757
+
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | 6962/-0 | PASS 10 -> 0 |
-| unittests | +3723/-0  | PASS |
-| mjsunit | 5041/-2 | 25 -> 2 [log](http://paste.ubuntu.com/p/tJZBybndNK/) |
-| wasm-spec-tests | 179/-0 | PASS |
-| wasm-js | 62/-0 | PASS |
-| wasm-api-tests | 15/-0 | PASS |
-| intl | 212/-0 | PASS |
-| message | 309/-0 | PASS |
-| inspector | 277/-0 | PASS |
-| debugger | 317/-0 | PASS |
+| cctest | +6964 / -0 | [log](http://paste.ubuntu.com/p/JSHyTBThWn/) |
+| unittests | +3723 / -0 | [log](http://paste.ubuntu.com/p/w4F7hYqwVG/) |
+| mjsunit | +5043 / -2 | 2->2 [log](http://paste.ubuntu.com/p/2nXZRTfDKS/) |
+| wasm-spec-tests | +179 / -0 | [log](http://paste.ubuntu.com/p/QXWhx3z9fs/) |
+| wasm-js | +62 / -0 | [log](http://paste.ubuntu.com/p/wqxWF6zp2q/) |
+| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/rVy3FPBXx8/) |
+| intl | +212 / -0 | [log](http://paste.ubuntu.com/p/brjzHRpzQZ/) |
+| message | +309 / -0 | [log](http://paste.ubuntu.com/p/TTscc3RSxf/) |
+| inspector | +277 / -0 | [log](http://paste.ubuntu.com/p/998SZ2T4yk/) |
+| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/72pwxzq3yy/) |
+| debugger | +317 / -0 | [log](http://paste.ubuntu.com/p/y8j2dNNKjk/) |
 
 ## Release build w/ the stress options
 
-last update: 20200930
+last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -362,14 +367,14 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir>
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +6936/-0  | PASS 9 -> 0 |
-| unittests | +0 / 0  | Skipped |
-| mjsunit | +5002/-0  | PASS 23 -> 0 |
-| wasm-spec-tests | +179 / 0  | PASS |
-| wasm-js | +61 / 0  | PASS |
-| wasm-api-tests | +0 / 0  | Skipped |
-| intl | +212 / 0  | PASS |
-| message | +309 / 0  | PASS |
-| inspector | +277 / 0  | PASS |
-| mkgrokdump | +0 / 0  | PASS |
-| debugger | +316 / 0  | PASS |
+| cctest | +6938 / -0 | [log](http://paste.ubuntu.com/p/F3nrQG6bMt/) |
+| unittests | +0 / -0 | [log](http://paste.ubuntu.com/p/DCjWTZPGDh/) |
+| mjsunit | +5002 / -0 | [log](http://paste.ubuntu.com/p/NNpjtwQxNM/) |
+| wasm-spec-tests | +179 / -0 | [log](http://paste.ubuntu.com/p/VGMqjsTHmN/) |
+| wasm-js | +61 / -0 | [log](http://paste.ubuntu.com/p/rbZHC66gmH/) |
+| wasm-api-tests | +0 / -0 | [log](http://paste.ubuntu.com/p/CJ5cPNB2m5/) |
+| intl | +212 / -0 | [log](http://paste.ubuntu.com/p/9gbSjfyHPX/) |
+| message | +309 / -0 | [log](http://paste.ubuntu.com/p/Z8jMk8zKs3/) |
+| inspector | +277 / -0 | [log](http://paste.ubuntu.com/p/vkcMny4nHJ/) |
+| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/sdchFTTdY7/) |
+| debugger | +316 / -0 | [log](http://paste.ubuntu.com/p/HxD3DTcqyW/) |
