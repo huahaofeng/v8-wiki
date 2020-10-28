@@ -13,6 +13,27 @@ This wiki documents our monthly project milestones. Please refer to [here](Proje
 
 ***
 
+## Milestones (Due 11/28/2020)
+
+### Upstream to V8
+
+In this milestone, we will rebase to the latest tip of V8 development branch and try to land our codebase to V8 repo
+
+### C-extension support
+
+Initial support for C-extensions:
+- Add simulator, assembler, disasm support for C-extension instructions
+- Generate C instructions in macro-assembler
+- Develop tools to estimate the percentage of instructions that can be converted to C-extensions (limit study)
+
+Future optimizations on C-extension instruction support can be handled in the next milestone
+ 
+### Initial performance analysis
+
+The goal of this milestone is to figure out where optimization opportunities are. We will focus on:
+- Developing tools to identify inefficient code-gen (https://github.com/v8-riscv/v8/issues/291 and https://github.com/v8-riscv/v8/issues/195)
+- A detailed analysis on the performance gaps identified
+ 
 ## Milestones (Due 10/09/2020)
 
 We will focus on steps to bringing V8/Nodes to the community and start on optimizing performance
