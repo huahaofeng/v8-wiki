@@ -242,7 +242,7 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 
 ## Debug Build
 
-last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
+last update: 2020128 (same with 20201017, the riscv64 branch not changed since 20201014) 5f073e89544266f74697cffec65de65a30c2db3e
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
@@ -260,7 +260,7 @@ last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
 
 ## Release Build
 
-last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
+last update: 2020128 (same with 20201017, the riscv64 branch not changed since 20201014) 5f073e89544266f74697cffec65de65a30c2db3e
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
@@ -282,7 +282,7 @@ The simulated build is built w/ x86 as host architecture and riscv64 as target a
 
 ## Debug build w/ default options
 
-last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
+last update: 2020128 (same with 20201017, the riscv64 branch not changed since 20201014) 5f073e89544266f74697cffec65de65a30c2db3e
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -311,7 +311,7 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 
 ## Debug build w/ stress options
 
-last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
+last update: 2020128 (same with 20201017, the riscv64 branch not changed since 20201014) 5f073e89544266f74697cffec65de65a30c2db3e
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -334,7 +334,7 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-debug-build-dir> <
 
 ## Release build testing w/ default options
 
-last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
+last update: 2020128 (same with 20201017, the riscv64 branch not changed since 20201014) 5f073e89544266f74697cffec65de65a30c2db3e
 
 The following stats are obtained from CI test runs and can be reproduced as
 
@@ -358,7 +358,7 @@ tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 
 ## Release build w/ the stress options
 
-last update: 20201017 5f073e89544266f74697cffec65de65a30c2db3e
+last update: 2020128 (same with 20201017, the riscv64 branch not changed since 20201014) 5f073e89544266f74697cffec65de65a30c2db3e
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
