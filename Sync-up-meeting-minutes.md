@@ -1,3 +1,22 @@
+## Date: 10/28/2020 6pm PT
+
+### Agenda
+
+- Announcement
+- V8 re-base update (Brice on new problems discovered and outstanding issues)
+- Follow-up from the last meeting
+- Technical presentation: how does V8's register allocator work? (Derek & Liqiang)
+- Technical presentation: how to support C-extension instruction code gen (Reza)
+- Technical presentation: preliminary performance analysis (Wei)
+- Technical presentation: J-extension group pointer-masking proposal and analysis on V8 (Peng) [if time permits]
+- Open discussions
+
+### Action Items
+- Participate in the code-speed workgroup meetings (Wei, Brice, Peng)
+- Give a presentation to compare the J-extension proposal and V8's compressed-pointer implementation (did not have time to cover this week, Peng)
+- Setup 3rd party  package distribution of our cross-compiled V8/Node binary (carried over from the last meeting, Wei)
+- Write up next steps for the register allocation study for Liqiang & Derek (Peng)
+
 ## Date: 10/14/2020 6pm PT
 ### Agenda
 
