@@ -15,7 +15,9 @@
 - Participate in the code-speed workgroup meetings (Wei, Brice, Peng)
 - Give a presentation to compare the J-extension proposal and V8's compressed-pointer implementation (did not have time to cover this week, Peng)
 - Setup 3rd party  package distribution of our cross-compiled V8/Node binary (carried over from the last meeting, Wei)
-- Write up next steps for the register allocation study for Liqiang & Derek (Peng)
+- Write up the next steps for the register allocation study for Liqiang & Derek (Peng)
+- Share today's slides to repo wiki (https://github.com/v8-riscv/v8/wiki/Content-sharing) (liqiang, reza, yahan)
+- Present the lgorithm to extend V8 register allocator for C-extension instructions (liqiang, reza, derek) 
 
 ## Date: 10/14/2020 6pm PT
 ### Agenda
