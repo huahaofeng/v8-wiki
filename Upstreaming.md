@@ -18,3 +18,6 @@ We need to follow the guidelines laid out in [Contributing to V8](https://v8.dev
 ## Information
 
 The significant change since the last rebase that caused the many bugs that showed up from this rebase effort were caused by changes to the standard frame, specifically, adding the argument count to the frame, and reversing the order of the arguments / receiver.
+
+https://bugs.chromium.org/p/v8/issues/detail?id=10991
+https://bugs.chromium.org/p/chromium/issues/detail?id=1138584#c1
