@@ -20,3 +20,4 @@
 - Community operation
   - [Join our Slack](https://forms.office.com/Pages/ResponsePage.aspx?id=8o_uD7KjGECcdTodVZH-3OiciJKG_BJHrqMNgnsFFqtUNlRUNEQ5QUgxNk0wVEVaTjJBTDNOMDNIQS4u)
   - Attend developer meetings
+  - [Content sharing](Content-sharing)
