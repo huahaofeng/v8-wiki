@@ -12,8 +12,14 @@ We need to follow the guidelines laid out in [Contributing to V8](https://v8.dev
 * [ ] Add all contributors to AUTHORS (see #302)
 * [ ] Upload to V8's [code review tool](https://v8.dev/docs/contribute#upload-to-v8%E2%80%99s-codereview-tool)
 
-## Outstanding issues
+## Related issues
 
+### Outstanding issues
+* [#299](https://github.com/v8-riscv/v8/issues/299): cfenv is unapproved
+* [#300](https://github.com/v8-riscv/v8/issues/300): Spike license
+* [#302](https://github.com/v8-riscv/v8/issues/302): AUTHORS file
+
+### Resolved issues
 * [#287](https://github.com/v8-riscv/v8/issues/287): Check failed: expect == mt.Call() (2 vs. 0)
   - Fixed
 * [#288](https://github.com/v8-riscv/v8/issues/288): Fatal error in ../../src/objects/tagged-impl.h, line 92
