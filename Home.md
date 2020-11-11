@@ -36,10 +36,10 @@ RISC-V ISA specification is found [here](https://riscv.org/specifications/), and
 
    | Meeting Info | Description |
    |-|-|
-   | Next meeting | 10/28/2020 (US) |
-   | Time | every other Wednesdays 6-7pm Pacific Time (Thursdays 9am Beijing Time) |
+   | Next meeting | 11/11/2020 (US) |
+   | Time | every other Wednesdays 5pm PT (Thursdays 9am Beijing Time) |
    | Meeting ID| 876 4151 0603 |
    | Passcode | 714793 |
-   | Meeting agenda | [Meeting agenda (10/28)](Developer-syn-up-meeting-agenda) |
+   | Meeting agenda | [Meeting agenda (11/11)](Developer-syn-up-meeting-agenda) |
    | Last meeting minutes | [Meeting minutes (10/28)](Sync-up-meeting-minutes)|
 - [Content sharing](Content-sharing)
