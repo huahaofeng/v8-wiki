@@ -242,39 +242,39 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 
 ## Debug Build
 
-last update: 20201106 branch `riscv64 (force-updated)` [64ea32](64ea327fe73683fe663b3ab98287d5b4ccaf0772)
+last update: 20201111 branch `riscv64` [a3f872](a3f8728a54a0cb40fdb64033ae5955ce862dfff4)
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +7110 / -8 | [log](http://paste.ubuntu.com/p/hR8nD4rTqM/) |
-| unittests | +3763 / -0 | [log](http://paste.ubuntu.com/p/mstrMDB9fc/) |
-| mjsunit | +5065 / -3 | [log](http://paste.ubuntu.com/p/KWfkgq4dtP/) |
-| wasm-spec-tests | +182 / -5 | [log](http://paste.ubuntu.com/p/vQ3G2SZGNs/) |
-| wasm-js | +59 / -0 | [log](http://paste.ubuntu.com/p/tRqc8QQnJD/) |
-| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/dq3psxhX8f/) |
-| intl | +222 / -0 | [log](http://paste.ubuntu.com/p/jKSSQ8WxjR/) |
-| message | +310 / -0 | [log](http://paste.ubuntu.com/p/8C96VYfJ4M/) |
-| inspector | +285 / -0 | [log](http://paste.ubuntu.com/p/x9ZRDNr2FR/) |
-| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/xmp3hP7MYj/) |
-| debugger | +316 / -0 | [log](http://paste.ubuntu.com/p/2YydWtJPCt/) |
+| cctest | +7110 / -7 | 8->7 [log](http://paste.ubuntu.com/p/CfwYJQgNQm/) |
+| unittests | +3763 / -0 | [log](http://paste.ubuntu.com/p/gVtQrcqMjZ/) |
+| mjsunit | +5065 / -2 | [log](http://paste.ubuntu.com/p/BWRHmzm9pf/) |
+| wasm-spec-tests | +182 / -5 | [log](http://paste.ubuntu.com/p/JbzPY9b4J8/) |
+| wasm-js | +59 / -0 | [log](http://paste.ubuntu.com/p/WhY7pkcNt8/) |
+| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/7trWP8snYJ/) |
+| intl | +222 / -0 | [log](http://paste.ubuntu.com/p/6y2SnFwVgX/) |
+| message | +310 / -0 | [log](http://paste.ubuntu.com/p/rqww2wzW9F/) |
+| inspector | +285 / -0 | [log](http://paste.ubuntu.com/p/Pq9By3Q4qw/) |
+| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/YVmPrxDfgX/) |
+| debugger | +316 / -0 | [log](http://paste.ubuntu.com/p/sWkBqzVwhR/) |
 
 ## Release Build
 
-last update: 20201106 branch `riscv64 (force-updated)` [64ea32](64ea327fe73683fe663b3ab98287d5b4ccaf0772)
+last update: 20201111 branch `riscv64` [a3f872](a3f8728a54a0cb40fdb64033ae5955ce862dfff4)
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +7101 / -5 | [log](http://paste.ubuntu.com/p/TGRbbJpbjb/) |
-| unittests | +3756 / -0 | [log](http://paste.ubuntu.com/p/RNJ55ZWf4Z/) |
-| mjsunit | +5082 / -4 | [log](http://paste.ubuntu.com/p/VTpSQJ8v5m/) |
-| wasm-spec-tests | +182 / -5 | [log](http://paste.ubuntu.com/p/Y3MVr7qJ5F/) |
-| wasm-js | +60 / -0 | [log](http://paste.ubuntu.com/p/BRNyQ3ZQgj/) |
-| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/NTh2cXFnc6/) |
-| intl | +222 / -0 | [log](http://paste.ubuntu.com/p/qFcnqH46FC/) |
-| message | +310 / -0 | [log](http://paste.ubuntu.com/p/5SWFvcdRRz/) |
-| inspector | +285 / -0 | [log](http://paste.ubuntu.com/p/cJYpQqwDVq/) |
-| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/DFqjbFmRKT/) |
-| debugger | +317 / -0 | [log](http://paste.ubuntu.com/p/35NSj6bP4S/) |
+| cctest | +7101 / -5 | [log](http://paste.ubuntu.com/p/sGS9KgDkTh/) |
+| unittests | +3756 / -0 | [log](http://paste.ubuntu.com/p/zmXgqxwDtv/) |
+| mjsunit | +5082 / -3 | [log](http://paste.ubuntu.com/p/XXgDNzKtN6/) |
+| wasm-spec-tests | +182 / -5 | [log](http://paste.ubuntu.com/p/qPBwZBzQDY/) |
+| wasm-js | +60 / -0 | [log](http://paste.ubuntu.com/p/7pPmGtJmvP/) |
+| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/mBSz5MRX9p/) |
+| intl | +222 / -0 | [log](http://paste.ubuntu.com/p/gWZprqsFxK/) |
+| message | +310 / -0 | [log](http://paste.ubuntu.com/p/DvgTCxgC9r/) |
+| inspector | +285 / -0 | [log](http://paste.ubuntu.com/p/vPqTxFqk4C/) |
+| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/rSZHrhYz3C/) |
+| debugger | +317 / -0 | [log](http://paste.ubuntu.com/p/rcTCkVNjXK/) |
 
 # Running on x86 via simulated v8-riscv build
 
@@ -282,7 +282,7 @@ The simulated build is built w/ x86 as host architecture and riscv64 as target a
 
 ## Debug build w/ default options
 
-last update: 20201106 branch `riscv64 (force-updated)` [64ea32](64ea327fe73683fe663b3ab98287d5b4ccaf0772)
+last update: 20201111 branch `riscv64` [a3f872](a3f8728a54a0cb40fdb64033ae5955ce862dfff4)
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -291,17 +291,17 @@ tools/run-tests.py --outdir=<your-simulated-build-dir> <test-suites>
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +7101 / -0 | [log](http://paste.ubuntu.com/p/bxP58tdtsH/) |
-| unittests | +3766 / -0 | [log](http://paste.ubuntu.com/p/4VbxZtW2t5/) |
-| mjsunit | +5063 / -0 | [log](http://paste.ubuntu.com/p/2GVvHMMzmX/) |
-| wasm-spec-tests | +182 / -0 | [log](http://paste.ubuntu.com/p/JPH94FcWvS/) |
-| wasm-js | +59 / -0 | [log](http://paste.ubuntu.com/p/qGJ87ydk4P/) |
-| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/dppw4f2whN/) |
-| intl | +222 / -0 | [log](http://paste.ubuntu.com/p/b4BN7WGpgP/) |
-| message | +310 / -0 | [log](http://paste.ubuntu.com/p/pQKkDWbfPx/) |
-| inspector | +285 / -0 | [log](http://paste.ubuntu.com/p/ZKnsXbjS68/) |
-| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/NYJHhV5Bmx/) |
-| debugger | +316 / -0 | [log](http://paste.ubuntu.com/p/JBFvNwXBSP/) |
+| cctest | +7101 / -0 | [log](http://paste.ubuntu.com/p/2J6XDVdSFg/) |
+| unittests | +3766 / -0 | [log](http://paste.ubuntu.com/p/VMDQQhKYVX/) |
+| mjsunit | +5063 / -0 | [log](http://paste.ubuntu.com/p/nxy4mWP7zd/) |
+| wasm-spec-tests | +182 / -0 | [log](http://paste.ubuntu.com/p/Zq725jpq7C/) |
+| wasm-js | +59 / -0 | [log](http://paste.ubuntu.com/p/XcrbkzMwZt/) |
+| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/M9DqQWvdNK/) |
+| intl | +222 / -0 | [log](http://paste.ubuntu.com/p/jDxqcSH8Tb/) |
+| message | +310 / -0 | [log](http://paste.ubuntu.com/p/qxnVTthmmJ/) |
+| inspector | +285 / -0 | [log](http://paste.ubuntu.com/p/x3pDdQxGtj/) |
+| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/9p2xJPWBM6/) |
+| debugger | +316 / -0 | [log](http://paste.ubuntu.com/p/rGmHzHnYFC/) |
 
 To run one or more test suites listed below, specify your own simulated build directory, e.g.,
 
@@ -311,7 +311,7 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 
 ## Debug build w/ stress options
 
-last update: 20201106 branch `riscv64 (force-updated)` [64ea32](64ea327fe73683fe663b3ab98287d5b4ccaf0772)
+last update: 20201111 branch `riscv64` [a3f872](a3f8728a54a0cb40fdb64033ae5955ce862dfff4)
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -320,21 +320,21 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-debug-build-dir> <
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +7075 / -0 | [log](http://paste.ubuntu.com/p/SfwbR4ZkP5/) |
-| unittests | +0 / -0 | [log](http://paste.ubuntu.com/p/T3CK8vPy4t/) |
-| mjsunit | +5027 / -0 | [log](http://paste.ubuntu.com/p/sMXgWgj6xg/) |
-| wasm-spec-tests | +182 / -0 | [log](http://paste.ubuntu.com/p/ZRwPKXHKjD/) |
-| wasm-js | +59 / -0 | [log](http://paste.ubuntu.com/p/wXymXZNzfM/) |
-| wasm-api-tests | +0 / -0 | [log](http://paste.ubuntu.com/p/Syk5z4wZs4/) |
-| intl | +222 / -0 | [log](http://paste.ubuntu.com/p/Dz97FGPpCc/) |
-| message | +310 / -0 | [log](http://paste.ubuntu.com/p/VYvYKVR55k/) |
-| inspector | +0 / -0 | [log](http://paste.ubuntu.com/p/5BFpScXG9d/) |
-| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/TJRXFXJWcS/) |
-| debugger | +315 / -0 | [log](http://paste.ubuntu.com/p/HJGjCFkSz4/) |
+| cctest | +7075 / -0 | [log](http://paste.ubuntu.com/p/XM8JdpNPhY/) |
+| unittests | +0 / -0 | [log](http://paste.ubuntu.com/p/8WFxrHQ8k4/) |
+| mjsunit | +5027 / -0 | [log](http://paste.ubuntu.com/p/cS6jDtC7hf/) |
+| wasm-spec-tests | +182 / -0 | [log](http://paste.ubuntu.com/p/w345HjvMXP/) |
+| wasm-js | +59 / -0 | [log](http://paste.ubuntu.com/p/7r2JBnytNC/) |
+| wasm-api-tests | +0 / -0 | [log](http://paste.ubuntu.com/p/wJ5qn2RXN4/) |
+| intl | +222 / -0 | [log](http://paste.ubuntu.com/p/RgGRb66hPf/) |
+| message | +310 / -0 | [log](http://paste.ubuntu.com/p/qZvm7xZWsB/) |
+| inspector | +0 / -0 | [log](http://paste.ubuntu.com/p/fccS27Wc3t/) |
+| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/4twg4BfKZN/) |
+| debugger | +315 / -0 | [log](http://paste.ubuntu.com/p/PQVB2dkScV/) |
 
 ## Release build testing w/ default options
 
-last update: 20201106 branch `riscv64 (force-updated)` [64ea32](64ea327fe73683fe663b3ab98287d5b4ccaf0772)
+last update: 20201111 branch `riscv64` [a3f872](a3f8728a54a0cb40fdb64033ae5955ce862dfff4)
 
 The following stats are obtained from CI test runs and can be reproduced as
 
@@ -344,21 +344,21 @@ tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +7092 / -0 | [log](http://paste.ubuntu.com/p/mddYsbMYg8/) |
-| unittests | +3758 / -0 | [log](http://paste.ubuntu.com/p/Qv3vx7K8w7/) |
-| mjsunit | +5077 / -0 | [log](http://paste.ubuntu.com/p/VPv2KXcJ4Y/) |
-| wasm-spec-tests | +182 / -0 | [log](http://paste.ubuntu.com/p/Fmpw2f2jYK/) |
-| wasm-js | +59 / -0 | [log](http://paste.ubuntu.com/p/PpgSgXCGr3/) |
-| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/gqfbsv7BN5/) |
-| intl | +222 / -0 | [log](http://paste.ubuntu.com/p/2pCQ2vrPrD/) |
-| message | +310 / -0 | [log](http://paste.ubuntu.com/p/cd84tCHWrw/) |
-| inspector | +285 / -0 | [log](http://paste.ubuntu.com/p/7cCyV6YqZb/) |
-| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/3kNp56Nd3j/) |
-| debugger | +317 / -0 | [log](http://paste.ubuntu.com/p/VHDSH9CxRw/) |
+| cctest | +7092 / -0 | [log](http://paste.ubuntu.com/p/PG8F5f8Vrz/) |
+| unittests | +3758 / -0 | [log](http://paste.ubuntu.com/p/2SxXdZXvdR/) |
+| mjsunit | +5077 / -0 | [log](http://paste.ubuntu.com/p/zdNC62cxPv/) |
+| wasm-spec-tests | +182 / -0 | [log](http://paste.ubuntu.com/p/RnFjZR5wx8/) |
+| wasm-js | +59 / -0 | [log](http://paste.ubuntu.com/p/BgY6J9HvGm/) |
+| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/rZqMDxhnYF/) |
+| intl | +222 / -0 | [log](http://paste.ubuntu.com/p/TkkFpVM4Ws/) |
+| message | +310 / -0 | [log](http://paste.ubuntu.com/p/Tbm3WsZwSy/) |
+| inspector | +285 / -0 | [log](http://paste.ubuntu.com/p/TkVYzGxDqk/) |
+| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/87fQX8VGpY/) |
+| debugger | +317 / -0 | [log](http://paste.ubuntu.com/p/GVN4dhnwd4/) |
 
 ## Release build w/ the stress options
 
-last update: 20201106 branch `riscv64 (force-updated)` [64ea32](64ea327fe73683fe663b3ab98287d5b4ccaf0772)
+last update: 20201111 branch `riscv64` [a3f872](a3f8728a54a0cb40fdb64033ae5955ce862dfff4)
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
@@ -367,14 +367,14 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir>
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +7066 / -0 | [log](http://paste.ubuntu.com/p/2PSMfwXw2b/) |
-| unittests | +0 / -0 | [log](http://paste.ubuntu.com/p/djjMP7YTGw/) |
-| mjsunit | +5039 / -0 | [log](http://paste.ubuntu.com/p/7cY9WJNfNC/) |
-| wasm-spec-tests | +182 / -0 | [log](http://paste.ubuntu.com/p/6VYtwj6gMd/) |
-| wasm-js | +59 / -0 | [log](http://paste.ubuntu.com/p/b68SQtyy37/) |
-| wasm-api-tests | +0 / -0 | [log](http://paste.ubuntu.com/p/pxkzTbCXdf/) |
-| intl | +222 / -0 | [log](http://paste.ubuntu.com/p/9fsTfpbS2T/) |
-| message | +310 / -0 | [log](http://paste.ubuntu.com/p/QzKDVqMCJD/) |
-| inspector | +0 / -0 | [log](http://paste.ubuntu.com/p/yj3xCvnTTR/) |
-| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/p4PTGRFRMX/) |
-| debugger | +316 / -0 | [log](http://paste.ubuntu.com/p/dV278PD7BJ/) |
+| cctest | +7066 / -0 | [log](http://paste.ubuntu.com/p/YGTmzqm3yh/) |
+| unittests | +0 / -0 | [log](http://paste.ubuntu.com/p/W4STZ3f3zR/) |
+| mjsunit | +5039 / -0 | [log](http://paste.ubuntu.com/p/yt5MXrBm33/) |
+| wasm-spec-tests | +182 / -0 | [log](http://paste.ubuntu.com/p/gnzCPn2Zyj/) |
+| wasm-js | +59 / -0 | [log](http://paste.ubuntu.com/p/8hjnJtvnv7/) |
+| wasm-api-tests | +0 / -0 | [log](http://paste.ubuntu.com/p/dq9mqwVDkd/) |
+| intl | +222 / -0 | [log](http://paste.ubuntu.com/p/Yx3vWsqHsh/) |
+| message | +310 / -0 | [log](http://paste.ubuntu.com/p/JspHrn9j5T/) |
+| inspector | +0 / -0 | [log](http://paste.ubuntu.com/p/QxSxJC38Zn/) |
+| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/v7bcFg8WD8/) |
+| debugger | +316 / -0 | [log](http://paste.ubuntu.com/p/9HthBMGWRf/)
