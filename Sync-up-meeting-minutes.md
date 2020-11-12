@@ -1,3 +1,24 @@
+
+## Date: 11/11/2020
+
+### Agenda
+
+- V8 re-base update and outstanding issues (Brice)
+- RISC-V community news (Wei)
+- Follow-up from the last meeting
+- Technical presentation: J-extension group pointer-masking proposal and analysis on V8 (Peng)
+- Open discussions
+
+### Highlights
+
+- On the pointer-masking discussion, the intuitive feeling is that V8 (a managed runtime w/ already a lightweight isolation mechanism) may not be a good candidate for pointer-masking (i.e., because the software solution already provides pretty good isolation protection, and using a HW solution is a lot more rigid). We decide to be more explicit in voicing this opinion to the J-extension workgroup.
+
+### Action items
+
+- Add a release wiki page on how people can gain access to pre-built v8 binary
+- Present the algorithm to extend V8 register allocator for C-extension instructions (qiu ji)
+
+
 ## Date: 10/28/2020 6pm PT
 
 ### Agenda
