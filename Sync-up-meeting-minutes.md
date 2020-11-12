@@ -16,7 +16,7 @@
 ### Action items
 
 - Add a release wiki page on how people can gain access to pre-built v8 binary
-- Present the algorithm to extend V8 register allocator for C-extension instructions (qiu ji)
+- Give a presentation on the algorithm to extend V8 register allocator for C-extension instructions (qiu ji)
 
 
 ## Date: 10/28/2020 6pm PT
