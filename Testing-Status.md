@@ -242,6 +242,8 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 
 ## Debug Build
 
+NOTE: last check 20201125, the riscv64 branch has not changed since 20201111.
+
 last update: 20201111 branch `riscv64` [a3f872](a3f8728a54a0cb40fdb64033ae5955ce862dfff4)
 
 | Test Suite | Tests passed (run-rate)| Notes |
