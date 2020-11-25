@@ -12,6 +12,7 @@ RISC-V ISA specification is found [here](https://riscv.org/specifications/), and
 - [Cross-compiled build (running on QEMU/HiFive)](Cross-compiled-Build)
 - [Simulator build (for developers running on x86)](Simulator-Build)
 - [Run tests](Run-Tests)
+- [Build RPM packages](build-rpm-packages)
 
 ## Project Management
 - [Project roadmap](Project-Roadmap)
