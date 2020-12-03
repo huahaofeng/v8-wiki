@@ -10,7 +10,7 @@ We need to follow the guidelines laid out in [Contributing to V8](https://v8.dev
 * [x] The full set of [tests](https://v8.dev/docs/test) have been run on all other required architectures
 * [x] Rebase to the latest tip of branch (in progress, ported as of Oct 14, working through remaining issues)
 * [x] Add all contributors to AUTHORS (see #302)
-* [ ] Upload to V8's [code review tool](https://v8.dev/docs/contribute#upload-to-v8%E2%80%99s-codereview-tool)
+* [x] Upload to V8's [code review tool](https://v8.dev/docs/contribute#upload-to-v8%E2%80%99s-codereview-tool)
 
 ## Related issues
 
@@ -35,6 +35,13 @@ We need to follow the guidelines laid out in [Contributing to V8](https://v8.dev
 ## Information
 
 The significant change since the last rebase that caused the many bugs that showed up from this rebase effort were caused by changes to the standard frame, specifically, adding the argument count to the frame, and reversing the order of the arguments / receiver.
+
+Our changes have now been pushed upstream for review - https://chromium-review.googlesource.com/c/v8/v8/+/2571344
+
+Locally, we will now have two branches:
+* riscv64 - our main branch
+* upstream - same as riscv64 but with some files removed that should not go upstream (e.g. .github/*)
+  - Before pushing, we should always remove those files (see [0da295d8](https://github.com/v8-riscv/v8/commit/0da295d803fe3c6da69b4637d37d0df04f513d51))
 
 ## Upstream Issues
 * [Issue 10991: Landing RISC-V in the V8 tree](https://bugs.chromium.org/p/v8/issues/detail?id=10991)
