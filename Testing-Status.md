@@ -1,3 +1,4 @@
+## NOTE: current riscv64 branch is under rebasing & upstreaming. I'll update the page after all compilation passes.
 
 This page lists the latest test results for different builds. The statistics are presented in the following format
 - Test stats are listed as +passed/-failed (e.g., `+1000/-2`)
