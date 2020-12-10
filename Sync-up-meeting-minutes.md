@@ -1,3 +1,17 @@
+## Date: 12/09/2020
+
+### Agenda
+
+- Announcement
+- V8 re-base update and outstanding issues (Brice)
+- RISC-V community news (Wei)
+- Follow-up from the last meeting
+- Technical presentation: register allocator study (Qiuji)
+- Open discussions
+
+### Action items
+- Setup GitHub Actions to add release builds - @Brice
+- Give Qiuji code review permission - @Brice
 
 ## Date: 11/11/2020
 
