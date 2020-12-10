@@ -4,7 +4,6 @@ The V8 project uses Google's [`depot_tools`](https://commondatastorage.googleapi
 - [Checkout V8 Source from Google](#checkout-v8-source-from-google)
 - [Checkout the RISC-V Branch](#checkout-the-risc-v-branch)
 - [Retrieve the matching dependencies](#retrieve-the-matching-dependencies)
-- [Patch the Chromium Build Toolchain](#patch-the-chromium-build-toolchain)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
