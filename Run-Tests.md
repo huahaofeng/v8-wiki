@@ -1,9 +1,9 @@
-The v8 project has an extensive suite of tests cases. This repositories automated testing currently runs the following suites:
+The v8 project has an extensive suite of tests cases. This repositories automated testing runs all of the standard test suites:
 * cctest
 * unittests
 * wasm-api-tests
-* wasm-js _(temporarily removed)_
-* wasm-spec-tests _(temporarily removed)_
+* wasm-js
+* wasm-spec-tests
 * mjsunit
 * intl
 * message
@@ -12,25 +12,27 @@ The v8 project has an extensive suite of tests cases. This repositories automate
 * mkgrokdump
 
 **The official set of tests which must be verified before opening a pull request should be run using the script:**
-```
-$V8_ROOT/v8$ bash ./v8-riscv-tools/test-riscv.sh
-```
 
-Run all of the tests using the following command. The directory specified in this command, `out/riscv64.sim`, should match the directory (specified when you built) of the configuration you would like to test.
-
+For the debug build:
 ```bash
-cd $V8_ROOT/v8
-tools/run-tests.py --outdir=out/riscv64.sim
+tools/dev/gm.py riscv64.debug.checkall
 ```
+
+For the release build:
+```bash
+tools/dev/gm.py riscv64.release.checkall
+```
+
+Additional flags, such as `--progress=verbose` may be useful.
 
 Individual suites can be run as shown below:
 
 ```bash
-tools/run-tests.py --outdir=out/riscv64.sim cctest
+tools/run-tests.py --outdir=out/riscv64.debug cctest
 ```
 
 When a test fails, it should print the command used to run that one individual test. For example, to run a single cctest:
 ```bash
-cd out/riscv64.sim
+cd out/riscv64.debug
 ./cctest test-macro-assembler-riscv64/Ror
 ```
