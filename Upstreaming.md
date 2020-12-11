@@ -41,7 +41,7 @@ Our changes have now been pushed upstream for review - https://chromium-review.g
 Locally, we will now have two branches:
 * [riscv64](https://github.com/v8-riscv/v8/tree/riscv64) - our main branch
 * [upstream](https://github.com/v8-riscv/v8/tree/upstream) - same as riscv64 but with some files removed that should not go upstream (e.g. .github/*)
-  - Before pushing, we should always remove those files (see [0da295d8](https://github.com/v8-riscv/v8/commit/0da295d803fe3c6da69b4637d37d0df04f513d51))
+  - Before pushing, we should always remove those files (see [5f65c851](https://github.com/v8-riscv/v8/commit/5f65c8515add6f202f55cdd1397e37e70b726a89))
 
 ## Upstream Issues
 * [Issue 10991: Landing RISC-V in the V8 tree](https://bugs.chromium.org/p/v8/issues/detail?id=10991)
