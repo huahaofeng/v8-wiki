@@ -1,3 +1,42 @@
+## Date: 12/23/2020
+
+### Agenda
+
+- Announcements
+- Community updates
+- Upstreaming updates
+- Action item followups
+- Review open PRs and determine next actions
+
+### Minutes
+- We will start rotating hosts for the meeting between PLCT, RIOS, Peng, and Futurewei
+  - PLCT lab will host the next one
+- Updates from Wei about RISC-V International meetings
+  - Code speed group is approved
+  - Performance tracking task group will define scripts to run benchmarks and post results to a website
+  - Plan to build Java and JS speed task groups
+- Yahan shared a roadmap for adding the V extension support to V8 (slide)
+  - Defined 2 phases: prepare and implement
+  - Discussed timing and testing of this work
+  - Probably a subset of the V extension will be sufficient to support the WebAssembly instructions, so be sure to focus on this first
+- Brice completed the release of the RPMs
+  - We may want to trigger releases for specific tags in addition to the LATEST
+  - Perhaps use a special prefix
+- Derek announced that RIOS will hold a student led summit on Jan 20 where he will demonstrate V8 on a PicoRio
+  - He will pause work on the C extension until after this
+- Wei discussed setting goals for 2021
+  - Speed up V8 on RV64GC
+  - Support V extension, C extension, B extension
+  - Node.js
+  - Peng brought up real world usage, including browser, ML (tensorflow.js)
+- After upstreaming, we will need to update our workflow
+  - Will likely need to keep branches for unratified extensions in our repo, not upstream
+
+### Action Items
+- Review open issues and close or update outdated ones (all)
+- Review open PRs and rebase or address open comments (Nekhlyudov, Yahan, Derek, Liqiang)
+- Provide some input to Wei about goals for 2021 (Peng, Reza, Brice)
+
 ## Date: 12/09/2020
 
 ### Agenda
