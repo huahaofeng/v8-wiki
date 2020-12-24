@@ -15,7 +15,7 @@
   - Code speed group is approved
   - Performance tracking task group will define scripts to run benchmarks and post results to a website
   - Plan to build Java and JS speed task groups
-- Yahan shared a roadmap for adding the V extension support to V8 (slides)[https://github.com/v8-riscv/v8/wiki/media/add_rvv.pdf]
+- Yahan shared a roadmap for adding the V extension support to V8 [slides](https://github.com/v8-riscv/v8/wiki/media/add_rvv.pdf)
   - Defined 2 phases: prepare and implement
   - Discussed timing and testing of this work
   - Probably a subset of the V extension will be sufficient to support the WebAssembly instructions, so be sure to focus on this first
