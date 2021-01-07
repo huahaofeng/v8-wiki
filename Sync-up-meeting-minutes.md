@@ -1,3 +1,49 @@
+## Date: 1/7/2021
+
+### Agenda
+
+- Announcements
+- Community updates
+- Upstreaming updates
+- Action item follow-ups
+- Discussion about the Wishlist 2021 for V8 for RISC-V project
+- Present recent develop progress status if any(RVV-Wasm support, Performance analyze vs ARM64 etc.)
+
+### Minutes
+- Upstreaming issues:
+  - need to separate RV32 modifies from the current RV64 modifies(apply to Georg Neis’s comments)
+
+- Updates from Wei about RVI meetings:
+  - PLCT will set up the Performance Tracking System(PTS) for the Code speed group. V8 will be the first one put to the target software.
+
+- Action items follow-ups:
+  - issue370 need to be checked with OS guys to see how to flush icache for JIT.
+  - issue 372/373/375/376/378 need to be clarified(low priority)
+  - pr309 need to be closed. pr379 need to be reviewed
+
+- Wishilist for 2021 is discussed and priority confirmed: 
+  - upstream(1st)
+  - node.js support(2nd)
+  - wasm and JS speedup(3rd)
+  - ISA extension support(4th)
+
+- Yahan introduced progressing for Wasm-RVV. He adds new register type declaration for the non-overlayed vector registers.
+- Qiuji reported some result for performance evaluation of V8-RISCV. The result is comparing to ARM64. 
+
+### Action Items
+- upstreaming: apply to Georg Neis’s comments
+
+- clean up github issues and prs:
+  - issue370(@qiuji)
+  - pr309(@taoliqiang)
+  - pr379(@luyahan)
+  - issue 372/373/375/376/378(@luyahan & @qiuji)
+  - issue258 (give a investigate report to it @qiuji & @taoliqiang)
+
+- Setup PTS for V8 (@ww)
+- Re-start c-ext support work?(@Derek Tu) 
+
+
 ## Date: 12/23/2020
 
 ### Agenda
