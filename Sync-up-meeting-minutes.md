@@ -21,14 +21,14 @@
   - issue 372/373/375/376/378 need to be clarified(low priority)
   - pr309 need to be closed. pr379 need to be reviewed
 
-- Wishilist for 2021 is discussed and priority confirmed: 
+- Wishilist for 2021 is discussed and priority confirmed:
   - upstream(1st)
   - node.js support(2nd)
   - wasm and JS speedup(3rd)
   - ISA extension support(4th)
 
 - Yahan introduced progressing for Wasm-RVV. He adds new register type declaration for the non-overlayed vector registers.
-- Qiuji reported some result for performance evaluation of V8-RISCV. The result is comparing to ARM64. 
+- Qiuji reported some result for performance evaluation of V8-RISCV. The result is comparing to ARM64.[slides](https://github.com/v8-riscv/v8/wiki/media/Register-Allocator-in-V8.pdf) 
 
 ### Action Items
 - upstreaming: apply to Georg Neis’s comments
@@ -41,7 +41,7 @@
   - issue258 (give a investigate report to it @qiuji & @taoliqiang)
 
 - Setup PTS for V8 (@ww)
-- Re-start c-ext support work?(@Derek Tu) 
+- Re-start c-ext support work?(@Derek Tu)
 
 
 ## Date: 12/23/2020
