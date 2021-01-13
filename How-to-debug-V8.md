@@ -194,21 +194,22 @@ console.log(res);
 
 **Stop point**
 
-Let's insert a stop point before instruction `fmv.d.x` in `macro-assembler-riscv64.cc:2183`
+Let's insert a stop point before instruction `fmv.d.x` in `macro-assembler-riscv64.cc:LoadFPRImmediate`
 
 ```
-void TurboAssembler::Move(FPURegister dst, uint64_t src) {
+void TurboAssembler::LoadFPRImmediate(FPURegister dst, uint64_t src) {
   // Handle special values first.
   if (src == bit_cast<uint64_t>(0.0) && has_double_zero_reg_set_) {
-    Move_d(dst, kDoubleRegZero);
+    if (dst != kDoubleRegZero) fmv_d(dst, kDoubleRegZero);
   } else if (src == bit_cast<uint64_t>(-0.0) && has_double_zero_reg_set_) {
     Neg_d(dst, kDoubleRegZero);
   } else {
     if (dst == kDoubleRegZero) {
       DCHECK(src == bit_cast<uint64_t>(0.0));
-      stop(127);  //Here it is            <------------------
+      stop(127);      // Here it is            <------------------
       fmv_d_x(dst, zero_reg);
       has_double_zero_reg_set_ = true;
+      has_single_zero_reg_set_ = false;
     } else {
       UseScratchRegisterScope temps(this);
       Register scratch = temps.Acquire();
@@ -256,18 +257,19 @@ sim> c
 Insert a watch point(0 <= code <= kMaxWatchpointCode) in the same place as the previous example.
 
 ```
-void TurboAssembler::Move(FPURegister dst, uint64_t src) {
+void TurboAssembler::LoadFPRImmediate(FPURegister dst, uint64_t src) {
   // Handle special values first.
   if (src == bit_cast<uint64_t>(0.0) && has_double_zero_reg_set_) {
-    Move_d(dst, kDoubleRegZero);
+    if (dst != kDoubleRegZero) fmv_d(dst, kDoubleRegZero);
   } else if (src == bit_cast<uint64_t>(-0.0) && has_double_zero_reg_set_) {
     Neg_d(dst, kDoubleRegZero);
   } else {
     if (dst == kDoubleRegZero) {
       DCHECK(src == bit_cast<uint64_t>(0.0));
-      break_(31, false);   //Here it is            <------------------
+      break_(31, false);     // Here it is            <------------------
       fmv_d_x(dst, zero_reg);
       has_double_zero_reg_set_ = true;
+      has_single_zero_reg_set_ = false;
     } else {
       UseScratchRegisterScope temps(this);
       Register scratch = temps.Acquire();
