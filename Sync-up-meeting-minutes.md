@@ -1,3 +1,40 @@
+## Date: 1/20/2021
+
+### Agenda
+
+- Announcements
+- Community updates
+- Upstreaming updates
+- Action item follow-ups
+- Open PR Discussions
+- Presentations for any recent/planned developments
+- Miscellaneous 
+
+### Minutes
+- Community Updates:
+  - There will be a RISC-V retreat on 1/27/2021 and 1/28/2021 Beijing time. Derek and Chao will showcase running V8 on PicoRio hardware.
+
+- Upstreaming Updates:
+  - Current rebase has some build failures.
+  - The planned current PRs that will be pushed in to master will be [#379](https://github.com/v8-riscv/v8/pull/379), [#384](https://github.com/v8-riscv/v8/pull/384), [#393](https://github.com/v8-riscv/v8/pull/393).
+  - Let Brice know if there are any PRs you would like to be added.
+
+- Updates from Wei about RVI meetings:
+  - There are plans for a performance tracking system on the compiler side.
+  - There will be another bi-weekly meeting 1/21/2021 afternoon Beijing time. Wei will update us on what he learns there.
+  - J-Extension group work is currently focusing more on security.
+
+- Miscellaneous
+  - In future meetings we will be moving presentations to the start.
+  - Wei would like to test using Qemu's User Mode for increased regression testing speeds.
+
+### Action Items
+- upstreaming: fix build issue and push in PRs.
+- Setup PTS for V8 (@ww)
+- Test Qemu's User Mode (@ww)
+- Continue c-ext support work(@Derek Tu)
+
+
 ## Date: 1/7/2021
 
 ### Agenda
