@@ -29,6 +29,9 @@ sudo apt install gawk texinfo zlib1g-dev
 ```
 
 ### Build Toolchain
+
+Follow the steps below to install the RISC-V toolchain. There is nothing modified in the standard toolchain, so if you already have this installed, you can skip this step.
+
 ```
 $ git clone https://github.com/riscv/riscv-gnu-toolchain
 $ cd riscv-gnu-toolchain
