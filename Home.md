@@ -41,6 +41,6 @@ RISC-V ISA specification is found [here](https://riscv.org/specifications/), and
    | Time | every other Wednesdays 5pm PT (Thursdays 9am Beijing Time) |
    | Meeting ID| 876 4151 0603 |
    | Passcode | 714793 |
-   | Meeting agenda | [Meeting agenda (01/21)](Developer-sync-up-meeting-agenda) |
+   | Meeting agenda | [Meeting agenda (02/17)](Developer-sync-up-meeting-agenda) |
    | Last meeting minutes | [Meeting minutes (01/21)](Sync-up-meeting-minutes)|
 - [Content sharing](Content-sharing)
