@@ -1,8 +1,6 @@
-Date: 12/23/2020 5pm PT
+Date: 2/17/2020 5pm PT
 
 **Agenda**
 - Announcements
 - Community updates
-- Upstreaming updates
-- Action item followups
-- Review open PRs and determine next actions
+- Discuss workflow after upstreaming (#442)
