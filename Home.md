@@ -18,7 +18,7 @@ RISC-V ISA specification is found [here](https://riscv.org/specifications/), and
 - [Project roadmap](Project-Roadmap)
 - [Testing status](Testing-Status)
 - [Work groups](Work-groups)
-- [Workflow](Workflow)
+- [[Upstream Workflow]]
 
 ## For Developers
 - [Setup VSCode](VSCode-Setup)
