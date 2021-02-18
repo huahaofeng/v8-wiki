@@ -1,3 +1,55 @@
+## Date: 2/17/2021
+
+### Agenda
+
+- Announcements
+- Community updates
+- Discuss workflow after upstreaming (#442)
+
+### Minutes
+
+- Announcements
+  - The Chromium team has [released SparkPlug](https://bugs.chromium.org/p/v8/issues/detail?id=11420):
+    > Sparkplug is a new baseline, non-optimising second-tier compiler, designed to fit in the compiler trade-off space between Ignition and TurboProp/TurboFan.
+- Community updates
+  - Chairs for all RISC-V task groups are in a renominating process
+  - RISC-V is holding several Forums in April and May - [Events](https://riscv.org/events/category/riscv-events/)
+  - RISC-V has some time slot at [ISC](https://www.isc-hpc.com)
+  - Software has two new TGs
+    - Performance modeling tools
+    - Performance profiling and monitoring tools
+  - RISC-V is pushing extension/ISA groups to ensure that there are no encumbered (patents, copyrights) items in their proposals
+  - Brice is working with Sanhong from Alibaba on a charter for the Managed Runtimes group
+    - Will share with the team for input (on Slack)
+  - It seems progress on JDK upstreaming is very slow
+- Upstreaming status
+  - Yahan and Brice now have access to start trybots for our Gerritt reviews
+    ```
+    # start default trybots
+    git cl try
+    # start RISC-V trybots
+    git cl try -B luci.v8.try -b v8_linux64_riscv64_rel_ng
+    ```
+  - Brice requested port committer status for some of us, so that we may apply the “Code-Review +1” label (equivalent of a LGTM)
+    - Waiting to hear back on that
+    - We will need to wait for a full committer to approve changes for now
+- Discuss workflow after upstreaming (#442)
+  - We will plan to make changes in our GitHub repo (this one), do our own code reviews here, then open upstream pull requests on Gerritt
+  - If others submit changes upstream, we should review them, and also encourage the developers to join our group
+  - How should we keep up-to-date with upstream?
+    - Mirror upstream into master branch automatically
+    - Run our regression tests on master to quickly identify problems caused by upstream changes
+    - Rebase riscv64 branch regularly on to master
+  - Brice will create a wiki page to describe the process of how we should stay in sync with upstream and the process that developers should follow to start new work
+  - Qiuji will triage the issues from upstream and assign them to the team as needed
+- Derek suggested pushing the C extension changes without jumps as a separate pull request
+  - Agreement from the group
+
+### Action Items
+
+- [ ] Create wiki page to describe new process for working with upstream - Brice
+- [ ] Open merge request for C extension (without jumps) - Derek
+
 ## Date: 1/20/2021
 
 ### Agenda
