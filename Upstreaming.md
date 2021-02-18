@@ -1,3 +1,5 @@
+**_Upstreaming is complete. Below is left for reference_**
+
 Our work on porting V8 to RISC-V is intended to be upstreamed to the [core project](https://github.com/v8/v8). This page outlines the progress in making that happen.
 
 We need to follow the guidelines laid out in [Contributing to V8](https://v8.dev/docs/contribute).
