@@ -9,7 +9,7 @@
   - [Monthly milestones](Monthly-milestones)
   - [Testing status](Testing-Status)
   - [Work groups](Work-groups)
-  - [Upstreaming](Upstreaming)
+  - [[Upstream Workflow]]
 - For Developers
   - [Setup VSCode](VSCode-Setup)
   - [How to contribute](Contributing)
