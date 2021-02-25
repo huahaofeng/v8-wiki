@@ -1,9 +1,9 @@
 # V8-RISCV
 **Welcome to the v8-riscv wiki**
 
-This is an on-going project to develop the RISC-V backend for the V8 JavaScript Engine. After a few months of intensive development, we have built a sufficient MVP (Minimal Viable Product) for the RISC-V64 port, which currently passes over 94% (15,000+) standard V8 test cases using v8-riscv64 simulated build. We have also established a sustainable porting methodology and development best practices that we feel confident invite a broader community participation. We welcome you joining our development effort. Plenty of supports are still needed for a complete and high-performing V8 on RISC-V.
+This is an on-going project to enhance the RISC-V backend for the V8 JavaScript Engine. The initial port has been upstreamed (https://chromium.googlesource.com/v8/v8.git/). The RISC-V backend is fully functional and is able to run the full test suites as well has common benchmarks, but it still needs improvements for improving performance and adding features. We have established a sustainable porting methodology and development best practices, such that we feel confident to invite broader community participation. We welcome you to join our development effort. Plenty of support is still needed for a complete and high-performing V8 on RISC-V.
 
-This repo will be the community home for some time before the code-base is upstream to the V8 community. For general V8 information, see [V8 Dev](https://v8.dev/). The rest of the wiki is specific to the RISC-V V8 backend.
+This repo will be the community home even though it is now available upstream. This provides us a shared space for developing larger changes here before pushing them upstream, as well as a stable branch that will always work for RISC-V, as upstream may still break the RISC-V port from time to time. For general V8 information, see [V8 Dev](https://v8.dev/). The rest of the wiki is specific to the RISC-V V8 backend.
 
 RISC-V ISA specification is found [here](https://riscv.org/specifications/), and RISC-V standard ABI can be found [here](https://github.com/riscv/riscv-elf-psabi-doc/).
 
