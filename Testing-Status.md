@@ -242,14 +242,11 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 `commit 4950b382671c20e1900d02164d705178960502da`
 
 ## Debug Build
-
-NOTE: last check 20201125, the riscv64 branch has not changed since 20201111.
-
-last update: 20201223 branch `riscv64` [fc127d87](fc127d87bc4aa87e9729442d5ead953d01eb9112)
+last update: 20201223 branch `upstream` [7314835361](7314835361037d24ed965b1e217229ecb2593c81)
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +7183 / -8 | [log](http://paste.ubuntu.com/p/ZxxFw7QkkD/) |
+| cctest | +4749/ -27 | [log](http://paste.ubuntu.com/p/ZxxFw7QkkD/) |
 | unittests | +3827 / -0 | [log](http://paste.ubuntu.com/p/mJ3t3p3kHj/) |
 | mjsunit | +5112 / -0 | [log](http://paste.ubuntu.com/p/jzn6mv5kqd/) |
 | wasm-spec-tests | +183 / -0 | [log](http://paste.ubuntu.com/p/Mgf35xgH9v/) |
