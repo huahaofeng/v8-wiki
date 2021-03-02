@@ -246,8 +246,8 @@ last update: 20201223 branch `upstream` [7314835361](7314835361037d24ed965b1e217
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
-| cctest | +4749/ -27 | [log](http://paste.ubuntu.com/p/ZxxFw7QkkD/) |
-| unittests | +3827 / -0 | [log](http://paste.ubuntu.com/p/mJ3t3p3kHj/) |
+| cctest | +4749/ -27 |  |
+| unittests | +3881/ -0 | |
 | mjsunit | +5112 / -0 | [log](http://paste.ubuntu.com/p/jzn6mv5kqd/) |
 | wasm-spec-tests | +183 / -0 | [log](http://paste.ubuntu.com/p/Mgf35xgH9v/) |
 | wasm-js | +57 / -0 | [log](http://paste.ubuntu.com/p/rVgZdQK47X/) |
