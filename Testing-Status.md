@@ -342,8 +342,8 @@ The following stats are obtained from CI test runs and can be reproduced as
 tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 ```
 
-| Test Suite | Test Status (run-rate)| Notes |
-| - | - | - |
+| Test Suite | Test Status (run-rate)|
+| - | - |
 | cctest | +4769 / -0 |
 | unittests | +3876 / -0 |
 | mjsunit | +5218 / -0 |
@@ -358,23 +358,22 @@ tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 
 ## Release build w/ the stress options
 
-last update: 20201223 branch `riscv64` [fc127d87](fc127d87bc4aa87e9729442d5ead953d01eb9112)
+last update: 20210302 branch `upstream` [7314835361](7314835361037d24ed965b1e217229ecb2593c81)
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
 tools/run-tests.py --variants=stress --outdir=<your-simulated-release-build-dir> <test-suites>
 ```
-
-| Test Suite | Tests passed (run-rate)| Notes |
-| - | - | - |
-| cctest | +7135 / -0 | [log](http://paste.ubuntu.com/p/HXVfrBRj8K/) |
-| unittests | +0 / -0 | [log](http://paste.ubuntu.com/p/QT8V2mTgBh/) |
-| mjsunit | +5087 / -0 | [log](http://paste.ubuntu.com/p/W9yZ9Y6mfF/) |
-| wasm-spec-tests | +183 / -0 | [log](http://paste.ubuntu.com/p/nKrtWyFhTd/) |
-| wasm-js | +57 / -0 | [log](http://paste.ubuntu.com/p/kr4MSd37cj/) |
-| wasm-api-tests | +0 / -0 | [log](http://paste.ubuntu.com/p/sV6FfykwX7/) |
-| intl | +228 / -0 | [log](http://paste.ubuntu.com/p/jjtKHrQCQV/) |
-| message | +310 / -0 | [log](http://paste.ubuntu.com/p/SkwKmHHmKN/) |
-| inspector | +0 / -0 | [log](http://paste.ubuntu.com/p/gNyHSZHQZ2/) |
-| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/4q9mKT3YjN/) |
-| debugger | +316 / -0 | [log](http://paste.ubuntu.com/p/qcywMJNtNb/) |
+| Test Suite | Tests passed (run-rate)|
+| - | - |
+| cctest | +4743 / -0 |
+| unittests | +0 / -0 |
+| mjsunit | +5181 / -0 |
+| wasm-spec-tests | +208 / -0 |
+| wasm-js | +57 / -0 |
+| wasm-api-tests | +0 / -0 |
+| intl | +239 / -0 |
+| message | +312 / -0 |
+| inspector | +0 / -0 |
+| mkgrokdump | +0 / -0 |
+| debugger | +315 / -0 |
