@@ -242,7 +242,7 @@ Running on QEMU 5.0.0 with fedora developer 20200108.
 `commit 4950b382671c20e1900d02164d705178960502da`
 
 ## Debug Build
-last update: 20201223 branch `upstream` [7314835361](7314835361037d24ed965b1e217229ecb2593c81)
+last update: 20210302 branch `upstream` [7314835361](7314835361037d24ed965b1e217229ecb2593c81)
 
 | Test Suite | Tests passed (run-rate)| Notes |
 | - | - | - |
@@ -334,7 +334,7 @@ tools/run-tests.py --variants=stress --outdir=<your-simulated-debug-build-dir> <
 
 ## Release build testing w/ default options
 
-last update: 20201223 branch `riscv64` [fc127d87](fc127d87bc4aa87e9729442d5ead953d01eb9112)
+last update: 20210302 branch `upstream` [7314835361](7314835361037d24ed965b1e217229ecb2593c81)
 
 The following stats are obtained from CI test runs and can be reproduced as
 
@@ -344,17 +344,17 @@ tools/run-tests.py --outdir=<your-release-build-dir> <test-suites>
 
 | Test Suite | Test Status (run-rate)| Notes |
 | - | - | - |
-| cctest | +7161 / -0 | [log](http://paste.ubuntu.com/p/Kt7K9YZ5d3/) |
-| unittests | +3822 / -0 | [log](http://paste.ubuntu.com/p/rW9pH9Gvys/) |
-| mjsunit | +5125 / -0 | [log](http://paste.ubuntu.com/p/mbCxPKq8g3/) |
-| wasm-spec-tests | +183 / -0 | [log](http://paste.ubuntu.com/p/YyqQgqRFKZ/) |
-| wasm-js | +57 / -0 | [log](http://paste.ubuntu.com/p/gBttvs4mV7/) |
-| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/dPnzhvHrkd/) |
-| intl | +228 / -0 | [log](http://paste.ubuntu.com/p/ZwDyXtZmvB/) |
-| message | +310 / -0 | [log](http://paste.ubuntu.com/p/PvzSpFFCqy/) |
-| inspector | +287 / -0 | [log](http://paste.ubuntu.com/p/7JD3qd3FFj/) |
-| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/5f6tXPPsrk/) |
-| debugger | +317 / -0 | [log](http://paste.ubuntu.com/p/cTht6Z4D6R/) |
+| cctest | +4769 / -0 |
+| unittests | +3876 / -0 |
+| mjsunit | +5218 / -0 |
+| wasm-spec-tests | +208 / -0 |
+| wasm-js | +57 / -0 |
+| wasm-api-tests | +17 / -0 |
+| intl | +228 / -0 |
+| message | +312 / -0 |
+| inspector | +294 / -0 |
+| mkgrokdump | +0 / -0 |
+| debugger | +316 / -0 |
 
 ## Release build w/ the stress options
 
