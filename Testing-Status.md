@@ -282,26 +282,26 @@ The simulated build is built w/ x86 as host architecture and riscv64 as target a
 
 ## Debug build w/ default options
 
-last update: 20201223 branch `riscv64` [fc127d87](fc127d87bc4aa87e9729442d5ead953d01eb9112)
+last update: 20210302 branch `upstream` [7314835361](7314835361037d24ed965b1e217229ecb2593c81)
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
 tools/run-tests.py --outdir=<your-simulated-build-dir> <test-suites>
 ```
 
-| Test Suite | Test Status (run-rate)| Notes |
-| - | - | - |
-| cctest | +7174 / -0 | [log](http://paste.ubuntu.com/p/drRznsQn3c/) |
-| unittests | +3830 / -0 | [log](http://paste.ubuntu.com/p/QT62zhGgfN/) |
-| mjsunit | +5110 / -0 | [log](http://paste.ubuntu.com/p/XwsCZm8NFN/) |
-| wasm-spec-tests | +183 / -0 | [log](http://paste.ubuntu.com/p/wP54CkNQ5d/) |
-| wasm-js | +57 / -0 | [log](http://paste.ubuntu.com/p/3tMG3p2prf/) |
-| wasm-api-tests | +17 / -0 | [log](http://paste.ubuntu.com/p/nfw5y6YmRt/) |
-| intl | +228 / -0 | [log](http://paste.ubuntu.com/p/4892qnV9Mn/) |
-| message | +310 / -0 | [log](http://paste.ubuntu.com/p/fyK8k7zxZZ/) |
-| inspector | +290 / -0 | [log](http://paste.ubuntu.com/p/4v9VhWFnB2/) |
-| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/8jDV8GSFXD/) |
-| debugger | +316 / -0 | [log](http://paste.ubuntu.com/p/C5HySHFTCC/) |
+| Test Suite | Test Status (run-rate)|
+| - | - |
+| cctest | +4746 / -21 |
+| unittests | +3884 / -0 |
+| mjsunit | +5197 / -1 |
+| wasm-spec-tests | +208 / -0 |
+| wasm-js | +57 / -0 |
+| wasm-api-tests | +17 / -0 |
+| intl | +293 / -0 |
+| message | +312 / -0 |
+| inspector | +264 / -33 |
+| mkgrokdump | +0 / -0 |
+| debugger | +307 / -9 |
 
 To run one or more test suites listed below, specify your own simulated build directory, e.g.,
 
@@ -311,26 +311,26 @@ tools/run-tests.py --outdir=out.gn/riscv.gcc.simulated.debug/ <test suite>
 
 ## Debug build w/ stress options
 
-last update: 20201223 branch `riscv64` [fc127d87](fc127d87bc4aa87e9729442d5ead953d01eb9112)
+last update: 20210302 branch `upstream` [7314835361](7314835361037d24ed965b1e217229ecb2593c81)
 
 The following stats are obtained from CI test runs and can be reproduced as
 ```
 tools/run-tests.py --variants=stress --outdir=<your-simulated-debug-build-dir> <test-suites>
 ```
 
-| Test Suite | Test Status (run-rate)| Notes |
-| - | - | - |
-| cctest | +7148 / -0 | [log](http://paste.ubuntu.com/p/TggGhx7nPF/) |
-| unittests | +0 / -0 | [log](http://paste.ubuntu.com/p/Q72nHYYHGr/) |
-| mjsunit | +5075 / -0 | [log](http://paste.ubuntu.com/p/47KPqQSWsk/) |
-| wasm-spec-tests | +183 / -0 | [log](http://paste.ubuntu.com/p/fNgHBytt4f/) |
-| wasm-js | +57 / -0 | [log](http://paste.ubuntu.com/p/jnVH7dd3S8/) |
-| wasm-api-tests | +0 / -0 | [log](http://paste.ubuntu.com/p/Rt4rCXVK5h/) |
-| intl | +228 / -0 | [log](http://paste.ubuntu.com/p/jv6xTwhmBx/) |
-| message | +310 / -0 | [log](http://paste.ubuntu.com/p/Pt5BnBsdc9/) |
-| inspector | +0 / -0 | [log](http://paste.ubuntu.com/p/vNGDBhHQrc/) |
-| mkgrokdump | +0 / -0 | [log](http://paste.ubuntu.com/p/KZTzhysFzJ/) |
-| debugger | +315 / -0 | [log](http://paste.ubuntu.com/p/JZxryWXdWS/) |
+| Test Suite | Test Status (run-rate)|
+| - | - |
+| cctest | +4720 / -21 |
+| unittests | +0 / -0 |
+| mjsunit | +0 / -0 |
+| wasm-spec-tests | +208 / -0 |
+| wasm-js | +57 / -0 |
+| wasm-api-tests | +0 / -0 |
+| intl | +228 / -0 |
+| message | +310 / -0 |
+| inspector | +0 / -0 |
+| mkgrokdump | +0 / -0 |
+| debugger | +307 / -8 |
 
 ## Release build testing w/ default options
 
