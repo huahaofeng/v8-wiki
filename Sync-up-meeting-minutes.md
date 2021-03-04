@@ -1,3 +1,31 @@
+## Date: 3/3/2021
+
+### Agenda
+- Announcements
+- Community updates
+- Upstreaming updates
+- Action item follow-ups
+- Open PR Discussion
+- Presentations for any recent/planned developments
+
+### Minutes
+- Announcements
+  - The initial support of SparkPlug for RISC-V is [done] (https://github.com/v8-riscv/v8/tree/riscv-sparkplug-dev)
+  - tensorflow.js can run a the simple [demo] (https://www.tensorflow.org/js/tutorials/setup) on the [RISC-V node.js] (https://github.com/v8-riscv/node/)
+
+- Upstreaming
+  - still waiting to get a proper priviledge to maintain and review+ the RISC-V arch files
+
+- Other updating
+  - [Test status] (https://github.com/v8-riscv/v8/wiki/Testing-Status) in wiki page is updated. 
+  - The github issue and prs had been reviewed and cleaned up
+  - C-ext support can run benchmark
+
+### Action Items
+- check and fix issue #53, #166, #297, #403, #414
+- test result for SparkPlug
+- moving on of C extension merge and evaluate
+
 ## Date: 2/17/2021
 
 ### Agenda
