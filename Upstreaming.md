@@ -19,19 +19,19 @@ We need to follow the guidelines laid out in [Contributing to V8](https://v8.dev
 ### Outstanding issues
 
 ### Resolved issues
-* [#287](https://github.com/v8-riscv/v8/issues/287): Check failed: expect == mt.Call() (2 vs. 0)
+* [#287](https://github.com/riscv/v8/issues/287): Check failed: expect == mt.Call() (2 vs. 0)
   - Fixed
-* [#288](https://github.com/v8-riscv/v8/issues/288): Fatal error in ../../src/objects/tagged-impl.h, line 92
+* [#288](https://github.com/riscv/v8/issues/288): Fatal error in ../../src/objects/tagged-impl.h, line 92
   - Fails on MIPS also; skipped for now
-* [#289](https://github.com/v8-riscv/v8/issues/289): RuntimeError: unreachable
+* [#289](https://github.com/riscv/v8/issues/289): RuntimeError: unreachable
   - Fixed
-* [#290](https://github.com/v8-riscv/v8/issues/290): Seg fault
+* [#290](https://github.com/riscv/v8/issues/290): Seg fault
   - Fails on MIPS also; skipped for now
-* [#302](https://github.com/v8-riscv/v8/issues/302): AUTHORS file
+* [#302](https://github.com/riscv/v8/issues/302): AUTHORS file
   - Fixed
-* [#299](https://github.com/v8-riscv/v8/issues/299): cfenv is unapproved
+* [#299](https://github.com/riscv/v8/issues/299): cfenv is unapproved
   - Fixed
-* [#300](https://github.com/v8-riscv/v8/issues/300): Spike license
+* [#300](https://github.com/riscv/v8/issues/300): Spike license
   - Fixed
 
 ## Information
@@ -41,9 +41,9 @@ The significant change since the last rebase that caused the many bugs that show
 Our changes have now been pushed upstream for review - https://chromium-review.googlesource.com/c/v8/v8/+/2571344
 
 Locally, we will now have two branches:
-* [riscv64](https://github.com/v8-riscv/v8/tree/riscv64) - our main branch
-* [upstream](https://github.com/v8-riscv/v8/tree/upstream) - same as riscv64 but with some files removed that should not go upstream (e.g. .github/*)
-  - Before pushing, we should always remove those files (see [5f65c851](https://github.com/v8-riscv/v8/commit/5f65c8515add6f202f55cdd1397e37e70b726a89))
+* [riscv64](https://github.com/riscv/v8/tree/riscv64) - our main branch
+* [upstream](https://github.com/riscv/v8/tree/upstream) - same as riscv64 but with some files removed that should not go upstream (e.g. .github/*)
+  - Before pushing, we should always remove those files (see [5f65c851](https://github.com/riscv/v8/commit/5f65c8515add6f202f55cdd1397e37e70b726a89))
   - Preferred command sequence:
     ```bash
     git checkout riscv64

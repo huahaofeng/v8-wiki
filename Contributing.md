@@ -2,7 +2,7 @@ As we hope to eventually get this code upstreamed, we will generally follow all 
 
 ## Issues
 
-In general, all changes should be based on an [issue](https://github.com/v8-riscv/v8/issues). If you would like to work on an existing issue, first check if anyone is already assigned and if so, discuss with that person before beginning work. If you would like to work on a new problem or enhancement, first create an issue for it and discuss with the community. The best way to do this will be to [join us in Slack](https://forms.office.com/Pages/ResponsePage.aspx?id=8o_uD7KjGECcdTodVZH-3OiciJKG_BJHrqMNgnsFFqtUNlRUNEQ5QUgxNk0wVEVaTjJBTDNOMDNIQS4u).
+In general, all changes should be based on an [issue](https://github.com/riscv/v8/issues). If you would like to work on an existing issue, first check if anyone is already assigned and if so, discuss with that person before beginning work. If you would like to work on a new problem or enhancement, first create an issue for it and discuss with the community. The best way to do this will be to [join us in Slack](https://forms.office.com/Pages/ResponsePage.aspx?id=8o_uD7KjGECcdTodVZH-3OiciJKG_BJHrqMNgnsFFqtUNlRUNEQ5QUgxNk0wVEVaTjJBTDNOMDNIQS4u).
 
 When creating a new issue, please be descriptive and include all relevant details, enough that someone completely unfamiliar with the problem or proposal can understand. Be sure to label your issue with the appropriate category (bug, enhancement, documentation, etc.). If you plan to work on the issue yourself, feel free to self-assign, otherwise, you can leave it unassigned for someone else to pick up.
 
@@ -26,7 +26,7 @@ Our CI job will run tests as well. These tests must all pass in order for your p
 v8-riscv-tools/test-riscv.sh
 ```
 
-Please run this same suite of tests locally before opening your PR to avoid wasting any one's time.
+Please firstly get the v8-riscv-tools repo from https://github.com/v8-riscv/v8-riscv-tools.git, then run this same suite of tests locally before opening your PR to avoid wasting any one's time. 
 
 All pull requests must be reviewed and approved by at least one owner before being accepted. Please also review ["Using Git"](using-git) and ensure that your commit messages follow the guidelines laid out there.
 

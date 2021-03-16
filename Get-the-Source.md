@@ -42,9 +42,9 @@ Since the RISC-V port is not yet upstream, we need to pull it from this reposito
 
 ```bash
 cd $V8_ROOT/v8
-git remote add riscv https://github.com/v8-riscv/v8.git
+git remote add riscv https://github.com/riscv/v8.git
 # or alternatively using ssh
-git remote add riscv git@github.com:v8-riscv/v8.git
+git remote add riscv git@github.com:riscv/v8.git
 git fetch riscv
 git checkout riscv64
 ```

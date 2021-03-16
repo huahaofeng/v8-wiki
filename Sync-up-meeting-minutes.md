@@ -10,14 +10,14 @@
 
 ### Minutes
 - Announcements
-  - The initial support of SparkPlug for RISC-V is [done] (https://github.com/v8-riscv/v8/tree/riscv-sparkplug-dev)
-  - tensorflow.js can run a the simple [demo] (https://www.tensorflow.org/js/tutorials/setup) on the [RISC-V node.js] (https://github.com/v8-riscv/node/)
+  - The initial support of SparkPlug for RISC-V is [done] (https://github.com/riscv/v8/tree/riscv-sparkplug-dev)
+  - tensorflow.js can run a the simple [demo] (https://www.tensorflow.org/js/tutorials/setup) on the [RISC-V node.js] (https://github.com/riscv/node/)
 
 - Upstreaming
   - still waiting to get a proper priviledge to maintain and review+ the RISC-V arch files
 
 - Other updating
-  - [Test status] (https://github.com/v8-riscv/v8/wiki/Testing-Status) in wiki page is updated. 
+  - [Test status] (https://github.com/riscv/v8/wiki/Testing-Status) in wiki page is updated. 
   - The github issue and prs had been reviewed and cleaned up
   - C-ext support can run benchmark
 
@@ -96,7 +96,7 @@
 
 - Upstreaming Updates:
   - Current rebase has some build failures.
-  - The planned current PRs that will be pushed in to master will be [#379](https://github.com/v8-riscv/v8/pull/379), [#384](https://github.com/v8-riscv/v8/pull/384), [#393](https://github.com/v8-riscv/v8/pull/393).
+  - The planned current PRs that will be pushed in to master will be [#379](https://github.com/riscv/v8/pull/379), [#384](https://github.com/riscv/v8/pull/384), [#393](https://github.com/riscv/v8/pull/393).
   - Let Brice know if there are any PRs you would like to be added.
 
 - Updates from Wei about RVI meetings:
@@ -145,7 +145,7 @@
   - ISA extension support(4th)
 
 - Yahan introduced progressing for Wasm-RVV. He adds new register type declaration for the non-overlayed vector registers.
-- Qiuji reported some result for performance evaluation of V8-RISCV. The result is comparing to ARM64.[slides](https://github.com/v8-riscv/v8/wiki/media/Register-Allocator-in-V8.pdf) 
+- Qiuji reported some result for performance evaluation of V8-RISCV. The result is comparing to ARM64.[slides](https://github.com/riscv/v8/wiki/media/Register-Allocator-in-V8.pdf) 
 
 ### Action Items
 - upstreaming: apply to Georg Neis’s comments
@@ -178,7 +178,7 @@
   - Code speed group is approved
   - Performance tracking task group will define scripts to run benchmarks and post results to a website
   - Plan to build Java and JS speed task groups
-- Yahan shared a roadmap for adding the V extension support to V8 [slides](https://github.com/v8-riscv/v8/wiki/media/add_rvv.pdf)
+- Yahan shared a roadmap for adding the V extension support to V8 [slides](https://github.com/riscv/v8/wiki/media/add_rvv.pdf)
   - Defined 2 phases: prepare and implement
   - Discussed timing and testing of this work
   - Probably a subset of the V extension will be sufficient to support the WebAssembly instructions, so be sure to focus on this first
@@ -253,7 +253,7 @@
 - Give a presentation to compare the J-extension proposal and V8's compressed-pointer implementation (did not have time to cover this week, Peng)
 - Setup 3rd party  package distribution of our cross-compiled V8/Node binary (carried over from the last meeting, Wei)
 - Write up the next steps for the register allocation study for Liqiang & Derek (Peng)
-- Share today's slides to repo wiki (https://github.com/v8-riscv/v8/wiki/Content-sharing) (liqiang, reza, yahan)
+- Share today's slides to repo wiki (https://github.com/riscv/v8/wiki/Content-sharing) (liqiang, reza, yahan)
 - Present the lgorithm to extend V8 register allocator for C-extension instructions (liqiang, reza, derek) 
 
 ## Date: 10/14/2020 6pm PT
@@ -341,7 +341,7 @@
 ### Agenda
 - New attendee introduction & announcement
 - Follow-up from last meeting
-- Technical content: how to debug v8 (Brice) - [slides](https://github.com/v8-riscv/v8/wiki/media/Debugging.pptx)
+- Technical content: how to debug v8 (Brice) - [slides](https://github.com/riscv/v8/wiki/media/Debugging.pptx)
 - 09/04 milestone progress (latest testing status) (Peng et al)
 - Open discussion: optimizations (all)
 
@@ -364,7 +364,7 @@
 ### Agenda:
 - New attendee introduction
 - Follow-up from last meeting
-- [August milestones](https://github.com/v8-riscv/v8/wiki/Monthly-milestones) & project operation (Peng)
+- [August milestones](https://github.com/riscv/v8/wiki/Monthly-milestones) & project operation (Peng)
 - Cross-compiled and native build progress (Wei et al)
 - Work-group status update (all)
 

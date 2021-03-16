@@ -31,7 +31,7 @@ Future optimizations on C-extension instruction support can be handled in the ne
 ### Initial performance analysis
 
 The goal of this milestone is to figure out where optimization opportunities are. We will focus on:
-- Developing tools to identify inefficient code-gen (https://github.com/v8-riscv/v8/issues/291 and https://github.com/v8-riscv/v8/issues/195)
+- Developing tools to identify inefficient code-gen (https://github.com/riscv/v8/issues/291 and https://github.com/riscv/v8/issues/195)
 - A detailed analysis on the performance gaps identified
  
 ## Milestones (Due 10/09/2020)
@@ -62,9 +62,9 @@ This is the first milestone since the open-sourcing of v8-riscv.
 
 **Status: Done**. Qemu/HiFive success-rate is on-part w/ simulated build and all the additional failures are reported.
 
-The goal is to achieve a high success rate (95%+) on `cctest` when running v8-riscv in QEMU or HiFive board. Currently, v8-riscv simulated build achieves 94%+ success rate, but, for native/qemu runs, the success rate is much lower (see [HiFive testing status](https://github.com/v8-riscv/v8/wiki/Testing-Status#running-on-hifive-unleashed-board)). In particular, `cctest` only achieves 64% success rate on HiFive. We choose `cctest` success rate as the target because most bugs can be exposed by `cctest` and the test cases in `cctest` are much easier to debug than other test suites.
+The goal is to achieve a high success rate (95%+) on `cctest` when running v8-riscv in QEMU or HiFive board. Currently, v8-riscv simulated build achieves 94%+ success rate, but, for native/qemu runs, the success rate is much lower (see [HiFive testing status](https://github.com/riscv/v8/wiki/Testing-Status#running-on-hifive-unleashed-board)). In particular, `cctest` only achieves 64% success rate on HiFive. We choose `cctest` success rate as the target because most bugs can be exposed by `cctest` and the test cases in `cctest` are much easier to debug than other test suites.
 
-The milestone is the top priority for this month and is tracked on the project board [here](https://github.com/v8-riscv/v8/projects/1).
+The milestone is the top priority for this month and is tracked on the project board [here](https://github.com/riscv/v8/projects/1).
 
 ### Upstream preparation (milestone label: `upstream-prep (09/04/2020)` )
 
@@ -77,7 +77,7 @@ Our goal is to upstream to V8 in the next two months. This milestone consists of
 
 Item 1 is the main work. Items 2 and 3 are mostly done and not blockers.
 
-The milestone is tracked on the project board [here](https://github.com/v8-riscv/v8/projects/3).
+The milestone is tracked on the project board [here](https://github.com/riscv/v8/projects/3).
 
 ### Initial NodeJS bring-up (milestone label: `nodejs (09/04/2020)`)
 
@@ -90,4 +90,4 @@ Since NodeJS is one major application to show-case v8-riscv, we will kick-off th
  
 We will define a success-rate target for this milestone after running test cases. 
 
-The milestone is tracked on the project board [here](https://github.com/v8-riscv/v8/projects/4).
+The milestone is tracked on the project board [here](https://github.com/riscv/v8/projects/4).

@@ -555,6 +555,8 @@ DebugPrint: 0x717ba952c1: [JSSet]
 
 ## `countInstr.py` tool
 
+First, clone the v8-riscv-tools repo from https://github.com/v8-riscv/v8-riscv-tools.git.
+
 usage:
 ```
 python3 ./v8-riscv-tools/CountInstr.py path_to_riscv_d8 path_to_mips_d8  [args of d8]
