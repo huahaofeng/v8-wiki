@@ -1,3 +1,35 @@
+## Date: 3/17/2021
+
+### Agenda
+- Announcements
+- Community updates
+- Upstreaming updates
+- Action item follow-ups
+- Open PR Discussion
+- Presentations for any recent/planned developments
+
+### Minutes
+- Announcements
+  - Initial commits have been merged
+  - Sparkplug patch has been commited
+  - Work on node.js has been started and initial builds have passed
+  - v8 repo has been moved under riscv/v8
+
+- Community Updates
+  - Managed runtimes group (java specific) sent out call for chair and co-chair
+  - RISC-V foundation has setup a basic infrastructure for the specification and software
+  - There is talks about setting up a group for performance modeling and performance profiling tools
+
+- Upstreaming
+  - still waiting to get a proper privilege to thumbs up code. 
+
+### Action Items
+  - Changes to the CI in regardes to the master, riscv64, and riscv64-dev branches
+  - Addition of architecture flags for compilation
+
+### Other
+  - Working with RISC-V International to get internship positions for v8.
+
 ## Date: 3/3/2021
 
 ### Agenda
