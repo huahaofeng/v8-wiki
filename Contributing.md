@@ -30,6 +30,13 @@ Please firstly get the v8-riscv-tools repo from https://github.com/v8-riscv/v8-r
 
 All pull requests must be reviewed and approved by at least one owner before being accepted. Please also review ["Using Git"](using-git) and ensure that your commit messages follow the guidelines laid out there.
 
+In the case of irregular timeouts or other strange behavior from the CI server, authorized users may re-run the CI testing by adding a special slash-command as a comment to the PR:
+
+ - `/retest-precheck`: Re-run the pre-check
+ - `/retest-build`:    Re-run the build
+ - `/retest-run`:      Re-run the testsuite
+ - `/retest`:          Re-run the whole CI job (all of the above) 
+
 ## Contributing to the Documentation
 
 The wiki is editable by all team members. Others may open issues against documentation, in the same way you would do for issues with the code. It seems that GitHub does not support PRs for the wiki, but we welcome contributors to add your changes into an issue for the team to review.
