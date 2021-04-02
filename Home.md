@@ -16,6 +16,7 @@ RISC-V ISA specification is found [here](https://riscv.org/specifications/), and
 
 ## Project Management
 - [Project roadmap](Project-Roadmap)
+- [2021-Goals](2021-Goals)
 - [Testing status](Testing-Status)
 - [Work groups](Work-groups)
 - [[Upstream Workflow]]
