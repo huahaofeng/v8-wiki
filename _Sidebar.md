@@ -18,6 +18,6 @@
   - [Understand V8 backend architecture](Understand-V8-backend-architecture)
   - [How to add a new instruction](How-to-add-a-new-instruction)
 - Community operation
-  - [Join our Slack](https://forms.office.com/Pages/ResponsePage.aspx?id=8o_uD7KjGECcdTodVZH-3OiciJKG_BJHrqMNgnsFFqtUNlRUNEQ5QUgxNk0wVEVaTjJBTDNOMDNIQS4u)
+  - [Join our Slack](https://join.slack.com/t/v8-riscv/shared_invite/zt-fvnake5e-HWNJhlHIMYl_3YskPmEGyg)
   - Attend developer meetings
   - [Content sharing](Content-sharing)
