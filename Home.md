@@ -33,7 +33,7 @@ RISC-V ISA specification is found [here](https://riscv.org/specifications/), and
 
 ## Community operation
 
-- [Join our Slack](https://forms.office.com/Pages/ResponsePage.aspx?id=8o_uD7KjGECcdTodVZH-3OiciJKG_BJHrqMNgnsFFqtUNlRUNEQ5QUgxNk0wVEVaTjJBTDNOMDNIQS4u)
+- [Join our Slack](https://join.slack.com/t/v8-riscv/shared_invite/zt-fvnake5e-HWNJhlHIMYl_3YskPmEGyg)
 - Attend our bi-weekly developer [Zoom Meeting](https://us02web.zoom.us/j/87641510603?pwd=d2NDcWZtdlJhdG5pQ2ZBZHl4Uk1Ndz09)
 
    | Meeting Info | Description |
