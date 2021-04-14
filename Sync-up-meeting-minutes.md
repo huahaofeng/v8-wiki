@@ -1,3 +1,36 @@
+## Date: 4/14/2021
+
+### Agenda
+
+- Announcements
+- Community updates
+- Upstreaming updates
+- Action item followups
+- Open PR Discussion
+- Presentations for any recent/planned developments
+
+### Minutes
+
+### Action Items
+
+## Date: 3/31/2021
+
+### Agenda
+
+- Announcements
+- Community updates
+- Upstreaming updates
+- Action item followups
+- Open PR Discussion
+- Presentations for any recent/planned developments
+
+### Action Items
+
+- Move 2021 goals in the issue to wiki (Jiqiu)
+- Arrange a zoom meeting w/ V8 MIPS RISCV backend to share tips and connect community (Jiqiu)
+- Update process workflow w/ consideration of NodeJS's dependency on V8 release branch (Jiqiu)
+- Outreach to users of V8 to arrange individual social hours for community outreach (Wei)
+
 ## Date: 3/17/2021
 
 ### Agenda
