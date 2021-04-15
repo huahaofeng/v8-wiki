@@ -17,7 +17,38 @@ _Developer meetings held every other week on Wednesday 6pm Pacific / 9pm Eastern
 
 ### Minutes
 
+- A member from the MIPS V8 backend team joined us today to listen in
+- Node.js now has a RISC-V target!
+- QiuJi plans to submit a talk for the RISC-V Forums and is also preparing another talk for a RISC-V event in Shanghai
+- Follow up on action items from last time
+  - [x] Move 2021 goals in the issue to wiki (Jiqiu)
+    - [2021 Goals](2021-Goals)
+  - [x] Arrange a zoom meeting w/ V8 MIPS RISCV backend to share tips and connect community (Jiqiu)
+    - They recommended that the best way to gain privileges in the V8 upstream is to just continue to submit useful patches
+    - One member joined us today
+  - Update process workflow w/ consideration of NodeJS's dependency on V8 release branch (Jiqiu)
+    - Node.js seems relatively easier to get patches accepted
+    - They only test x64, so there are no guarantees for other architectures
+    - We need to clarify the process to update V8 within Node.js, but we assume we need to get a patch upstream in V8, then get that pulled in to Node.js
+    - Qiuji will work on setting up our own CI for this
+    - Qiuji will update the workflow on the wiki
+  - Outreach to users of V8 to arrange individual social hours for community outreach (Wei)
+    - Wei is working on this
+    - Has posted a new job opening, but not much response yet
+- PLCT is preparing a technical training session and would like other team members to do a guest lecture
+  - This is a series of lectures, starting now and going every 2 weeks
+  - Typical discussion is 1 hour, so a 40-50 minute talk followed by discussion would be good
+- Upstreaming workflow
+  - Since we can now quickly approve our own PRs upstream, the old process using our GitHub is no longer needed
+  - We should maintain this repo to ensure that there is always a stable branch with RISC-V support, since upstream will often break RISC-V support
+  - We will use the `riscv64` branch for this
+  - Others may want to continue to keep development branches in this repo while in progress, but this is not a requirement
+  - Brice will update the wiki with these changes
+
 ### Action Items
+
+- [ ] Update wiki with Node.js workflow (Qiuji)
+- [ ] Update wiki with new upstreaming workflow (Brice)
 
 ## Date: 3/31/2021
 
