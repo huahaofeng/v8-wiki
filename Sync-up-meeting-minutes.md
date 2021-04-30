@@ -3,6 +3,29 @@ _Developer meetings held every other week on Wednesday 6pm Pacific / 9pm Eastern
 **[Zoom link](https://us02web.zoom.us/j/87641510603?pwd=d2NDcWZtdlJhdG5pQ2ZBZHl4Uk1Ndz09)**
 
 ---
+## Date: 4/28/2021
+
+### Agenda
+
+- Announcements
+- Community updates
+- Upstreaming updates
+- Action item followups
+- Open PR Discussion
+- Presentations for any recent/planned developments
+
+### Minutes
+- V8 upstreaming is progressing normally after Brice got the review+
+- About Node.js
+  - V8 in Nodes.js is now updated to V9.0.257.21. Its build is still fail. It's expected a fine CI would be set up until the next version update.(After Brice got the review+ on Apr 14, we now can do daily maintain for V8.)
+  - Node.js needs native test other than simutaor test, so the final CI still depends on sutained stable hardware. Yahan and QiuJi is trying the Allwinner D1.
+  - The workflow still depends on the pratice result of the above two points.(QiuJi todo)
+- QiuJi had submitted a lightening talk proposal for the RISC-V Forums, also a talk proposal for RVSC in Shanghai.
+
+### Action Items
+
+- [ ] Update wiki with Node.js workflow (Qiuji)
+- [ ] Update wiki with new upstreaming workflow (Brice)
 
 ## Date: 4/14/2021
 
