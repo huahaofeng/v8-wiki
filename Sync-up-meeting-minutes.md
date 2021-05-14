@@ -3,6 +3,32 @@ _Developer meetings held every other week on Wednesday 6pm Pacific / 9pm Eastern
 **[Zoom link](https://us02web.zoom.us/j/87641510603?pwd=d2NDcWZtdlJhdG5pQ2ZBZHl4Uk1Ndz09)**
 
 ---
+## Date: 5/12/2021
+
+### Agenda
+
+- Announcements
+- Community updates
+- Upstreaming updates
+- Action item followups
+- Open PR Discussion
+- Presentations for any recent/planned developments
+
+### Minutes
+
+- First managed runtime meetings. Many groups joined such as Alibaba's OpenJDK team
+- QiuJi's application to do a presentation has been accepted by the RISC-V forum. Planning to give a 10 minute presentation with tentative topics being: a retrospection on porting and maintaining V8, feature development, and optimizations
+- PLCT team has projects they would like to bring new engineers for. Please contact them for details.
+- Upstreaming updates include: c-extension flags and renaming some riscv-only flags
+- V8 team would like us to take care and follow the conventions they have set up. Such conventions include remembering the RISCV64 tag on our commits as well as making sure commit messages and comments follow normal conventions.
+
+### Action Items
+
+- [ ] Update wiki with Node.js workflow. Pending because we need to set up a native CI platform for Node.js (Qiuji)
+- [ ] Add C-Extension Instructions (Derek)
+- [ ] Add calendar for who will host meetings
+
+
 ## Date: 4/28/2021
 
 ### Agenda
