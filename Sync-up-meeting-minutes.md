@@ -11,7 +11,7 @@ _Developer meetings held every other week on Wednesday 6pm Pacific / 9pm Eastern
 - Brice went through a couple PRs being reviewed
 
 ### Action item:
-- Move our repo to risc-v international repo (Brice)
+- Send instructions to OpenJDK team about moving repo to risc-v international repo (Brice)
 
 ---
 ## Date: 5/12/2021
