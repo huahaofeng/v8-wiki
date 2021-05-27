@@ -10,6 +10,9 @@ _Developer meetings held every other week on Wednesday 6pm Pacific / 9pm Eastern
    - Android task group formed (T-head from Alibaba is leading the effort)
 - Brice went through a couple PRs being reviewed
 
+### Action item:
+- Move our repo to risc-v international repo (Brice)
+
 ---
 ## Date: 5/12/2021
 
