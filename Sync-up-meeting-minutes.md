@@ -2,6 +2,14 @@ _Developer meetings held every other week on Wednesday 6pm Pacific / 9pm Eastern
 
 **[Zoom link](https://us02web.zoom.us/j/87641510603?pwd=d2NDcWZtdlJhdG5pQ2ZBZHl4Uk1Ndz09)**
 
+## Date: 05/26/2021
+
+### Minutes
+- Community News: 
+   - building a testbed (open to all OSS community as a testing platform & continuous performance tracking; members gain free access to developer's board and test) for RISC-V international in Nanjing, China (PLCT lab)
+   - Android task group formed (T-head from Alibaba is leading the effort)
+- Brice went through a couple PRs being reviewed
+
 ---
 ## Date: 5/12/2021
 
