@@ -458,35 +458,88 @@ void Simulator::InstructionDecode(Instruction* instr) {
     CheckICache(i_cache(), instr);
   }
   pc_modified_ = false;
+
   v8::internal::EmbeddedVector<char, 256> buffer;
+
   if (::v8::internal::FLAG_trace_sim) {
-    SNPrintF(trace_buf_, "%s", "");
+    SNPrintF(trace_buf_, " ");
     disasm::NameConverter converter;
     disasm::Disassembler dasm(converter);
+    // Use a reasonably large buffer.
     dasm.InstructionDecode(buffer, reinterpret_cast<byte*>(instr));
+
+    // PrintF("EXECUTING  0x%08" PRIxPTR "   %-44s\n",
+    //        reinterpret_cast<intptr_t>(instr), buffer.begin());
   }
 
   instr_ = instr;
   switch (instr_.InstructionType()) {
-    case Instruction::kRegisterType:
-      DecodeTypeRegister();
+    case Instruction::kRType:
+      DecodeRVRType();
       break;
-    case Instruction::kImmediateType:
-      DecodeTypeImmediate();
+    case Instruction::kR4Type:
+      DecodeRVR4Type();
       break;
-    case Instruction::kJumpType:
-      DecodeTypeJump();
+    case Instruction::kIType:
+      DecodeRVIType();
+      break;
+    case Instruction::kSType:
+      DecodeRVSType();
+      break;
+    case Instruction::kBType:
+      DecodeRVBType();
+      break;
+    case Instruction::kUType:
+      DecodeRVUType();
+      break;
+    case Instruction::kJType:
+      DecodeRVJType();
+      break;
+    case Instruction::kCRType:
+      DecodeCRType();
+      break;
+    case Instruction::kCAType:
+      DecodeCAType();
+      break;
+    case Instruction::kCJType:
+      DecodeCJType();
+      break;
+    case Instruction::kCBType:
+      DecodeCBType();
+      break;
+    case Instruction::kCIType:
+      DecodeCIType();
+      break;
+    case Instruction::kCIWType:
+      DecodeCIWType();
+      break;
+    case Instruction::kCSSType:
+      DecodeCSSType();
+      break;
+    case Instruction::kCLType:
+      DecodeCLType();
+      break;
+    case Instruction::kCSType:
+      DecodeCSType();
       break;
     default:
+      if (::v8::internal::FLAG_trace_sim) {
+        std::cout << "Unrecognized instruction [@pc=0x" << std::hex
+                  << registers_[pc] << "]: 0x" << instr->InstructionBits()
+                  << std::endl;
+      }
       UNSUPPORTED();
   }
+
   if (::v8::internal::FLAG_trace_sim) {
-    PrintF("  0x%08" PRIxPTR "  %-44s   %s\n",
-           reinterpret_cast<intptr_t>(instr), buffer.begin(),
+    PrintF("  0x%012" PRIxPTR "  %ld    %-44s   %s\n",
+           reinterpret_cast<intptr_t>(instr), icount_, buffer.begin(),
            trace_buf_.begin());
   }
+
   if (!pc_modified_) {
-    set_register(pc, reinterpret_cast<int32_t>(instr) + kInstrSize);
+    set_register(pc,
+                 reinterpret_cast<int64_t>(instr) + instr->InstructionSize());
   }
 }
 ```
