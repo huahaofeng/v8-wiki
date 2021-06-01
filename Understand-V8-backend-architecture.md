@@ -451,7 +451,7 @@ The entry-point to the simulator is `Simulator::Call()`, which is a wrapper to t
 
 `Simulator::Execute()` executes instructions (via `Simulator::InstructionDecode()`) from the current PC until it reaches the `end_sim_pc` or at `FLAG_STOP_sim_at` (for debugging). The actual implementations of instruction simulation is at `DecodeXXXX()` functions.
 
-```
+```c++
 // Executes the current instruction.
 void Simulator::InstructionDecode(Instruction* instr) {
   if (v8::internal::FLAG_check_icache) {
