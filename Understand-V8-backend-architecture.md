@@ -416,7 +416,7 @@ Data structures used in V8 runtime environments such as `frame`, `thread`, `isol
 The simulator supports multiple threads (i.e., each `isolate` is a thread and `Monitor` (?)),  an ICache, a lightweight debugger (`MipsDebugger`) that supports breakpoints, get values, and get register values,
 
 V8 calls into generated code via the `GeneratedCode` wrapper, which will start execution in the simulator or forwards to the real entry on a MIPS platform.
-```
+```c++
 template <typename Return, typename... Args>
 class GeneratedCode {
  public:
