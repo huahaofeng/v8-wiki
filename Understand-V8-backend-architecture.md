@@ -99,7 +99,7 @@ Below are examples of code assembler APIs defined in `compiler/code-assembler.cc
   TNode<Word32T> Word32Sar(SloppyTNode<Word32T> value, int shift);
 ```
 
-Note that `CodeAssembler` APIs create `TFNode`.
+Note that `CodeAssembler` APIs create `TNode`.
 
 ### Code Stub Assembler (`codegen/code-stub-assembler.cc`)
 
