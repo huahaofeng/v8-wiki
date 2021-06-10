@@ -2,6 +2,26 @@ _Developer meetings held every other week on Wednesday 6pm Pacific / 9pm Eastern
 
 **[Zoom link](https://us02web.zoom.us/j/87641510603?pwd=d2NDcWZtdlJhdG5pQ2ZBZHl4Uk1Ndz09)**
 
+## Date: 06/09/2021
+
+### Minutes
+- Announcements / Community Updates
+  - Qiuji has permissions on the V8 repo now and can trigger try-jobs and +1 PRs!
+  - The RISC-V International internship program has begun
+    - One intern will work on RV32 porting of V8
+    - To start after graduation, around mid June
+  - We are still waiting for Node.js to publish its update
+  - ISCAS is going to build RISC-V laptops before the end of 2022
+    - Will be working on Chromium porting
+    - Hopefully we can get some support and work open sourced from other companies, including RIOS Lab, and Brice will check if Futurewei has anything that can be opened from previous work on that
+  - The V-extension will be frozen soon
+    - We should consider starting to add support in V8 for this
+    - The Wasm vector extension has just been ratified as well, so this is a good time to take on this task
+  - Yahan is starting to track V8 performance
+- Project updates
+  - For C-extensions, the assembly generator methods are all defined, but are not yet used
+  - Derek should upstream his work, then PLCT can help to finish any remaining items
+
 ## Date: 05/26/2021
 
 ### Minutes
